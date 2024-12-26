@@ -1,6 +1,0 @@
-// ANOTES:
-mbirot-smc-vm
-qpzm83*VHU038
-10.80.7.68 --Agente01desa
-10.80.7.69 -- Agente02desa
-10.80.7.73 --Agente03desa
