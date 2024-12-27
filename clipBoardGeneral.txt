@@ -4,3 +4,5 @@ qpzm83*VHU038
 10.80.7.68 --Agente01desa
 10.80.7.69 -- Agente02desa
 10.80.7.73 --Agente03desa
+
+ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
