@@ -1,5 +1,6 @@
 // TASKS:
 mbirot-smc-vm/qpzm83*VHU038
+ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 vme1desdsojum01 (10.82.12.4)
 10.80.7.68 -> vme1desagedso01     RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01  -> ssh -p 22 mbirot-smc-vm@10.80.7.68
