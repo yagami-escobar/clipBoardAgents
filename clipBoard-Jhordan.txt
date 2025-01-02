@@ -23,4 +23,7 @@ vme1prddsojum01 (10.82.12.52)
 // AKS
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-desa --name aks-eu1-integra-canal-desa --overwrite-existing
-kubelogin convert-kubeconfig -l azurecli
+kubelogin convert-kubeconfig -l azurecl
+
+
+ext.jescobars.soaint@pacificosegurossalud.com.pei
