@@ -3,9 +3,9 @@ mbirot-smc-vm/qpzm83*VHU038
 ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 vme1desdsojum01 (10.82.12.4)
-10.80.7.68 -> vme1desagedso01     RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01  -> ssh -p 22 mbirot-smc-vm@10.80.7.68
-10.80.7.69 -> vme1desagedso02     RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01  -> ssh -p 22 mbirot-smc-vm@10.80.7.69
-10.80.7.73 -> vme1desagedso03     RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01  -> ssh -p 22 mbirot-smc-vm@10.80.7.73
+	vme1desagedso01 (10.80.7.68) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.68
+	vme1desagedso02 (10.80.7.69) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.69
+	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.73
 
 
 vme1tstdsojum01 (10.81.4.84)
@@ -19,3 +19,8 @@ vme1prddsojum01 (10.82.12.52)
 10.82.13.132 -> vme1prdagedso01   rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.132
 10.82.13.133 -> vme1prdagedso02   rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.133
 10.82.13.134 -> vme1prdagedso03   rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.134
+
+// AKS
+az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
+az aks get-credentials --resource-group rg-eu1-plat-integra-desa --name aks-eu1-integra-canal-desa --overwrite-existing
+kubelogin convert-kubeconfig -l azurecli
