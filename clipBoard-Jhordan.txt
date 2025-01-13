@@ -41,4 +41,4 @@ kubelogin convert-kubeconfig -l azurecli
 
 
 
-az login --service-principal -u spn-devsecopsdeployapp-desa-01 --password=XXXXXXLuT5XPhVY0_XXXXFkzqafqjr2DLisgQXXX --tenant XXXa9021-e6f2-49e1-88c2-e90b79214XXX --allow-no-subscription
+az login --service-principal -u XXX98158-6d55-488a-bcf0-b11e8fa209f7 --password=XXXXXXLuT5XPhVY0_XXXXFkzqafqjr2DLisgQXXX --tenant XXXa9021-e6f2-49e1-88c2-e90b79214XXX --allow-no-subscription
