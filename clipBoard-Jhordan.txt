@@ -39,3 +39,6 @@ az aks get-credentials -g rg-eu1-plat-integra-desa -n aks-eu1-integra-canal-desa
 kubelogin convert-kubeconfig -l azurecli
 
 
+
+
+az login --service-principal -u spn-devsecopsdeployapp-desa-01 --password=XXXXXXLuT5XPhVY0_XXXXFkzqafqjr2DLisgQXXX --tenant XXXa9021-e6f2-49e1-88c2-e90b79214XXX --allow-no-subscription
