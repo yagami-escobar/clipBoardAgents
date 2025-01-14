@@ -32,13 +32,30 @@ kubelogin convert-kubeconfig -l azurecl
 ext.jescobars.soaint@pacificosegurossalud.com.pei
 
 
+
+
+
+// ****************************************** AZURE ****************************************** //
+az login --service-principal -u 09e98158-6d55-488a-bcf0-b11e8fa209f7 --password=XXXXXXLuT5XPhVY0_XXXXFkzqafqjr2DLisgQXXX --tenant XXXa9021-e6f2-49e1-88c2-e90b79214XXX --allow-no-subscription
+
+
 // ****************************************** AKSs ****************************************** //
 // AKS-CN:
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials -g rg-eu1-plat-integra-desa -n aks-eu1-integra-canal-desa --overwrite-existing
 kubelogin convert-kubeconfig -l azurecli
 
+// ****************************************** SA ****************************************** //
+// LIST SA
+'az storage account list -g rg-eu1-land-ofidig-desa-01 -o table' -> list sa
 
+// CHANGE RULE 
+az storage account update \
+  --name steu1ofidigfilesdesa01  \
+  --resource-group rg-eu1-land-ofidig-desa-01 \
+  --default-action Allow
 
-
-az login --service-principal -u XXX98158-6d55-488a-bcf0-b11e8fa209f7 --password=XXXXXXLuT5XPhVY0_XXXXFkzqafqjr2DLisgQXXX --tenant XXXa9021-e6f2-49e1-88c2-e90b79214XXX --allow-no-subscription
+// LIST CNTs
+az storage container list --account-name steu1lndofidigbsedesa01 --auth-mode login -o table
+az storage container list --account-name steu1odintfuncdesa01 --auth-mode login -o table
+az storage container list --account-name steu1ofidigfilesdesa01 --auth-mode login -o table
