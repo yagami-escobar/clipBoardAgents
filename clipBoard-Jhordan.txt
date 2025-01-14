@@ -59,3 +59,7 @@ az storage account update \
 az storage container list --account-name steu1lndofidigbsedesa01 --auth-mode login -o table
 az storage container list --account-name steu1odintfuncdesa01 --auth-mode login -o table
 az storage container list --account-name steu1ofidigfilesdesa01 --auth-mode login -o table
+
+
+// CREATE CNTs
+az storage container create --resource-group rg-eu1-land-ofidig-desa-01 --account-name steu1ofidigfilesdesa01 --name cn-ofidig-login
