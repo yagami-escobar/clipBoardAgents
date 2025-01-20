@@ -80,47 +80,45 @@ nslookup db-srv-eu1-ofidig-desa-02.database.windows.net
 
 
 
-
 // ********************************* SQLDB ********************************* //
 	// OFIDIG
-	nslookup db-srv-eu1-ofidig-desa-01.database.windows.net		'subs: nss-land-oficinadigital'
-	20.62.132.162
+	'VALID 1 (AGENT)' ->  nslookup db-srv-eu1-ofidig-desa-01.database.windows.net -> agent03 (20.62.132.162 ) || 'subs: nss-land-oficinadigital'
+	'VALID 2 (AGENT)' ->  nc -zv db-srv-eu1-ofidig-desa-01.database.windows.net   -> ''
 
-	nslookup db-srv-eu1-ofidig-desa-02.database.windows.net		'subs: nss-land-oficinadigital'
-	20.62.132.162
-
-	nslookup db-srv-eu1-datos-desa-01.database.windows.net		'subs: nss-plat-datos'
-	agent02	-> 20.62.132.163
-	agent03	-> 20.62.132.162
-
-
+  'VALID 1 (AGENT)' ->  nslookup db-srv-eu1-ofidig-desa-02.database.windows.net	-> agent03	(20.62.132.162)	|| 'subs: nss-land-oficinadigital'
+	'VALID 2 (AGENT)' ->  nc -zv db-srv-eu1-ofidig-desa-02.database.windows.net   -> ''
+	
+  'VALID 1 (AGENT)' ->  nslookup db-srv-eu1-datos-desa-01.database.windows.net	-> agent03	(20.62.132.162) || 'subs: nss-plat-datos'
+	'VALID 2 (AGENT)' ->  nc -zv db-srv-eu1-datos-desa-01.database.windows.net    -> ''
+	
 
 	// INTEGRA
-	sqlsv-eastus-canal-desa-01.database.windows.net 			'subs: nss-plat-integracion'
-	(agent02 y agent03) -> 10.227.2.68
+	'VALID 1 (AGENT)' -> nslookup sqlsv-eastus-canal-desa-01.database.windows.net -> agent03 (10.227.2.68) || 'subs: nss-plat-integracion'
+  'VALID 2 (AGENT)' -> nc -zv sqlsv-eastus-canal-desa-01.database.windows.net   -> 
+  
+  
+  'VALID 1 (AGENT)' -> sqlsv-eastus-multicanal-desa-01.database.windows.net     -> agent03 (10.227.2.4)  || 'subs: nss-plat-integracion'
+  'VALID 2 (AGENT)' -> nc -zv sqlsv-eastus-canal-desa-01.database.windows.net   -> 
 
-	sqlsv-eastus-multicanal-desa-01.database.windows.net		'subs: nss-plat-integracion'
-	(agent02 y agent03) -> 10.227.2.4
-
-
-
+  
 
 // ********************************* KV ********************************* //
-
 	// OFIDIG
-	nslookup https://kveu1ofidigdesa01.vault.azure.net/
-	10.80.19.4
+	'VALID 1 (AKS)': nslookup kveu1ofidigdesa01.vault.azure.net    -> agent02 (10.80.19.4)   || // nslookup kveu1integradesa.vault.azure.net     -> agent02 (10.227.5.68)
+  'VALID 2 (AKS)': nc -zv kveu1ofidigdesa01.vault.azure.net 443  -> Connection timed out   || // nc -zv kveu1integradesa.vault.azure.net 443   -> Connected to 10.227.5.68:443
 
-	// INTEGRA
-	nslookup https://kveu1integradesa.vault.azure.net/
-	10.227.5.68
+
+
 
 // nc:
 'nc <IP_DNS> <PORT>'	--> probar svcs o apis o conectarse a un server o svc a un port especifico.
 
 
 
+kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
 
 
 
-kubectl run nettools-pod --image=jrecord/nettools --restart=Never --interactive --tty -- /bin/bash
+
+'kubectl exec -it pod/xxxx -- bin/bash' -> crear pod.
+'' -> 
