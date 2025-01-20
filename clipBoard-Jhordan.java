@@ -122,3 +122,39 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
 
 'kubectl exec -it pod/xxxx -- bin/bash' -> crear pod.
 '' -> 
+
+
+
+// RESOURCES:
+
+-> nss-land-oficinadigital (rg-eu1-land-ofidig-desa-01)
+
+- 'SA' -> 
+  steu1ofidigfilesdesa01 -> pe-steu1ofidigfilesdesa-01 -> 10.80.19.68 -> vnet-eu1-ofidig-datos-desa/sn-eu1-ofidig-datos-pe-files-desa-01
+  steu1odintfuncdesa01   -> pe-steu1odintfuncdesa-01   -> 10.80.19.52 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
+
+  nslookup steu1ofidigfilesdesa01.blob.core.windows.net
+  telnet steu1ofidigfilesdesa01.blob.core.windows.net 443
+  nc -zv steu1ofidigfilesdesa01.blob.core.windows.net
+
+  nslookup steu1odintfuncdesa01.blob.core.windows.net
+  telnet steu1odintfuncdesa01.blob.core.windows.net 443
+  nc -zv steu1ofidigfilesdesa01.blob.core.windows.net
+
+
+
+- 'FN' -> 
+  func-eu1-nodelnx-ofidigi-desa-01 -> pe-funceu1-ofidigi-desa-01 -> 10.80.19.53 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
+
+  nslookup func-eu1-nodelnx-ofidigi-desa-01.azurewebsites.net
+  telnet func-eu1-nodelnx-ofidigi-desa-01.azurewebsites.net 443
+  nc -zv func-eu1-nodelnx-ofidigi-desa-01.azurewebsites.net
+
+
+
+- 'PUBSUB' -> 
+  wps-eastus-ofidig-desa-01(wps-eastus-ofidig-desa-01.webpubsub.azure.com) -> pe-eu1-wps-ofidig-desa-01 -> 10.80.19.180 -> vnet-eu1-ofidig-frontend-desa/sn-eu1-ofidig-frontend-pe-wps-desa-01 
+
+  nslookup wps-eastus-ofidig-desa-01.webpubsub.azure.com
+  telnet wps-eastus-ofidig-desa-01.webpubsub.azure.com 443
+  nc -zv wps-eastus-ofidig-desa-01.webpubsub.azure.com
