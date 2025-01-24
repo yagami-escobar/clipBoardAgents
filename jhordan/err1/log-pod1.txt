@@ -1,0 +1,66 @@
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:/home/srdsoagedes/org-nss-pacificoSalud/agent01/_work/r39/a/_pip-desa-ci-ods-oficinaDigitalSaludK8sCn/uti-o                                                                                                                                                                                                                                 ds-oficinaDigitalSaludK8sCn/infrastructure/manifests$ kubectl get pods -n ns-desa-cn-ods-oficinadigitalsalud
+NAME                              READY   STATUS              RESTARTS   AGE
+ods-secretssync-8d9bbf78c-6gkqd   0/1     ContainerCreating   0          47m
+ext-jescobars-mejco-vm-est@vme1desagedso02:/home/srdsoagedes/org-nss-pacificoSalud/agent01/_work/r39/a/_pip-desa-ci-ods-oficinaDigitalSaludK8sCn/uti-o                                                                                                                                                                                                                                 ds-oficinaDigitalSaludK8sCn/infrastructure/manifests$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud describe pod/ods-secretssync-8d9bbf78c-6gkqd
+Name:             ods-secretssync-8d9bbf78c-6gkqd
+Namespace:        ns-desa-cn-ods-oficinadigitalsalud
+Priority:         0
+Service Account:  default
+Node:             aks-nodewrkcn-29188228-vmss000001/10.227.40.10
+Start Time:       Fri, 17 Jan 2025 05:55:04 +0000
+Labels:           app=ods-secretssync
+                  pod-template-hash=8d9bbf78c
+Annotations:      secrets-store.csi.k8s.io/enable-secret-rotation: true
+                  secrets-store.csi.k8s.io/rotationPollInterval: 3600s
+Status:           Pending
+IP:
+IPs:              <none>
+Controlled By:    ReplicaSet/ods-secretssync-8d9bbf78c
+Containers:
+  ods-secretssync-container:
+    Container ID:
+    Image:         alpine
+    Image ID:
+    Port:          <none>
+    Host Port:     <none>
+    Command:
+      sleep
+      3600
+    State:          Waiting
+      Reason:       ContainerCreating
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /mnt/secrets-store from secrets-store-inline (ro)
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-tk5xm (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   False
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  secrets-store-inline:
+    Type:              CSI (a Container Storage Interface (CSI) volume source)
+    Driver:            secrets-store.csi.k8s.io
+    FSType:
+    ReadOnly:          true
+    VolumeAttributes:      secretProviderClass=secretproviderclass-ods-general
+  kube-api-access-tk5xm:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason       Age                  From               Message
+  ----     ------       ----                 ----               -------
+  Normal   Scheduled    48m                  default-scheduler  Successfully assigned ns-desa-cn-ods-oficinadigitalsalud/ods-secretssync-8d9bbf78c-6gk                                                                                                                                                                                                                                 qd to aks-nodewrkcn-29188228-vmss000001
+  Warning  FailedMount  109s (x31 over 48m)  kubelet            MountVolume.SetUp failed for volume "secrets-store-inline" : rpc error: code = Unknown                                                                                                                                                                                                                                  desc = failed to mount secrets store objects for pod ns-desa-cn-ods-oficinadigitalsalud/ods-secretssync-8d9bbf78c-6gkqd, err: rpc error: code = Unkno                                                                                                                                                                                                                                 wn desc = failed to mount objects, error: failed to create auth config, error: failed to get credentials, nodePublishSecretRef secret is not set

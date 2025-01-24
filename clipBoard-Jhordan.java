@@ -142,8 +142,6 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
   'X' nc -zv steu1ofidigfilesdesa01.blob.core.windows.net 443
 
 
-
-
 // ********************************* FN ********************************* //
   func-eu1-nodelnx-ofidigi-desa-01 -> pe-funceu1-ofidigi-desa-01 -> 10.80.19.53 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
 
@@ -186,3 +184,32 @@ az acr login -n acrseu1integradesa
 // ********************************* PODS ********************************* //
 kubectl get all -n ns-desa-cn-ods-oficinadigitalsalud
 kubectl -n ns-desa-cn-ods-oficinadigitalsalud describe pod/ods-ux-parameters-975c49d88-7bx8l
+
+// ******************** LOGS 
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:/etc$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-ux-parameters-975c49d88-9wmjz
+
+> srv-ms-sc-ux-ods-parametersManagement@0.0.1 start
+> nest start
+
+
+<--- Last few GCs --->
+
+[17:0x7f1e5c8c8000]    38979 ms: Mark-Compact 252.3 (258.6) -> 251.9 (258.6) MB, pooled: 0 MB, 1396.33 / 0.00 ms  (average mu = 0.439, current mu = 0.226) allocation failure; scavenge might not succeed
+[17:0x7f1e5c8c8000]    40877 ms: Mark-Compact 253.1 (258.6) -> 252.8 (260.1) MB, pooled: 1 MB, 1709.20 / 0.00 ms  (average mu = 0.283, current mu = 0.099) allocation failure; scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+npm error path /APP
+npm error command failed
+npm error signal SIGABRT
+npm error command sh -c nest start
+npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-24T21_58_13_024Z-debug-0.log
+
+
+
+
