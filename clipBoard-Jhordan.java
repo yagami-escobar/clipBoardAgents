@@ -133,13 +133,13 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
   steu1ofidigfilesdesa01 -> pe-steu1ofidigfilesdesa-01 -> 10.80.19.68 -> vnet-eu1-ofidig-datos-desa/sn-eu1-ofidig-datos-pe-files-desa-01
   steu1odintfuncdesa01   -> pe-steu1odintfuncdesa-01   -> 10.80.19.52 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
 
-  nslookup steu1ofidigfilesdesa01.blob.core.windows.net
-  telnet steu1ofidigfilesdesa01.blob.core.windows.net 443
-  nc -zv steu1ofidigfilesdesa01.blob.core.windows.net
+  'X' nslookup steu1ofidigfilesdesa01.blob.core.windows.net 
+  'X' telnet steu1ofidigfilesdesa01.blob.core.windows.net 443
+  'X' nc -zv steu1ofidigfilesdesa01.blob.core.windows.net 443
 
-  nslookup steu1odintfuncdesa01.blob.core.windows.net
-  telnet steu1odintfuncdesa01.blob.core.windows.net 443
-  nc -zv steu1ofidigfilesdesa01.blob.core.windows.net
+  'X' nslookup steu1odintfuncdesa01.blob.core.windows.net
+  'X' telnet steu1odintfuncdesa01.blob.core.windows.net 443
+  'X' nc -zv steu1ofidigfilesdesa01.blob.core.windows.net 443
 
 
 
@@ -158,3 +158,13 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
   nslookup wps-eastus-ofidig-desa-01.webpubsub.azure.com
   telnet wps-eastus-ofidig-desa-01.webpubsub.azure.com 443
   nc -zv wps-eastus-ofidig-desa-01.webpubsub.azure.com
+
+
+
+
+// ********************************* APP-SERVICE ********************************* //
+
+web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net -> 10.80.19.164
+web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net -> 10.80.19.167
+web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net -> 10.80.19.165
+web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net -> 10.80.19.166
