@@ -129,7 +129,7 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
 
 -> nss-land-oficinadigital (rg-eu1-land-ofidig-desa-01)
 
-- 'SA' -> 
+// ********************************* SA ********************************* //
   steu1ofidigfilesdesa01 -> pe-steu1ofidigfilesdesa-01 -> 10.80.19.68 -> vnet-eu1-ofidig-datos-desa/sn-eu1-ofidig-datos-pe-files-desa-01
   steu1odintfuncdesa01   -> pe-steu1odintfuncdesa-01   -> 10.80.19.52 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
 
@@ -143,7 +143,8 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
 
 
 
-- 'FN' -> 
+
+// ********************************* FN ********************************* //
   func-eu1-nodelnx-ofidigi-desa-01 -> pe-funceu1-ofidigi-desa-01 -> 10.80.19.53 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
 
   nslookup func-eu1-nodelnx-ofidigi-desa-01.azurewebsites.net
@@ -152,7 +153,7 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
 
 
 
-- 'PUBSUB' -> 
+// ********************************* PUBSUB ********************************* //
   wps-eastus-ofidig-desa-01(wps-eastus-ofidig-desa-01.webpubsub.azure.com) -> pe-eu1-wps-ofidig-desa-01 -> 10.80.19.180 -> vnet-eu1-ofidig-frontend-desa/sn-eu1-ofidig-frontend-pe-wps-desa-01 
 
   nslookup wps-eastus-ofidig-desa-01.webpubsub.azure.com
@@ -163,8 +164,25 @@ kubectl run nettools-pod --image=jrecord/nettools --restart=Never -- /bin/bash
 
 
 // ********************************* APP-SERVICE ********************************* //
+(40.79.154.193)
+nslookup web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net -> 10.80.19.164
+nc -zv 
+nslookup web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net -> 10.80.19.167
+nc -zv 
+nslookup web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net -> 10.80.19.165
+nc -zv 
+nslookup web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net -> 10.80.19.166
+nc -zv 
 
-web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net -> 10.80.19.164
-web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net -> 10.80.19.167
-web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net -> 10.80.19.165
-web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net -> 10.80.19.166
+
+
+// ********************************* ACR ********************************* //
+nslookup acrseu1integradesa.azurecr.io
+nc -zv 10.227.5.71 443
+
+az acr login -n acrseu1integradesa
+
+
+// ********************************* PODS ********************************* //
+kubectl get all -n ns-desa-cn-ods-oficinadigitalsalud
+kubectl -n ns-desa-cn-ods-oficinadigitalsalud describe pod/ods-ux-parameters-975c49d88-7bx8l
