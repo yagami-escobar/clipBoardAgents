@@ -175,6 +175,11 @@ nslookup web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net -> 10.80.19.166
 nc -zv 
 
 
+vme1desagedso02	(10.80.7.69) -> {nslookup web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net, web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net, web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net, web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net}
+vme1desagedso02	(10.80.7.69) -> {acrseu1integradesa.azurecr.io}
+
+
+
 
 // ********************************* ACR ********************************* //
 nslookup acrseu1integradesa.azurecr.io
