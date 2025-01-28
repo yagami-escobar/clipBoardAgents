@@ -216,5 +216,6 @@ npm error command sh -c nest start
 npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-24T21_58_13_024Z-debug-0.log
 
 
-
-
+'X-XXXXXXX'
+1: 4e34b054-f47e-4a87-adb8-3e1447deXXXX
+2: 7tQ8Q~D9GhuixYj8UqhlxpL6TPMDXZRe0ot9XXXX
