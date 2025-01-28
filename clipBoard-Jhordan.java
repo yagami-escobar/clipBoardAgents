@@ -224,4 +224,4 @@ npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-2
 - db-srv-eu1-datos-desa-01.database.windows.net (db-sql-eu1-datos-desa01)    -> [db_ddladmin, db_datareader y db_datawriter]
 
 
-
+- sqlsv-eastus-canal-desa-01.database.windows.net (db_sql_integr_mejoconcanal_desa_01) -> [db_ddladmin, db_datareader y db_datawriter]
