@@ -71,8 +71,6 @@ srodlsqldes
 srodpsqldes
 
 curl db-srv-eu1-ofidig-desa-01.database.windows.net
-
-
 nslookup db-srv-eu1-ofidig-desa-01.database.windows.net
 nslookup db-srv-eu1-ofidig-desa-02.database.windows.net
 
@@ -219,3 +217,11 @@ npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-2
 'X-XXXXXXX'
 1: 4e34b054-f47e-4a87-adb8-3e1447deXXXX
 2: 7tQ8Q~D9GhuixYj8UqhlxpL6TPMDXZRe0ot9XXXX
+
+// DBs
+- db-srv-eu1-ofidig-desa-01.database.windows.net (db-sql-eu1-ofidig-desa-01) -> [db_ddladmin, db_datareader y db_datawriter]
+- db-srv-eu1-ofidig-desa-02.database.windows.net (db-sql-eu1-ofidig-desa-02) -> [db_ddladmin, db_datareader y db_datawriter]
+- db-srv-eu1-datos-desa-01.database.windows.net (db-sql-eu1-datos-desa01)    -> [db_ddladmin, db_datareader y db_datawriter]
+
+
+
