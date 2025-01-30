@@ -1,0 +1,49 @@
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-ux-parameters-7ff97cbc5b-5rmqf
+
+> srv-ms-sc-ux-ods-parametersManagement@0.0.1 start
+> nest start
+
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] AppModule dependencies initialized +1ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] CommonsModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] SqlServerModule dependencies initialized +1ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] TypeOrmModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] KeyVaultModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] HttpModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] PinoLoggerProviderModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] RedisModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigServerProviderModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] KeyVaultModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +0ms
+[Nest] 28  - 01/30/2025, 10:47:08 PM   ERROR [RedisService] InternalServerErrorException: Error retrieving secret "AZURE-REDIS-URL": unauthorized_client: Error(s): 700016 - Timestamp: 2025-01-30 22:47:08Z - Description: AADSTS700016: Application with identifier 'xxx' was not found in the directory 'pacificoeps'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant. Trace ID: c7ded6a2-ba44-435f-a7e8-a04c01bccd00 Correlation ID: e682ce05-75b2-405c-9714-899f57e22683 Timestamp: 2025-01-30 22:47:08Z - Correlation ID: e682ce05-75b2-405c-9714-899f57e22683 - Trace ID: c7ded6a2-ba44-435f-a7e8-a04c01bccd00
+[Nest] 28  - 01/30/2025, 10:47:08 PM   ERROR [ExceptionHandler] Error retrieving secret "DB-HOST": unauthorized_client: Error(s): 700016 - Timestamp: 2025-01-30 22:47:08Z - Description: AADSTS700016: Application with identifier 'xxx' was not found in the directory 'pacificoeps'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant. Trace ID: c7ded6a2-ba44-435f-a7e8-a04c01bccd00 Correlation ID: e682ce05-75b2-405c-9714-899f57e22683 Timestamp: 2025-01-30 22:47:08Z - Correlation ID: e682ce05-75b2-405c-9714-899f57e22683 - Trace ID: c7ded6a2-ba44-435f-a7e8-a04c01bccd00
+InternalServerErrorException: Error retrieving secret "DB-HOST": unauthorized_client: Error(s): 700016 - Timestamp: 2025-01-30 22:47:08Z - Description: AADSTS700016: Application with identifier 'xxx' was not found in the directory 'pacificoeps'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant. Trace ID: c7ded6a2-ba44-435f-a7e8-a04c01bccd00 Correlation ID: e682ce05-75b2-405c-9714-899f57e22683 Timestamp: 2025-01-30 22:47:08Z - Correlation ID: e682ce05-75b2-405c-9714-899f57e22683 - Trace ID: c7ded6a2-ba44-435f-a7e8-a04c01bccd00
+    at KeyVaultService.getSecret (/APP/src/lib/external/azure/key-vault/KeyVault.service.ts:63:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getSecretOrConfig (/APP/src/lib/external/azure/sql-server/SqlServer.module.ts:34:18)
+    at async InstanceWrapper.useFactory (/APP/src/lib/external/azure/sql-server/SqlServer.module.ts:37:25)
+    at async Injector.instantiateClass (/APP/node_modules/@nestjs/core/injector/injector.js:377:37)
+    at async callback (/APP/node_modules/@nestjs/core/injector/injector.js:65:34)
+    at async Injector.resolveConstructorParams (/APP/node_modules/@nestjs/core/injector/injector.js:145:24)
+    at async Injector.loadInstance (/APP/node_modules/@nestjs/core/injector/injector.js:70:13)
+    at async Injector.loadProvider (/APP/node_modules/@nestjs/core/injector/injector.js:98:9)
+    at async /APP/node_modules/@nestjs/core/injector/instance-loader.js:56:13
+    at async Promise.all (index 3)
+    at async InstanceLoader.createInstancesOfProviders (/APP/node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+    at async /APP/node_modules/@nestjs/core/injector/instance-loader.js:40:13
+    at async Promise.all (index 23)
+    at async InstanceLoader.createInstances (/APP/node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+    at async InstanceLoader.createInstancesOfDependencies (/APP/node_modules/@nestjs/core/injector/instance-loader.js:22:13)
