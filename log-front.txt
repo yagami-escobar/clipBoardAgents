@@ -1,0 +1,63 @@
+main.20a5a99daffd916ec25e.js:2 Unsatisfied version 7.1.1 from arquetipo-spa-container of shared singleton module react-router-dom (required =19.0.0)
+(anonymous) @ main.20a5a99daffd916ec25e.js:2Understand this warningAI
+/undefined/remoteEntry.js:1 
+        
+        
+       Failed to load resource: the server responded with a status of 404 (Not Found)Understand this errorAI
+4main.20a5a99daffd916ec25e.js:2 Initialization of sharing external failed: ScriptExternalLoadError: Loading script failed.
+(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
+t @ main.20a5a99daffd916ec25e.js:2Understand this warningAI
+main.20a5a99daffd916ec25e.js:2 Uncaught (in promise) ScriptExternalLoadError: Loading script failed.
+(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
+while loading "./SidebarStyles" from 327
+while loading "./Sidebar" from 327
+    at 327 (main.20a5a99daffd916ec25e.js:2:16316)
+    at l (main.20a5a99daffd916ec25e.js:2:190800)
+    at u (main.20a5a99daffd916ec25e.js:2:194289)
+    at l.I (main.20a5a99daffd916ec25e.js:2:194644)
+    at main.20a5a99daffd916ec25e.js:2:196910
+    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
+    at main.20a5a99daffd916ec25e.js:2:198168
+    at Array.forEach (<anonymous>)
+    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
+    at main.20a5a99daffd916ec25e.js:2:191518Understand this errorAI
+main.20a5a99daffd916ec25e.js:2 Uncaught (in promise) ScriptExternalLoadError: Loading script failed.
+(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
+while loading "./HeaderStyles" from 250
+    at 250 (main.20a5a99daffd916ec25e.js:2:15920)
+    at l (main.20a5a99daffd916ec25e.js:2:190800)
+    at u (main.20a5a99daffd916ec25e.js:2:194289)
+    at l.I (main.20a5a99daffd916ec25e.js:2:194651)
+    at main.20a5a99daffd916ec25e.js:2:196910
+    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
+    at main.20a5a99daffd916ec25e.js:2:198168
+    at Array.forEach (<anonymous>)
+    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
+    at main.20a5a99daffd916ec25e.js:2:191518Understand this errorAI
+main.20a5a99daffd916ec25e.js:2 Uncaught (in promise) ScriptExternalLoadError: Loading script failed.
+(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
+while loading "./SiniestrosStyles" from 906
+    at 906 (main.20a5a99daffd916ec25e.js:2:16716)
+    at l (main.20a5a99daffd916ec25e.js:2:190800)
+    at u (main.20a5a99daffd916ec25e.js:2:194289)
+    at l.I (main.20a5a99daffd916ec25e.js:2:194658)
+    at main.20a5a99daffd916ec25e.js:2:196910
+    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
+    at main.20a5a99daffd916ec25e.js:2:198168
+    at Array.forEach (<anonymous>)
+    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
+    at main.20a5a99daffd916ec25e.js:2:191518Understand this errorAI
+main.20a5a99daffd916ec25e.js:2 Uncaught ScriptExternalLoadError: Loading script failed.
+(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
+while loading "./SidebarStyles" from 327
+while loading "./Sidebar" from 327
+    at 327 (main.20a5a99daffd916ec25e.js:2:16316)
+    at l (main.20a5a99daffd916ec25e.js:2:190800)
+    at u (main.20a5a99daffd916ec25e.js:2:194289)
+    at l.I (main.20a5a99daffd916ec25e.js:2:194644)
+    at main.20a5a99daffd916ec25e.js:2:196910
+    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
+    at main.20a5a99daffd916ec25e.js:2:198168
+    at Array.forEach (<anonymous>)
+    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
+    at main.20a5a99daffd916ec25e.js:2:191518
