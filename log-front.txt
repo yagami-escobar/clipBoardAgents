@@ -1,63 +1,29 @@
-main.20a5a99daffd916ec25e.js:2 Unsatisfied version 7.1.1 from arquetipo-spa-container of shared singleton module react-router-dom (required =19.0.0)
-(anonymous) @ main.20a5a99daffd916ec25e.js:2Understand this warningAI
-/undefined/remoteEntry.js:1 
+main.9702265aebf27d97799b.js:697 Unsatisfied version 7.1.1 from arquetipo-spa-container of shared singleton module react-router-dom (required =19.0.0)
+warn @ main.9702265aebf27d97799b.js:697Understand this warningAI
+react-dom-client.development.js:24594 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+remoteEntry.js:1 
         
         
-       Failed to load resource: the server responded with a status of 404 (Not Found)Understand this errorAI
-4main.20a5a99daffd916ec25e.js:2 Initialization of sharing external failed: ScriptExternalLoadError: Loading script failed.
-(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
-t @ main.20a5a99daffd916ec25e.js:2Understand this warningAI
-main.20a5a99daffd916ec25e.js:2 Uncaught (in promise) ScriptExternalLoadError: Loading script failed.
-(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
-while loading "./SidebarStyles" from 327
-while loading "./Sidebar" from 327
-    at 327 (main.20a5a99daffd916ec25e.js:2:16316)
-    at l (main.20a5a99daffd916ec25e.js:2:190800)
-    at u (main.20a5a99daffd916ec25e.js:2:194289)
-    at l.I (main.20a5a99daffd916ec25e.js:2:194644)
-    at main.20a5a99daffd916ec25e.js:2:196910
-    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
-    at main.20a5a99daffd916ec25e.js:2:198168
-    at Array.forEach (<anonymous>)
-    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
-    at main.20a5a99daffd916ec25e.js:2:191518Understand this errorAI
-main.20a5a99daffd916ec25e.js:2 Uncaught (in promise) ScriptExternalLoadError: Loading script failed.
-(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
-while loading "./HeaderStyles" from 250
-    at 250 (main.20a5a99daffd916ec25e.js:2:15920)
-    at l (main.20a5a99daffd916ec25e.js:2:190800)
-    at u (main.20a5a99daffd916ec25e.js:2:194289)
-    at l.I (main.20a5a99daffd916ec25e.js:2:194651)
-    at main.20a5a99daffd916ec25e.js:2:196910
-    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
-    at main.20a5a99daffd916ec25e.js:2:198168
-    at Array.forEach (<anonymous>)
-    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
-    at main.20a5a99daffd916ec25e.js:2:191518Understand this errorAI
-main.20a5a99daffd916ec25e.js:2 Uncaught (in promise) ScriptExternalLoadError: Loading script failed.
-(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
-while loading "./SiniestrosStyles" from 906
-    at 906 (main.20a5a99daffd916ec25e.js:2:16716)
-    at l (main.20a5a99daffd916ec25e.js:2:190800)
-    at u (main.20a5a99daffd916ec25e.js:2:194289)
-    at l.I (main.20a5a99daffd916ec25e.js:2:194658)
-    at main.20a5a99daffd916ec25e.js:2:196910
-    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
-    at main.20a5a99daffd916ec25e.js:2:198168
-    at Array.forEach (<anonymous>)
-    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
-    at main.20a5a99daffd916ec25e.js:2:191518Understand this errorAI
-main.20a5a99daffd916ec25e.js:2 Uncaught ScriptExternalLoadError: Loading script failed.
-(error: https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/undefined/remoteEntry.js)
-while loading "./SidebarStyles" from 327
-while loading "./Sidebar" from 327
-    at 327 (main.20a5a99daffd916ec25e.js:2:16316)
-    at l (main.20a5a99daffd916ec25e.js:2:190800)
-    at u (main.20a5a99daffd916ec25e.js:2:194289)
-    at l.I (main.20a5a99daffd916ec25e.js:2:194644)
-    at main.20a5a99daffd916ec25e.js:2:196910
-    at 787 (main.20a5a99daffd916ec25e.js:2:197491)
-    at main.20a5a99daffd916ec25e.js:2:198168
-    at Array.forEach (<anonymous>)
-    at l.f.consumes (main.20a5a99daffd916ec25e.js:2:197976)
-    at main.20a5a99daffd916ec25e.js:2:191518
+       Failed to load resource: net::ERR_CONNECTION_REFUSEDUnderstand this errorAI
+main.9702265aebf27d97799b.js:565 Initialization of sharing external failed: ScriptExternalLoadError: Loading script failed.
+(error: http://localhost:5004/remoteEntry.js)
+warn @ main.9702265aebf27d97799b.js:565Understand this warningAI
+5remoteEntry.js:2 Unsatisfied version 19.0.0 from arquetipo-spa-container of shared singleton module react (required =18.3.1)
+(anonymous) @ remoteEntry.js:2Understand this warningAI
+8remoteEntry.js:2 Unsatisfied version 19.0.0 from arquetipo-spa-container of shared singleton module react (required =18.3.1)
+(anonymous) @ remoteEntry.js:2Understand this warningAI
+653.77774a1636a8fb885e41.js:2 Uncaught TypeError: Cannot read properties of undefined (reading 'ReactCurrentOwner')
+    at 20 (653.77774a1636a8fb885e41.js:2:305)
+    at i (remoteEntry.js:2:287412)
+    at 848 (653.77774a1636a8fb885e41.js:2:720)
+    at i (remoteEntry.js:2:287412)
+    at 935 (653.77774a1636a8fb885e41.js:2:1290)
+    at i (remoteEntry.js:2:287412)
+    at 490 (363.04fc04891eb5d70f536b.js:1:1999)
+    at i (remoteEntry.js:2:287412)
+    at 19 (363.04fc04891eb5d70f536b.js:1:794)
+    at i (remoteEntry.js:2:287412)Understand this errorAI
+react-dom-client.development.js:7409 An error occurred in one of your React components.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
