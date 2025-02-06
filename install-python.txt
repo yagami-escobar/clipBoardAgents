@@ -1,0 +1,10 @@
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x6a755776 | sudo tee /etc/apt/keyrings/deadsnakes.asc
+
+
+
+echo "deb [signed-by=/etc/apt/keyrings/deadsnakes.asc] http://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/deadsnakes-ppa.list
+
+
+sudo apt update
+sudo apt install -y python3.12 python3.12-venv python3.12-dev
