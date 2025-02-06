@@ -1,0 +1,59 @@
+main.e0e49238098ab06462a3.js:665 Unsatisfied version 7.1.1 from arquetipo-spa-container of shared singleton module react-router-dom (required =19.0.0)
+warn @ main.e0e49238098ab06462a3.js:665Understand this warningAI
+react-dom-client.development.js:24594 Download the React DevTools for a better development experience: https://react.dev/link/react-devtools
+5remoteEntry.js:2 Unsatisfied version 19.0.0 from arquetipo-spa-container of shared singleton module react (required =18.3.1)
+(anonymous) @ remoteEntry.js:2Understand this warningAI
+web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/:1 Access to font at 'https://fonts.gstatic.com/s/materialicons/v143/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2' from origin 'https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this errorAI
+flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2:1 
+        
+        
+       Failed to load resource: net::ERR_FAILEDUnderstand this errorAI
+web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net/:1 Access to font at 'https://fonts.gstatic.com/s/materialiconsoutlined/v109/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2' from origin 'https://web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.Understand this errorAI
+gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2:1 
+        
+        
+       Failed to load resource: net::ERR_FAILEDUnderstand this errorAI
+remoteEntry.js:2 Uncaught ChunkLoadError: Loading chunk 423 failed.
+(error: https://web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net/423.524195c5d34d2bf521ae.js)
+while loading "./Home" from webpack/container/reference/siniestros
+    at Object.j (remoteEntry.js:2:164684)
+    at remoteEntry.js:2:159472
+    at Array.reduce (<anonymous>)
+    at Function.e (remoteEntry.js:2:159450)
+    at ./Home (remoteEntry.js:2:15475)
+    at a (remoteEntry.js:2:15594)
+    at handleFunction (main.e0e49238098ab06462a3.js:490:31)
+    at onInitialized (main.e0e49238098ab06462a3.js:502:60)
+    at handleFunction (main.e0e49238098ab06462a3.js:495:25)
+    at onExternal (main.e0e49238098ab06462a3.js:501:68)
+(anonymous) @ remoteEntry.js:2
+(anonymous) @ remoteEntry.js:2
+(anonymous) @ remoteEntry.js:2
+./Home @ remoteEntry.js:2
+a @ remoteEntry.js:2
+handleFunction @ main.e0e49238098ab06462a3.js:490
+onInitialized @ main.e0e49238098ab06462a3.js:502
+handleFunction @ main.e0e49238098ab06462a3.js:495
+onExternal @ main.e0e49238098ab06462a3.js:501
+(anonymous) @ main.e0e49238098ab06462a3.js:492
+Promise.then
+handleFunction @ main.e0e49238098ab06462a3.js:492
+(anonymous) @ main.e0e49238098ab06462a3.js:509
+__webpack_require__.f.remotes @ main.e0e49238098ab06462a3.js:472
+(anonymous) @ main.e0e49238098ab06462a3.js:309
+__webpack_require__.e @ main.e0e49238098ab06462a3.js:308
+eval @ appRoutes.tsx:8
+lazyInitializer @ react.development.js:759
+react-stack-bottom-frame @ react-dom-client.development.js:22532
+beginWork @ react-dom-client.development.js:9609
+runWithFiberInDEV @ react-dom-client.development.js:543
+performUnitOfWork @ react-dom-client.development.js:15052
+workLoopConcurrent @ react-dom-client.development.js:15038
+renderRootConcurrent @ react-dom-client.development.js:15013
+performWorkOnRoot @ react-dom-client.development.js:14333
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:15931
+performWorkUntilDeadline @ scheduler.development.js:44Understand this errorAI
+react-dom-client.development.js:7409 An error occurred in one of your React components.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
