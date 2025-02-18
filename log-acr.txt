@@ -6,3 +6,32 @@ An error occurred while pulling a sample image. Please validate your network con
 Failed to run command 'docker pull mcr.microsoft.com/mcr/hello-world:latest'. Error response from daemon: Get "https://mcr.microsoft.com/v2/": tls: failed to verify certificate: x509: certificate signed by unknown authority
 
 Please refer to https://aka.ms/acr/errors#docker_pull_error for more information.
+
+
+
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ curl -v https://mcr.microsoft.com/v2/
+*   Trying 150.171.70.10:443...
+* TCP_NODELAY set
+* Connected to mcr.microsoft.com (150.171.70.10) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.3 (OUT), TLS alert, unknown CA (560):
+* SSL certificate problem: self signed certificate in certificate chain
+* Closing connection 0
+curl: (60) SSL certificate problem: self signed certificate in certificate chain
+More details here: https://curl.haxx.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the web page mentioned above.
