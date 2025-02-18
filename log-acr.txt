@@ -1,0 +1,8 @@
+
+Docker daemon status: available
+Docker version: 'Docker version 27.1.1, build cc13f95, platform linux/amd64'
+2025-02-18 06:30:17.496195 An error occurred: DOCKER_PULL_ERROR
+An error occurred while pulling a sample image. Please validate your network connection and verify if Docker daemon is running properly.
+Failed to run command 'docker pull mcr.microsoft.com/mcr/hello-world:latest'. Error response from daemon: Get "https://mcr.microsoft.com/v2/": tls: failed to verify certificate: x509: certificate signed by unknown authority
+
+Please refer to https://aka.ms/acr/errors#docker_pull_error for more information.
