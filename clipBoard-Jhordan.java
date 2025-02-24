@@ -184,6 +184,12 @@ nc -zv 10.227.5.71 443
 az acr login -n acrseu1integradesa
 
 
+
+// ENVS
+export AZURE_DEVOPS_EXT_TLS_NO_VERIFY=1
+export AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
+
+
 // ********************************* PODS ********************************* //
 kubectl get all -n ns-desa-cn-ods-oficinadigitalsalud
 kubectl -n ns-desa-cn-ods-oficinadigitalsalud describe pod/ods-ux-parameters-975c49d88-7bx8l
