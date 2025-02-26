@@ -10,7 +10,7 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 vme1desdsojum01 (10.82.12.4)
 	vme1desagedso01 (10.80.7.68) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.68
 	vme1desagedso02 (10.80.7.69) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.69
-	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.73
+	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROdbSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.73
 
 vme1tstdsojum01 (10.81.4.84)
 	10.81.5.4  -> vme1tstagedso01     rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.4

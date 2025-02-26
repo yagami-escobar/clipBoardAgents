@@ -1,0 +1,48 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-ux-parameters-9bc88678f-cxzxx
+
+> srv-ms-sc-ux-ods-parametersManagement@0.0.1 start
+> nest start
+
+{"level":30,"time":1740589577550,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"Config Client","msg":"Fetching values of config server"}
+{"level":50,"time":1740589577611,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":30,"time":1740589577612,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"Config Client","msg":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-ux-ods-parametersMaelopment"}
+{"level":50,"time":1740589577612,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":50,"time":1740589577829,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"Config Client","err":{"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (/APP/node_s/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejectiternal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarior":false},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":8000,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain-Agent":"axios/1.7.9","Accept-Encoding":"gzip, compress, deflate, br"},"cancelToken":{"promise":{},"_listeners":[],"reason":{"message":"canceled","name":"CanceledError","stack":"CanceledError: canceled\n    at Object.cancel (/APP/node_modules/axios/lib/cancel/CancelToken.j  at /APP/node_modules/@nestjs/axios/dist/http.service.js:84:34\n    at execFinalizer (/APP/node_modules/rxjs/src/internal/Subscription.ts:208:5)\n    at SafeSubscriber.Subscription.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscription.ts:80:13)\n    at SafeSubscrier.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscriber.ts:107:24)\n    at SafeSubscriber.Subscriber._error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:120:12)\n    at SafeSubscriber.Subscriber.error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:86:12)\nnode_modules/@nestjs/axios/dist/http.service.js:77:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","code":"ERR_CANCELED"}},"method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-ux-osManagement/development"},"code":"ERR_BAD_REQUEST","status":401},"msg":"Request failed with status code 401"}
+{"level":50,"time":1740589577834,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"Config Client","msg":"An error occurred while querying the config server service "}
+{"level":30,"time":1740589577842,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1740589577842,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1740589577842,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"CommonsModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"SqlServerModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"HttpModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"PinoLoggerProviderModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"RedisModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ApplicationInsigthsModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigServerProviderModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ConfigClientModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis client is ready"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"TypeOrmCoreModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"InstanceLoader","msg":"ParameterModule dependencies initialized"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RoutesResolver","msg":"ParameterController {/parametros}:"}
+{"level":30,"time":1740589577911,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RouterExplorer","msg":"Mapped {/parametros, GET} route"}
+{"level":30,"time":1740589577912,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":50,"time":1740590177093,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740590177094,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740590177094,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740590177138,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740590177142,"pid":28,"hostname":"ods-ux-parameters-9bc88678f-cxzxx","context":"RedisService","msg":"Redis client is ready"}

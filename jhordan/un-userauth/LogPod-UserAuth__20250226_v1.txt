@@ -1,0 +1,82 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$  kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-ux-userauth-6bb9597bbb-mmjqh
+
+> srv-ms-sc-un-ods-userAuthorizationManagement@0.0.1 start
+> nest start
+
+{"level":30,"time":1740589619779,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"Config Client","msg":"Fetching values of config server"}
+{"level":50,"time":1740589619780,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":30,"time":1740589619780,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"Config Client","msg":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-userAuthorizationManagement/development"}
+{"level":50,"time":1740589619780,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":50,"time":1740589619839,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"Config Client","err":{"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (/APP/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":8000,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/1.7.9","Accept-Encoding":"gzip, compress, deflate, br"},"cancelToken":{"promise":{},"_listeners":[],"reason":{"message":"canceled","name":"CanceledError","stack":"CanceledError: canceled\n    at Object.cancel (/APP/node_modules/axios/lib/cancel/CancelToken.js:60:22)\n    at /APP/node_modules/@nestjs/axios/dist/http.service.js:84:34\n    at execFinalizer (/APP/node_modules/rxjs/src/internal/Subscription.ts:208:5)\n    at SafeSubscriber.Subscription.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscription.ts:80:13)\n    at SafeSubscriber.Subscriber.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscriber.ts:107:24)\n    at SafeSubscriber.Subscriber._error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:120:12)\n    at SafeSubscriber.Subscriber.error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:86:12)\n    at /APP/node_modules/@nestjs/axios/dist/http.service.js:77:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","code":"ERR_CANCELED"}},"method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-userAuthorizationManagement/development"},"code":"ERR_BAD_REQUEST","status":401},"msg":"Request failed with status code 401"}
+{"level":50,"time":1740589619841,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"Config Client","msg":"An error occurred while querying the config server service "}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"CommonsModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"SqlServerModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"HttpModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589619843,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"PinoLoggerProviderModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"RedisModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ApplicationInsigthsModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigServerProviderModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"ConfigClientModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"TypeOrmCoreModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"InstanceLoader","msg":"UserModule dependencies initialized"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RoutesResolver","msg":"UserController {/usuarios}:"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RouterExplorer","msg":"Mapped {/usuarios/perfiles, GET} route"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RouterExplorer","msg":"Mapped {/usuarios, GET} route"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RouterExplorer","msg":"Mapped {/usuarios, POST} route"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RouterExplorer","msg":"Mapped {/usuarios, PUT} route"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RouterExplorer","msg":"Mapped {/usuarios/permisos, POST} route"}
+{"level":30,"time":1740589619844,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":50,"time":1740590220091,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740590220092,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740590220092,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740590220148,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740590220165,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1740590821051,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740590821051,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740590821051,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740590821105,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740590821113,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1740591422025,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740591422025,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740591422025,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740591422057,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740591422063,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1740592023072,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740592023072,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740592023072,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740592023167,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740592023182,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1740592624032,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740592624032,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740592624032,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740592624086,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740592624092,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1740593225059,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740593225059,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740593225060,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740593225087,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740593225104,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1740593826054,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1740593826054,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1740593826054,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1740593826130,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1740593826134,"pid":28,"hostname":"ods-ux-userauth-6bb9597bbb-mmjqh","context":"RedisService","msg":"Redis client is ready"}
