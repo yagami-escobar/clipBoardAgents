@@ -232,3 +232,26 @@ npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-2
 
 - sqlsv-eastus-canal-desa-01.database.windows.net (db_sql_integr_mejoconcanal_desa_01) -> [xxx, xxx y xxx]
 - sqlsv-eastus-multicanal-desa-01.database.windows.net (db_sql_integr_mejoconmulticanal_desa_01) -> [xxx, xxx y xxx]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// GH
+type -p curl >/dev/null || sudo apt update && sudo apt install curl -y
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo tee /usr/share/keyrings/githubcli-archive-keyring.gpg > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh -y
