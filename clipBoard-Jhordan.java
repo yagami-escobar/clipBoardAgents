@@ -284,3 +284,11 @@ sudo apt install gh -y
 7b185ff1-8a5c-4d7a-9d05-29da31f0XXXX
 1kM8Q~geDwuaeuLX0n4Ou6hlRFh9pvHt2qHaXXXX
 033a9021-e6f2-49e1-88c2-e90b7921XXXX
+
+
+
+
+
+VERSION=$(curl -s https://api.github.com/repos/mikefarah/yq/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq
+chmod +x /usr/local/bin/yq
