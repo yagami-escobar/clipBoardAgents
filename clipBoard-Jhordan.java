@@ -305,34 +305,84 @@ chmod +x /usr/local/bin/yq
 
 
 
+
+
+
+
+
 // TEST[VALIDATE]
 
-10.81.5.5	10.81.19.73	HTTPS	443		Comunicacion de la VM (vme1tstagedso02) al App Service web-eu1-ofidig-test-01	
-10.81.5.5	10.81.19.72	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-02	
-10.81.5.5	10.81.19.68	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-03	
-10.81.5.5	10.81.19.71	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-04	
-10.81.5.5	10.81.19.69	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-05	
-10.81.5.5	10.81.19.70	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-06	
-10.228.40.0/21	10.81.19.36	TCP	1433		Comunicacion del AKS al servidor Azure SQL 01 de Oficina Digital.	
-10.228.40.0/21	10.81.19.52	TCP	1433		Comunicacion del AKS al servidor Azure SQL 02 de Oficina Digital.	
-10.228.40.0/21	10.81.23.132	TCP	1433		Comunicacion del AKS al servidor Azure SQL Datos.	
-10.228.40.0/21	10.81.19.4	HTTPS	443		Comunicacion del AKS al Storage Account de Oficina Digital.	
-10.228.40.0/21	10.81.19.20	HTTPS	443		Comunicacion del AKS al Storage Account de Oficina Digital.	
-10.228.40.0/21	10.81.19.228	HTTPS	443		Comunicacion del AKS al Storage Account de Oficina Digital.	
-10.228.40.0/21	10.81.19.196	HTTPS	443		Comunicacion del AKS al Azure Function.	
-10.81.5.6	10.81.19.36	TCP	1433		Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 01 de Oficina Digital.	
-10.81.5.6	10.81.19.52	TCP	1433		Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 02 de Oficina Digital.	
-10.81.5.6	10.81.23.132	TCP	1433		Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 01 Datos.	
-10.81.4.84	10.81.19.73	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-01	
-10.81.4.84	10.81.19.72	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-02	
-10.81.4.84	10.81.19.68	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-03	
-10.81.4.84	10.81.19.71	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-04	
-10.81.4.84	10.81.19.69	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-05	
-10.81.4.84	10.81.19.70	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-06	
+10.81.5.5	10.81.19.73	HTTPS	443		                      Comunicacion de la VM (vme1tstagedso02) al App Service web-eu1-ofidig-test-01	
+10.81.5.5	10.81.19.72	HTTPS	443		                      Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-02	
+10.81.5.5	10.81.19.68	HTTPS	443		                      Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-03	
+10.81.5.5	10.81.19.71	HTTPS	443		                      Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-04	
+10.81.5.5	10.81.19.69	HTTPS	443		                      Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-05	
+10.81.5.5	10.81.19.70	HTTPS	443		                      Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-06	
+
+10.228.40.0/21	10.81.19.36	TCP	1433		                Comunicacion del AKS al servidor Azure SQL 01 de Oficina Digital.	
+10.228.40.0/21	10.81.19.52	TCP	1433		                Comunicacion del AKS al servidor Azure SQL 02 de Oficina Digital.	
+10.228.40.0/21	10.81.19.4	HTTPS	443		                Comunicacion del AKS al Storage Account de Oficina Digital.	
+10.228.40.0/21	10.81.23.132	TCP	1433		              Comunicacion del AKS al servidor Azure SQL Datos.	
+10.228.40.0/21	10.81.19.20	HTTPS	443		                Comunicacion del AKS al Storage Account de Oficina Digital.	
+10.228.40.0/21	10.81.19.228	HTTPS	443		              Comunicacion del AKS al Storage Account de Oficina Digital.	
+10.228.40.0/21	10.81.19.196	HTTPS	443		              Comunicacion del AKS al Azure Function.	
+
+10.81.5.6	10.81.19.36	TCP	1433		                      Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 01 de Oficina Digital.	
+10.81.5.6	10.81.19.52	TCP	1433		                      Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 02 de Oficina Digital.	
+10.81.5.6	10.81.23.132	TCP	1433		                    Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 01 Datos.	
+
+10.81.4.84	10.81.19.73	HTTPS	443		                    Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-01	
+10.81.4.84	10.81.19.72	HTTPS	443		                    Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-02	
+10.81.4.84	10.81.19.68	HTTPS	443		                    Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-03	
+10.81.4.84	10.81.19.71	HTTPS	443		                    Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-04	
+10.81.4.84	10.81.19.69	HTTPS	443		                    Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-05	
+10.81.4.84	10.81.19.70	HTTPS	443		                    Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-06	
+
+// ************************************************* APP SERVICE ************************************************* //
+  // --------------------------------- TEST --------------------------------- //
+  web-eu1-ofidig-test-01.azurewebsites.net (container) -> 10.81.19.73
+  web-eu1-ofidig-test-02.azurewebsites.net (header)    -> 10.81.19.72
+  web-eu1-ofidig-test-03.azurewebsites.net (menu)      -> 10.81.19.68
+  web-eu1-ofidig-test-04.azurewebsites.net (module)    -> 10.81.19.71
+  web-eu1-ofidig-test-05.azurewebsites.net (access)    -> 10.81.19.69
+  web-eu1-ofidig-test-06.azurewebsites.net (6to)         -> 10.81.19.70
+
+  // VALID
+  nslookup web-eu1-ofidig-test-01.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-01.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-02.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-02.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-03.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-03.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-04.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-04.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-05.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-05.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-06.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-06.azurewebsites.net 443
+
+// ************************************************* AZURE-SQL ************************************************* //
+db-srv-eu1-ofidig-test-01.database.windows.net 10.81.19.36
+db-srv-eu1-ofidig-test-02.database.windows.net 10.81.19.52
+db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
+
+  // VALID
+  nslookup db-srv-eu1-ofidig-test-01.database.windows.net
+  nc -zv db-srv-eu1-ofidig-test-01.database.windows.net 1433
+
+  nslookup db-srv-eu1-ofidig-test-02.database.windows.net
+  nc -zv db-srv-eu1-ofidig-test-02.database.windows.net 1433
+
+  nslookup db-srv-eu1-datos-test-01.database.windows.net
+  nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433
 
 
-
-// IAC:
+  // IAC:
 'desa' -> az login --service-principal -u 3923b129-62e7-40ac-b78c-3ca139955xxx --password=UFN8Q~XAuYDW7Rm134~BaW7of5Lon9li1us1Nxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
 'test' -> az login --service-principal -u 7b185ff1-8a5c-4d7a-9d05-29da31f0cxxx --password=1kM8Q~geDwuaeuLX0n4Ou6hlRFh9pvHt2qHaRxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
 
