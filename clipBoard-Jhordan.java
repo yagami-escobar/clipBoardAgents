@@ -329,3 +329,17 @@ chmod +x /usr/local/bin/yq
 10.81.4.84	10.81.19.71	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-04	
 10.81.4.84	10.81.19.69	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-05	
 10.81.4.84	10.81.19.70	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-06	
+
+
+
+// IAC:
+'desa' -> az login --service-principal -u 3923b129-62e7-40ac-b78c-3ca139955xxx --password=UFN8Q~XAuYDW7Rm134~BaW7of5Lon9li1us1Nxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
+'test' -> az login --service-principal -u 7b185ff1-8a5c-4d7a-9d05-29da31f0cxxx --password=1kM8Q~geDwuaeuLX0n4Ou6hlRFh9pvHt2qHaRxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
+
+// APPS
+'desa' -> az login --service-principal -u 09e98158-6d55-488a-bcf0-b11e8fa20xxx --password=Hzf8Q~LuT5XPhVY0_PI4ZFkzqafqjr2DLisgQxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
+'test' -> az login --service-principal -u fca09910-1a9d-4a17-898c-de20cf2dexxx --password=TvV8Q~9ayPrD_~aMzppF_Eu3AsvWHsuInMquRxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
+
+// DB
+'desa' -> az login --service-principal -u 4e34b054-f47e-4a87-adb8-3e1447de7xxx --password=7tQ8Q~D9GhuixYj8UqhlxpL6TPMDXZRe0ot9Txxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
+'test' -> az login --service-principal -u 563fea99-cbe0-4f83-b44d-e4742ac1bxxx --password=ILG8Q~yLaLrSEjFq7eXsx2jxo4pzS21133yjRxxx --tenant 033a9021-e6f2-49e1-88c2-e90b79214327 --allow-no-subscription
