@@ -380,3 +380,7 @@ db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
 
   nslookup db-srv-eu1-datos-test-01.database.windows.net
   nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433
+
+
+
+V3x8Q~am_2l3JEEy2F-L.zJnnvGK5azo9QwDDxxx
