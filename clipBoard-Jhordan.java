@@ -63,21 +63,21 @@ nc -zv wps-eastus-ofidig-desa-01.webpubsub.azure.com
 mbirot-smc-vm/qpzm83*VHU038
 ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
-'vme1desdsojum01' (10.82.12.4)
-	vme1desagedso01 (10.80.7.68) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.68
-	vme1desagedso02 (10.80.7.69) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.69
-	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROdbSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.73
+'vme1desdsojum01' (10.82.12.4)[WINDOWS][BASTION]
+	vme1desagedso01 (10.80.7.68) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 [LINUX][IAC]
+	vme1desagedso02 (10.80.7.69) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 [LINUX][BACKEND/FRONTEND]
+	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 [LINUX][DB]
 
-'vme1tstdsojum01' (10.81.4.84)
-	vme1tstagedso01 -> 10.81.5.4  -> rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.4
-	vme1tstagedso02 -> 10.81.5.5  -> RG-EU1-PLAT-DEVSECOP-CROSS-TEST-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.5
-	vme1tstagedso03 -> 10.81.5.6  -> rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.6
-	vme1tstagedso04 -> 10.81.5.7  -> rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.7
+'vme1tstdsojum01' (10.81.4.84)[WINDOWS][BASTION]
+	vme1tstagedso01 -> 10.81.5.4  -> rg-eu1-plat-devsecop-cross-test-01 [LINUX][IAC]
+	vme1tstagedso02 -> 10.81.5.5  -> RG-EU1-PLAT-DEVSECOP-CROSS-TEST-01 [LINUX][BACKEND/FRONTEND]
+	vme1tstagedso03 -> 10.81.5.6  -> rg-eu1-plat-devsecop-cross-test-01 [LINUX][DB]
+	vme1tstagedso04 -> 10.81.5.7  -> rg-eu1-plat-devsecop-cross-test-01 [NO MAPEADO - AVERIGUAR]
 
-'vme1prddsojum01' (10.82.12.52)
-	vme1prdagedso01 -> 10.82.13.132 -> rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.132
-	vme1prdagedso02 -> 10.82.13.133 -> rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.133
-	vme1prdagedso03 -> 10.82.13.134 -> rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.134
+'vme1prddsojum01' (10.82.12.52)[WINDOWS][BASTION]
+	vme1prdagedso01 -> 10.82.13.132 -> rg-eu1-plat-devsecop-cross-prod-01 [LINUX][IAC]
+	vme1prdagedso02 -> 10.82.13.133 -> rg-eu1-plat-devsecop-cross-prod-01 [LINUX][BACKEND/FRONTEND]
+	vme1prdagedso03 -> 10.82.13.134 -> rg-eu1-plat-devsecop-cross-prod-01 [LINUX][DB]
 
 
 // ************************************************* KV ************************************************* //
@@ -292,3 +292,40 @@ sudo apt install gh -y
 VERSION=$(curl -s https://api.github.com/repos/mikefarah/yq/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq
 chmod +x /usr/local/bin/yq
+
+
+
+
+
+
+
+
+
+
+
+
+
+// TEST[VALIDATE]
+
+10.81.5.5	10.81.19.73	HTTPS	443		Comunicacion de la VM (vme1tstagedso02) al App Service web-eu1-ofidig-test-01	
+10.81.5.5	10.81.19.72	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-02	
+10.81.5.5	10.81.19.68	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-03	
+10.81.5.5	10.81.19.71	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-04	
+10.81.5.5	10.81.19.69	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-05	
+10.81.5.5	10.81.19.70	HTTPS	443		Comunicacion del VM (vme1desagedso02) al App Service web-eu1-ofidig-test-06	
+10.228.40.0/21	10.81.19.36	TCP	1433		Comunicacion del AKS al servidor Azure SQL 01 de Oficina Digital.	
+10.228.40.0/21	10.81.19.52	TCP	1433		Comunicacion del AKS al servidor Azure SQL 02 de Oficina Digital.	
+10.228.40.0/21	10.81.23.132	TCP	1433		Comunicacion del AKS al servidor Azure SQL Datos.	
+10.228.40.0/21	10.81.19.4	HTTPS	443		Comunicacion del AKS al Storage Account de Oficina Digital.	
+10.228.40.0/21	10.81.19.20	HTTPS	443		Comunicacion del AKS al Storage Account de Oficina Digital.	
+10.228.40.0/21	10.81.19.228	HTTPS	443		Comunicacion del AKS al Storage Account de Oficina Digital.	
+10.228.40.0/21	10.81.19.196	HTTPS	443		Comunicacion del AKS al Azure Function.	
+10.81.5.6	10.81.19.36	TCP	1433		Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 01 de Oficina Digital.	
+10.81.5.6	10.81.19.52	TCP	1433		Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 02 de Oficina Digital.	
+10.81.5.6	10.81.23.132	TCP	1433		Comunicacion del VM (vme1tstagedso03) al servidor Azure SQL 01 Datos.	
+10.81.4.84	10.81.19.73	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-01	
+10.81.4.84	10.81.19.72	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-02	
+10.81.4.84	10.81.19.68	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-03	
+10.81.4.84	10.81.19.71	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-04	
+10.81.4.84	10.81.19.69	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-05	
+10.81.4.84	10.81.19.70	HTTPS	443		Comunicacion del VM Jump (vme1tstdsojum01) al App Service web-eu1-ofidig-test-06	
