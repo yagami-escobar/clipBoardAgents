@@ -351,8 +351,12 @@ chmod +x /usr/local/bin/yq
   nslookup web-eu1-ofidig-test-01.azurewebsites.net
   nc -zv web-eu1-ofidig-test-01.azurewebsites.net 443
 
+  nc -zv 10.81.19.73 443
+
   nslookup web-eu1-ofidig-test-02.azurewebsites.net
   nc -zv web-eu1-ofidig-test-02.azurewebsites.net 443
+
+  nc -zv 10.81.19.72 443
 
   nslookup web-eu1-ofidig-test-03.azurewebsites.net
   nc -zv web-eu1-ofidig-test-03.azurewebsites.net 443
@@ -374,13 +378,25 @@ db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
   // VALID
   nslookup db-srv-eu1-ofidig-test-01.database.windows.net
   nc -zv db-srv-eu1-ofidig-test-01.database.windows.net 1433
+  nc -zv 10.81.19.36 1433
+  nc -zv 10.81.19.52
+  
 
   nslookup db-srv-eu1-ofidig-test-02.database.windows.net
   nc -zv db-srv-eu1-ofidig-test-02.database.windows.net 1433
 
   nslookup db-srv-eu1-datos-test-01.database.windows.net
   nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433
+// ************************************************* STORAGE ACCOUNT ************************************************* //
+nslookup steu1ofidigapltest01.blob.core.windows.net
+nc -zv steu1ofidigapltest01.blob.core.windows.net 443
 
+nslookup steu1ofidigapltest02.blob.core.windows.net
+nc -zv steu1ofidigapltest02.blob.core.windows.net 443
 
+nslookup steu1ofidigsrvltest01.blob.core.windows.net
+nc -zv steu1ofidigsrvltest01.blob.core.windows.net 443
 
-V3x8Q~am_2l3JEEy2F-L.zJnnvGK5azo9QwDDxxx
+// ************************************************* FUNCTION ************************************************* //
+nslookup func-eu1-ofidig-test-01.azurewebsites.net
+nc -zv  func-eu1-ofidig-test-01.azurewebsites.net 443
