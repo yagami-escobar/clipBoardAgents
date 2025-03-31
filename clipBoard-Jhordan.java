@@ -403,3 +403,13 @@ nc -zv  func-eu1-ofidig-test-01.azurewebsites.net 443
 // ************************************************* KV ************************************************* //
 kveu1ofidigtst01.vault.azure.net  10.81.19.132
 kveu1datostest-01.vault.azure.net 10.81.23.164
+
+
+// FALTANTE
+'AKS -> DB1'      -> aksvm02[resolucion y con efimera] y vm03[resolucion y 0-con]
+'AKS -> DB2'      -> aksvm02[resolucion y con efimera] y vm03 [resolucion y 0-con]
+'AKS -> DB3'      -> aksvm02[resolucion y con efimera] y vm03 [resolucion y 0-con]
+'AKS -> Function' -> resolucion y con efimera. [nslookup func-eu1-ofidig-test-01.azurewebsites.net, nc -zv 10.81.19.196 443]
+'AKS -> SA1'      -> resolucion y con efimera. [nslookup steu1ofidigapltest01.blob.core.windows.net, ]
+'AKS -> SA2'      -> resolucion y con efimera
+'AKS -> SA3'      -> resolucion y con efimera
