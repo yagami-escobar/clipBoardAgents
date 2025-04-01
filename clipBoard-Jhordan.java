@@ -63,21 +63,21 @@ nc -zv wps-eastus-ofidig-desa-01.webpubsub.azure.com
 mbirot-smc-vm/qpzm83*VHU038
 ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
-'vme1desdsojum01' (10.82.12.4)
-	vme1desagedso01 (10.80.7.68) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.68
-	vme1desagedso02 (10.80.7.69) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.69
-	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROdbSS-DESA-01 -> ssh -p 22 mbirot-smc-vm@10.80.7.73
+'vme1desdsojum01' (10.82.12.4)[WINDOWS][BASTION]
+	vme1desagedso01 (10.80.7.68) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 [LINUX][IAC]
+	vme1desagedso02 (10.80.7.69) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 [LINUX][BACKEND/FRONTEND]
+	vme1desagedso03 (10.80.7.73) (X) -> RG-EU1-PLAT-DEVSECOP-CROSS-DESA-01 [LINUX][DB]
 
-'vme1tstdsojum01' (10.81.4.84)
-	vme1tstagedso01 -> 10.81.5.4  -> rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.4
-	vme1tstagedso02 -> 10.81.5.5  -> RG-EU1-PLAT-DEVSECOP-CROSS-TEST-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.5
-	vme1tstagedso03 -> 10.81.5.6  -> rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.6
-	vme1tstagedso04 -> 10.81.5.7  -> rg-eu1-plat-devsecop-cross-test-01  -> ssh -p 22 mbirot-smc-vm@10.81.5.7
+'vme1tstdsojum01' (10.81.4.84)[WINDOWS][BASTION]
+	vme1tstagedso01 -> 10.81.5.4  -> rg-eu1-plat-devsecop-cross-test-01 [LINUX][IAC]
+	vme1tstagedso02 -> 10.81.5.5  -> RG-EU1-PLAT-DEVSECOP-CROSS-TEST-01 [LINUX][BACKEND/FRONTEND]
+	vme1tstagedso03 -> 10.81.5.6  -> rg-eu1-plat-devsecop-cross-test-01 [LINUX][DB]
+	vme1tstagedso04 -> 10.81.5.7  -> rg-eu1-plat-devsecop-cross-test-01 [NO MAPEADO - AVERIGUAR]
 
-'vme1prddsojum01' (10.82.12.52)
-	vme1prdagedso01 -> 10.82.13.132 -> rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.132
-	vme1prdagedso02 -> 10.82.13.133 -> rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.133
-	vme1prdagedso03 -> 10.82.13.134 -> rg-eu1-plat-devsecop-cross-prod-01  -> ssh -p 22 mbirot-smc-vm@10.82.13.134
+'vme1prddsojum01' (10.82.12.52)[WINDOWS][BASTION]
+	vme1prdagedso01 -> 10.82.13.132 -> rg-eu1-plat-devsecop-cross-prod-01 [LINUX][IAC]
+	vme1prdagedso02 -> 10.82.13.133 -> rg-eu1-plat-devsecop-cross-prod-01 [LINUX][BACKEND/FRONTEND]
+	vme1prdagedso03 -> 10.82.13.134 -> rg-eu1-plat-devsecop-cross-prod-01 [LINUX][DB]
 
 
 // ************************************************* KV ************************************************* //
@@ -287,3 +287,130 @@ sudo apt install gh -y
 
 
 aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
+
+
+
+VERSION=$(curl -s https://api.github.com/repos/mikefarah/yq/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
+wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq
+chmod +x /usr/local/bin/yq
+
+
+
+// ********************************************************************************************** TEST ********************************************************************************************** //
+// ---------------------------------------------------------- [FSU] ---------------------------------------------------------- //
+<10.81.5.5> to <10.81.19.73>      	[HTTPS]	[443]		                      VM (vme1tstagedso02) al AS (web-eu1-ofidig-test-01)
+<10.81.5.5>	to <10.81.19.72>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (web-eu1-ofidig-test-02)	
+<10.81.5.5>	to <10.81.19.68>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (web-eu1-ofidig-test-03)	
+<10.81.5.5>	to <10.81.19.69>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (web-eu1-ofidig-test-05)	
+<10.81.5.5>	to <10.81.19.71>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (web-eu1-ofidig-test-04)	
+<10.81.5.5>	to <10.81.19.70>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (web-eu1-ofidig-test-06)	
+<10.81.5.5>	to <10.81.19.132>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (kveu1ofidigtst01)	
+<10.81.5.5>	to <10.81.23.164>      	[HTTPS]	[443]		                      VM (vme1desagedso02) al AS (kveu1datostest-01)	
+
+<10.81.4.84> to	<10.81.19.73>	      [HTTPS]	[443]		                      VM Jump (vme1tstdsojum01) al AS (web-eu1-ofidig-test-01)
+<10.81.4.84> to	<10.81.19.72>	      [HTTPS]	[443]		                      VM Jump (vme1tstdsojum01) al AS (web-eu1-ofidig-test-02)	
+<10.81.4.84> to	<10.81.19.68>	      [HTTPS]	[443]		                      VM Jump (vme1tstdsojum01) al AS (web-eu1-ofidig-test-03)	
+<10.81.4.84> to	<10.81.19.71>	      [HTTPS]	[443]		                      VM Jump (vme1tstdsojum01) al AS (web-eu1-ofidig-test-04)	
+<10.81.4.84> to	<10.81.19.69>	      [HTTPS]	[443]		                      VM Jump (vme1tstdsojum01) al AS (web-eu1-ofidig-test-05)
+<10.81.4.84> to	<10.81.19.70>	      [HTTPS]	[443]		                      VM Jump (vme1tstdsojum01) al AS (web-eu1-ofidig-test-06)	
+
+<10.228.40.0/21> to	<10.81.19.36>	  [TCP]	  [1433]		                    AKS (aks-eu1-integra-canal-test) al SSQL1-ODS   (db-srv-eu1-ofidig-test-01)
+<10.228.40.0/21> to	<10.81.19.52>	  [TCP]	  [1433]		                    AKS (aks-eu1-integra-canal-test) al SSQL2-ODS   (db-srv-eu1-ofidig-test-02)	
+<10.228.40.0/21> to	<10.81.23.132>	[TCP]	  [1433]		                    AKS (aks-eu1-integra-canal-test) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
+<10.228.40.0/21> to	<10.81.19.4>	  [HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al SA1-ODS     (steu1ofidigapltest01)
+<10.228.40.0/21> to	<10.81.19.20>	  [HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al SA2-ODS     (steu1ofidigapltest02)
+<10.228.40.0/21> to	<10.81.19.228>	[HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al SA3-ODS     (steu1ofidigsrvltest01)
+<10.228.40.0/21> to	<10.81.19.196>	[HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al FN          (func-eu1-ofidig-test-01)
+<10.228.40.0/21> to	<10.81.19.132>	[HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al KV          (kveu1ofidigtst01)
+<10.228.48.0/21> to	<10.81.23.132>	[HTTPS]	[433]		                      AKS (aks-eu1-integra-multicanal-test) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
+<10.228.48.0/21> to	<10.81.23.164>	[HTTPS]	[443]		                      AKS (aks-eu1-integra-multicanal-test) al KV          (kveu1datostest-01)
+
+
+<10.81.5.6>	to <10.81.19.36>	      [TCP]	  [1433]		                    VM (vme1tstagedso03) al SSQL1-ODS   (db-srv-eu1-ofidig-test-01)
+<10.81.5.6>	to <10.81.19.52>	      [TCP]	  [1433]		                    VM (vme1tstagedso03) al SSQL2-ODS   (db-srv-eu1-ofidig-test-02)
+<10.81.5.6>	to <10.81.23.132>	      [TCP]	  [1433]		                    VM (vme1tstagedso03) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
+
+
+
+
+// ************************************************* APP SERVICE ************************************************* //
+  // --------------------------------- TEST --------------------------------- //
+  web-eu1-ofidig-test-01.azurewebsites.net (container) -> 10.81.19.73
+  web-eu1-ofidig-test-02.azurewebsites.net (header)    -> 10.81.19.72
+  web-eu1-ofidig-test-03.azurewebsites.net (menu)      -> 10.81.19.68
+  web-eu1-ofidig-test-04.azurewebsites.net (module)    -> 10.81.19.71
+  web-eu1-ofidig-test-05.azurewebsites.net (access)    -> 10.81.19.69
+  web-eu1-ofidig-test-06.azurewebsites.net (6to)         -> 10.81.19.70
+
+  // VALID
+  nslookup web-eu1-ofidig-test-01.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-01.azurewebsites.net 443
+
+  nc -zv 10.81.19.73 443
+
+  nslookup web-eu1-ofidig-test-02.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-02.azurewebsites.net 443
+
+  nc -zv 10.81.19.72 443
+
+  nslookup web-eu1-ofidig-test-03.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-03.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-04.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-04.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-05.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-05.azurewebsites.net 443
+
+  nslookup web-eu1-ofidig-test-06.azurewebsites.net
+  nc -zv web-eu1-ofidig-test-06.azurewebsites.net 443
+
+// ************************************************* AZURE-SQL ************************************************* //
+db-srv-eu1-ofidig-test-01.database.windows.net 10.81.19.36
+db-srv-eu1-ofidig-test-02.database.windows.net 10.81.19.52
+db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
+
+  // VALID
+  nslookup db-srv-eu1-ofidig-test-01.database.windows.net
+  nc -zv db-srv-eu1-ofidig-test-01.database.windows.net 1433
+  nc -zv 10.81.19.36 1433
+  nc -zv 10.81.19.52
+  
+
+  nslookup db-srv-eu1-ofidig-test-02.database.windows.net
+  nc -zv db-srv-eu1-ofidig-test-02.database.windows.net 1433
+
+  nslookup db-srv-eu1-datos-test-01.database.windows.net
+  nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433
+// ************************************************* STORAGE ACCOUNT ************************************************* //
+steu1ofidigapltest01.blob.core.windows.net    10.81.19.4
+steu1ofidigapltest02.blob.core.windows.net    10.81.19.20
+steu1ofidigsrvltest01.blob.core.windows.net   10.81.19.228
+
+// VALID
+nslookup steu1ofidigapltest01.blob.core.windows.net
+nc -zv steu1ofidigapltest01.blob.core.windows.net 443
+
+nslookup steu1ofidigapltest02.blob.core.windows.net
+nc -zv steu1ofidigapltest02.blob.core.windows.net 443
+
+nslookup steu1ofidigsrvltest01.blob.core.windows.net
+nc -zv steu1ofidigsrvltest01.blob.core.windows.net 443
+
+// ************************************************* FUNCTION ************************************************* //
+nslookup func-eu1-ofidig-test-01.azurewebsites.net
+nc -zv  func-eu1-ofidig-test-01.azurewebsites.net 443
+
+// ************************************************* KV ************************************************* //
+kveu1ofidigtst01.vault.azure.net  10.81.19.132
+kveu1datostest-01.vault.azure.net 10.81.23.164
+
+
+// FALTANTE
+'AKS -> DB1'      -> aksvm02[resolucion y con efimera] y vm03[resolucion y 0-con]
+'AKS -> DB2'      -> aksvm02[resolucion y con efimera] y vm03 [resolucion y 0-con]
+'AKS -> DB3'      -> aksvm02[resolucion y con efimera] y vm03 [resolucion y 0-con]
+'AKS -> Function' -> resolucion y con efimera. [nslookup func-eu1-ofidig-test-01.azurewebsites.net, nc -zv 10.81.19.196 443]
+'AKS -> SA1'      -> resolucion y con efimera. [nslookup steu1ofidigapltest01.blob.core.windows.net, ]
+'AKS -> SA2'      -> resolucion y con efimera
+'AKS -> SA3'      -> resolucion y con efimera
