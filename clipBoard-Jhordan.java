@@ -284,3 +284,6 @@ sudo apt install gh -y
 7b185ff1-8a5c-4d7a-9d05-29da31f0XXXX
 1kM8Q~geDwuaeuLX0n4Ou6hlRFh9pvHt2qHaXXXX
 033a9021-e6f2-49e1-88c2-e90b7921XXXX
+
+
+aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
