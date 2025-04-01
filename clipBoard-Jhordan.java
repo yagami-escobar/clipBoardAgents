@@ -414,3 +414,4 @@ kveu1datostest-01.vault.azure.net 10.81.23.164
 'AKS -> SA1'      -> resolucion y con efimera. [nslookup steu1ofidigapltest01.blob.core.windows.net, ]
 'AKS -> SA2'      -> resolucion y con efimera
 'AKS -> SA3'      -> resolucion y con efimera
+aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
