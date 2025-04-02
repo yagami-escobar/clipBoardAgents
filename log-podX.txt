@@ -1,0 +1,11 @@
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+npm error path /APP
+npm error command failed
+npm error signal SIGABRT
+npm error command sh -c nest start
+npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-24T21_58_13_024Z-debug-0.log

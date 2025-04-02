@@ -30,10 +30,6 @@ az storage account update \
   --resource-group rg-eu1-land-ofidig-desa-01 \
   --default-action Allow
 
-// ************************************************* SAs ************************************************* //
-// LIST SA
-steu1ofidigfilesdesa01 -> pe-steu1ofidigfilesdesa-01 -> 10.80.19.68 -> vnet-eu1-ofidig-datos-desa/sn-eu1-ofidig-datos-pe-files-desa-01
-steu1odintfuncdesa01   -> pe-steu1odintfuncdesa-01   -> 10.80.19.52 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
 
 
 // ++++++++++++++++++++++++++++++++++ VALIDATE ++++++++++++++++++++++++++++++++++ //
@@ -46,6 +42,11 @@ steu1odintfuncdesa01   -> pe-steu1odintfuncdesa-01   -> 10.80.19.52 -> vnet-eu1-
 
 // ************************************************* FN ************************************************* //
 func-eu1-nodelnx-ofidigi-desa-01 -> pe-funceu1-ofidigi-desa-01 -> 10.80.19.53 -> vnet-eu1-ofidig-integra-desa/sn-eu1-ofidig-pe-integra-desa-01
+
+
+// ************************************************* KV ************************************************* //
+
+
 
 
 // ************************************************* PUBSUB ************************************************* //
@@ -116,59 +117,6 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
   'nc <IP_DNS> <PORT>'	--> probar svcs o apis o conectarse a un server o svc a un port especifico.
 
 
-// ************************************************* SQLDB ************************************************* //
-// --------------------------------- DEV --------------------------------- //
-'AKS CN':
-	// OFIDIG
-	'VALID 1 (AGENT)' ->  nslookup db-srv-eu1-ofidig-desa-01.database.windows.net -> agent03 (20.62.132.162 ) || 'subs: nss-land-oficinadigital'
-	'VALID 2 (AGENT)' ->  nc -zv db-srv-eu1-ofidig-desa-01.database.windows.net   -> ''
-
-  'VALID 1 (AGENT)' ->  nslookup db-srv-eu1-ofidig-desa-02.database.windows.net	-> agent03	(20.62.132.162)	|| 'subs: nss-land-oficinadigital'
-	'VALID 2 (AGENT)' ->  nc -zv db-srv-eu1-ofidig-desa-02.database.windows.net   -> ''
-	
-  'VALID 1 (AGENT)' ->  nslookup db-srv-eu1-datos-desa-01.database.windows.net	-> agent03	(20.62.132.162) || 'subs: nss-plat-datos'
-	'VALID 2 (AGENT)' ->  nc -zv db-srv-eu1-datos-desa-01.database.windows.net    -> ''
-	
-
-	// INTEGRA
-	'VALID 1 (AGENT)' -> nslookup sqlsv-eastus-canal-desa-01.database.windows.net -> agent03 (10.227.2.68) || 'subs: nss-plat-integracion'
-  'VALID 2 (AGENT)' -> nc -zv sqlsv-eastus-canal-desa-01.database.windows.net   -> 
-  
-  
-  'VALID 1 (AGENT)' -> sqlsv-eastus-multicanal-desa-01.database.windows.net     -> agent03 (10.227.2.4)  || 'subs: nss-plat-integracion'
-  'VALID 2 (AGENT)' -> nc -zv sqlsv-eastus-canal-desa-01.database.windows.net   -> 
-
-// --------------------------------- TEST --------------------------------- //
-
-
-
-
-// --------------------------------- PROD --------------------------------- //
-
-
-
-// ++++++++++++++++++++++++++++++++++ VALIDATE ++++++++++++++++++++++++++++++++++ //
-
-
-
-
-// ************************************************* APP SERVICE ************************************************* //
-// --------------------------------- DEV --------------------------------- //
-web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net (container) -> 10.80.19.164
-web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net (header)    -> 10.80.19.167
-web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net (menu)      -> 10.80.19.165
-web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net (module)    -> 10.80.19.166
-web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net (access)    -> 10.80.19.168
-
-// --------------------------------- TEST --------------------------------- //
-
-// --------------------------------- PROD --------------------------------- //
-
-
-// ++++++++++++++++++++++++++++++++++ VALIDATE ++++++++++++++++++++++++++++++++++ //
-nslookup web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net
-nc -zv web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net 443
-
 
 
 
@@ -230,50 +178,11 @@ az aks get-credentials --resource-group rg-eu1-plat-integra-prd-01 --name aks-eu
 kubelogin convert-kubeconfig -l azurecl
 
 // ++++++++++++++++++++++++++++++++++ CMDs ++++++++++++++++++++++++++++++++++ //
+ 'create pod' -> kubectl -n ns-desa-cn-ods-oficinadigitalsalud run net1 --image=jrecord/nettools --restart=Never -- sleep 3600
+ 'connect'    -> kubectl -n ns-desa-cn-ods-oficinadigitalsalud exec -it net1 -- /bin/bash
+ 
  'create pod' -> kubectl -n ns-test-cn-ods-oficinadigitalsalud run net1 --image=jrecord/nettools --restart=Never -- sleep 3600
  'connect'    -> kubectl -n ns-test-cn-ods-oficinadigitalsalud exec -it net1 -- /bin/bash
-
-
-
-<--- JS stacktrace --->
-
-FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
------ Native stack trace -----
-
-npm error path /APP
-npm error command failed
-npm error signal SIGABRT
-npm error command sh -c nest start
-npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-24T21_58_13_024Z-debug-0.log
-
-
-'X-XXXXXXX'
-1: 4e34b054-f47e-4a87-adb8-3e1447deXXXX
-2: 7tQ8Q~D9GhuixYj8UqhlxpL6TPMDXZRe0ot9XXXX
-
-// DBs
-- db-srv-eu1-ofidig-desa-01.database.windows.net (db-sql-eu1-ofidig-desa-01) -> [db_ddladmin, db_datareader y db_datawriter]
-- db-srv-eu1-ofidig-desa-02.database.windows.net (db-sql-eu1-ofidig-desa-02) -> [db_ddladmin, db_datareader y db_datawriter]
-- db-srv-eu1-datos-desa-01.database.windows.net (db-sql-eu1-datos-desa01)    -> [db_ddladmin, db_datareader y db_datawriter]
-
-
-- sqlsv-eastus-canal-desa-01.database.windows.net (db_sql_integr_mejoconcanal_desa_01) -> [xxx, xxx y xxx]
-- sqlsv-eastus-multicanal-desa-01.database.windows.net (db_sql_integr_mejoconmulticanal_desa_01) -> [xxx, xxx y xxx]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // GH
@@ -283,21 +192,120 @@ echo "deb [signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://
 sudo apt update
 sudo apt install gh -y
 
-
-7b185ff1-8a5c-4d7a-9d05-29da31f0XXXX
-1kM8Q~geDwuaeuLX0n4Ou6hlRFh9pvHt2qHaXXXX
-033a9021-e6f2-49e1-88c2-e90b7921XXXX
-
-
 aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
-
-
 
 VERSION=$(curl -s https://api.github.com/repos/mikefarah/yq/releases/latest | grep -oP '"tag_name": "\K(.*)(?=")')
 wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/local/bin/yq
 chmod +x /usr/local/bin/yq
 
 
+
+
+
+// ********************************************************************************************** DESA ********************************************************************************************** //
+// ---------------------------------------------------------- [FSU] ---------------------------------------------------------- //
+
+// ************************************************* APP SERVICE ************************************************* //
+  // RESOURCES
+  web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net (container) -> 10.80.19.164
+  web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net (header)    -> 10.80.19.167
+  web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net (menu)      -> 10.80.19.165
+  web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net (module)    -> 10.80.19.166
+  web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net (access)    -> 10.80.19.168
+
+  // CMDS
+  [nslookup web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net || nslookup 10.80.19.164]
+  [nc -zv 10.80.19.164 443 || nc -zv web-eu1-ofidig-test-01.azurewebsites.net 443]
+
+  [nslookup web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net || nslookup 10.80.19.167]
+  [nc -zv 10.80.19.167 443 || nc -zv web-eu1-ofidig-test-02.azurewebsites.net 443]
+
+  [nslookup web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net || nslookup 10.80.19.165]
+  [nc -zv 10.80.19.165 443 || nc -zv web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net 443]
+
+  [nslookup web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net || nslookup 10.80.19.166]
+  [nc -zv 10.80.19.166 443|| nc -zv web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net 443]
+
+  [nslookup web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net || nslookup 10.80.19.168]
+  [nc -zv 10.80.19.168 || nc -zv web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net 443]
+
+  // VALID
+  
+
+// ************************************************* AZURE-SQL ************************************************* //
+  // RESOURCES
+  db-srv-eu1-ofidig-desa-01.database.windows.net 10.80.19.84
+  db-srv-eu1-ofidig-desa-02.database.windows.net 10.80.19.100
+  db-srv-eu1-datos-desa-01.database.windows.net 10.80.20.4
+
+  // CMDS
+  [nslookup db-srv-eu1-ofidig-desa-01.database.windows.net || nslookup 10.80.19.84]
+  [nc -zv 10.80.19.84 1433 || nc -zv db-srv-eu1-ofidig-desa-01.database.windows.net 1433]
+
+  [nslookup db-srv-eu1-ofidig-desa-02.database.windows.net || nslookup 10.80.19.100]
+  [nc -zv 10.80.19.100 1433 || nc -zv db-srv-eu1-ofidig-desa-02.database.windows.net 1433]
+
+  [nslookup db-srv-eu1-datos-desa-01.database.windows.net || nslookup 10.80.20.4]
+  [nc -zv 10.80.20.4 1433 || nc -zv db-srv-eu1-datos-desa-01.database.windows.net 1433]
+
+  // VALID
+  vm03 to sql1 -> [resol: 'no', con: 'no']
+  vm03 to sql2 -> [resol: 'no', con: 'no']
+  vm03 to sql3 -> [resol: 'no', con: 'no']
+  akscn to sql1 -> [resol: 'no', con: 'no']
+  akscn to sql2 -> [resol: 'no', con: 'no']
+  aksmc to sql3 -> [resol: 'no', con: 'no']
+
+// ************************************************* STORAGE ACCOUNT ************************************************* //
+  // RESOURCES
+  steu1ofidigfilesdesa01.blob.core.windows.net    10.80.19.68 'Validar'
+  steu1odintfuncdesa01.blob.core.windows.net      10.80.19.52 'Validar'
+  steu1ofidigapldesa01.blob.core.windows.net      10.80.19.69 'Validar'
+
+
+  // CMDS
+  [nslookup steu1ofidigfilesdesa01.blob.core.windows.net || nslookup 10.80.19.68]
+  [nc -zv 10.80.19.68 433 || nc -zv steu1ofidigfilesdesa01.blob.core.windows.net 433]
+
+  [nslookup steu1odintfuncdesa01.blob.core.windows.net || nslookup 10.80.19.52]
+  [nc -zv 10.80.19.52 433 || nc -zv steu1odintfuncdesa01.blob.core.windows.net 433]
+
+  [nslookup steu1ofidigapldesa01.blob.core.windows.net || nslookup 10.80.19.69]
+  [nc -zv 10.80.19.69 433 || nc -zv steu1ofidigapldesa01.blob.core.windows.net 433]
+
+
+  // VALID
+  vm02 to sa1 -> [resol: 'ok', con: 'no']
+  vm02 to sa2 -> [resol: 'ok', con: 'no']
+  vm02 to sa3 -> [resol: 'ok', con: 'no']
+  aks to sa1 -> [resol: '', con: '']
+  aks to sa2 -> [resol: '', con: '']
+  aks to sa3 -> [resol: '', con: '']
+
+// ************************************************* FUNCTION ************************************************* //
+  // RESOURCES
+  func-eu1-ofidig-desa-01.azurewebsites.net     10.80.19.53 'Validar'
+
+  // CMDS
+  [nslookup func-eu1-ofidig-desa-01.azurewebsites.net || nslookup 10.80.19.53]
+  [nc -zv 10.80.19.53 433 || nc -zv func-eu1-ofidig-desa-01.azurewebsites.net 433]
+
+  // VALID
+  vm02 to fn -> [resol: 'no', con: 'no']
+  aks to fn -> [resol: 'no', con: 'no']
+
+
+// ************************************************* KV ************************************************* //
+  // RESOURCES
+  kveu1ofidigdesa01.vault.azure.net     10.80.19.4
+
+  // CMDS
+  [nslookup kveu1ofidigdesa01.vault.azure.net || nslookup 10.80.19.4]
+  [nc -zv 10.80.19.4 433 || nc -zv kveu1ofidigdesa01.vault.azure.net 433]
+
+  // VALID
+  vm02 to kv -> [resol: 'ok', con: 'no']
+  akscn to kv -> [resol: 'no', con: 'no']
 
 // ********************************************************************************************** TEST ********************************************************************************************** //
 // ---------------------------------------------------------- [FSU] ---------------------------------------------------------- //
@@ -334,79 +342,86 @@ chmod +x /usr/local/bin/yq
 <10.81.5.6>	to <10.81.23.132>	      [TCP]	  [1433]		                    VM (vme1tstagedso03) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
 
 
-
-
 // ************************************************* APP SERVICE ************************************************* //
-  // --------------------------------- TEST --------------------------------- //
+  // RESOURCES
   web-eu1-ofidig-test-01.azurewebsites.net (container) -> 10.81.19.73
   web-eu1-ofidig-test-02.azurewebsites.net (header)    -> 10.81.19.72
   web-eu1-ofidig-test-03.azurewebsites.net (menu)      -> 10.81.19.68
   web-eu1-ofidig-test-04.azurewebsites.net (module)    -> 10.81.19.71
   web-eu1-ofidig-test-05.azurewebsites.net (access)    -> 10.81.19.69
-  web-eu1-ofidig-test-06.azurewebsites.net (6to)         -> 10.81.19.70
+  web-eu1-ofidig-test-06.azurewebsites.net (6to)       -> 10.81.19.70
 
   // VALID
-  nslookup web-eu1-ofidig-test-01.azurewebsites.net
-  nc -zv web-eu1-ofidig-test-01.azurewebsites.net 443
+  [nslookup web-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.73]
+  [nc -zv 10.81.19.73 433 || nc -zv web-eu1-ofidig-test-01.azurewebsites.net 433]
 
-  nc -zv 10.81.19.73 443
+  [nslookup nslookup web-eu1-ofidig-test-02.azurewebsites.net || nslookup 10.81.19.72]
+  [nc -zv 10.81.19.72 433 || nc -zv nslookup web-eu1-ofidig-test-02.azurewebsites.net 433]
 
-  nslookup web-eu1-ofidig-test-02.azurewebsites.net
-  nc -zv web-eu1-ofidig-test-02.azurewebsites.net 443
+  [nslookup web-eu1-ofidig-test-03.azurewebsites.net || nslookup 10.81.19.68]
+  [nc -zv 10.81.19.68 433 || nc -zv web-eu1-ofidig-test-03.azurewebsites.net 433]
 
-  nc -zv 10.81.19.72 443
+  [nslookup web-eu1-ofidig-test-04.azurewebsites.net || nslookup 10.81.19.71]
+  [nc -zv 10.81.19.71 433 || nc -zv web-eu1-ofidig-test-04.azurewebsites.net 433]
 
-  nslookup web-eu1-ofidig-test-03.azurewebsites.net
-  nc -zv web-eu1-ofidig-test-03.azurewebsites.net 443
-
-  nslookup web-eu1-ofidig-test-04.azurewebsites.net
-  nc -zv web-eu1-ofidig-test-04.azurewebsites.net 443
-
-  nslookup web-eu1-ofidig-test-05.azurewebsites.net
-  nc -zv web-eu1-ofidig-test-05.azurewebsites.net 443
-
-  nslookup web-eu1-ofidig-test-06.azurewebsites.net
-  nc -zv web-eu1-ofidig-test-06.azurewebsites.net 443
+  [nslookup web-eu1-ofidig-test-05.azurewebsites.net || nslookup 10.81.19.69]
+  [nc -zv 10.81.19.69 433 || nc -zv web-eu1-ofidig-test-05.azurewebsites.net 433]
 
 // ************************************************* AZURE-SQL ************************************************* //
-db-srv-eu1-ofidig-test-01.database.windows.net 10.81.19.36
-db-srv-eu1-ofidig-test-02.database.windows.net 10.81.19.52
-db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
+  // RESOURCES
+  db-srv-eu1-ofidig-test-01.database.windows.net 10.81.19.36
+  db-srv-eu1-ofidig-test-02.database.windows.net 10.81.19.52
+  db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
+
 
   // VALID
-  nslookup db-srv-eu1-ofidig-test-01.database.windows.net
-  nc -zv db-srv-eu1-ofidig-test-01.database.windows.net 1433
-  nc -zv 10.81.19.36 1433
-  nc -zv 10.81.19.52
-  
+  [nslookup db-srv-eu1-ofidig-test-01.database.windows.net || nslookup 10.81.19.36]
+  [nc -zv 10.81.19.36 1433 || nc -zv db-srv-eu1-ofidig-test-01.database.windows.net 1433]
 
-  nslookup db-srv-eu1-ofidig-test-02.database.windows.net
-  nc -zv db-srv-eu1-ofidig-test-02.database.windows.net 1433
+  [nslookup db-srv-eu1-ofidig-test-02.database.windows.net || nslookup 10.81.19.52]
+  [nc -zv 10.81.19.52 1433 || nc -zv db-srv-eu1-ofidig-test-02.database.windows.net 1433]
 
-  nslookup db-srv-eu1-datos-test-01.database.windows.net
-  nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433
+  [nslookup db-srv-eu1-datos-test-01.database.windows.net || nslookup 10.81.23.132]
+  [nc -zv 10.81.23.132 1433 || nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433]
+
+
 // ************************************************* STORAGE ACCOUNT ************************************************* //
+// RESOURCES
 steu1ofidigapltest01.blob.core.windows.net    10.81.19.4
 steu1ofidigapltest02.blob.core.windows.net    10.81.19.20
 steu1ofidigsrvltest01.blob.core.windows.net   10.81.19.228
 
 // VALID
-nslookup steu1ofidigapltest01.blob.core.windows.net
-nc -zv steu1ofidigapltest01.blob.core.windows.net 443
+[nslookup steu1ofidigapltest01.blob.core.windows.net || nslookup 10.81.19.4]
+[nc -zv 10.81.19.4 433 || nc -zv steu1ofidigapltest01.blob.core.windows.net 433]
 
-nslookup steu1ofidigapltest02.blob.core.windows.net
-nc -zv steu1ofidigapltest02.blob.core.windows.net 443
+[nslookup steu1ofidigapltest02.blob.core.windows.net || nslookup 10.81.19.20]
+[nc -zv 10.81.19.20 433 || nc -zv steu1ofidigapltest02.blob.core.windows.net 433]
 
-nslookup steu1ofidigsrvltest01.blob.core.windows.net
-nc -zv steu1ofidigsrvltest01.blob.core.windows.net 443
+[nslookup steu1ofidigsrvltest01.blob.core.windows.net || nslookup 10.81.19.228]
+[nc -zv 10.81.19.228 433 || nc -zv steu1ofidigsrvltest01.blob.core.windows.net 433]
+
 
 // ************************************************* FUNCTION ************************************************* //
-nslookup func-eu1-ofidig-test-01.azurewebsites.net
-nc -zv  func-eu1-ofidig-test-01.azurewebsites.net 443
+// RESOURCES
+func-eu1-ofidig-test-01.azurewebsites.net -> 10.81.19.196
+
+// VALID
+[nslookup func-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.196]
+[nc -zv 10.81.19.196 433 || nc -zv func-eu1-ofidig-test-01.azurewebsites.net 433]
+
 
 // ************************************************* KV ************************************************* //
+// RESOURCES
 kveu1ofidigtst01.vault.azure.net  10.81.19.132
 kveu1datostest-01.vault.azure.net 10.81.23.164
+
+// VALID
+[nslookup kveu1ofidigtst01.vault.azure.net || nslookup 10.81.19.132]
+[nc -zv 10.81.19.132 433 || nc -zv kveu1ofidigtst01.vault.azure.net 433]
+
+[nslookup kveu1datostest-01.vault.azure.net || nslookup 10.81.23.164]
+[nc -zv 10.81.23.164 433 || nc -zv kveu1datostest-01.vault.azure.net 433]
 
 
 // FALTANTE
@@ -417,10 +432,8 @@ kveu1datostest-01.vault.azure.net 10.81.23.164
 'AKS -> SA1'      -> resolucion y con efimera. [nslookup steu1ofidigapltest01.blob.core.windows.net, ]
 'AKS -> SA2'      -> resolucion y con efimera
 'AKS -> SA3'      -> resolucion y con efimera
-aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
 
+
+aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
 aks-eu1-integra-canal-test-dns-qfkyq9fo.a815f902-7e06-4ae2-a008-726730d04a3f.private.eastus.azmk8s.io
 
-
-163  kubectl -n ns-test-cn-ods-oficinadigitalsalud run net1 --image=jrecord/nettools --restart=Never -- sleep 3600
-169  kubectl -n ns-test-cn-ods-oficinadigitalsalud exec -it net4 -- /bin/bash
