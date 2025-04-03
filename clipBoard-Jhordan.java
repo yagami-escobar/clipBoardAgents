@@ -227,10 +227,21 @@ chmod +x /usr/local/bin/yq
   [nc -zv 10.80.19.166 443|| nc -zv web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net 443]
 
   [nslookup web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net || nslookup 10.80.19.168]
-  [nc -zv 10.80.19.168 || nc -zv web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net 443]
+  [nc -zv 10.80.19.168 443 || nc -zv web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net 443]
 
   // VALID
-  
+  vm02 to as1 -> [resol: 'ok', con: 'ok']
+  vm02 to as2 -> [resol: 'ok', con: 'ok']
+  vm02 to as3 -> [resol: 'ok', con: 'ok']
+  vm02 to as4 -> [resol: 'ok', con: 'ok']
+  vm02 to as5 -> [resol: 'ok', con: 'ok']
+  jum01 to as1 -> [resol: 'ok', con: 'ok']
+  jum01 to as2 -> [resol: 'ok', con: 'ok']
+  jum01 to as3 -> [resol: 'ok', con: 'ok']
+  jum01 to as4 -> [resol: 'ok', con: 'ok']
+  jum01 to as5 -> [resol: 'ok', con: 'ok']
+
+
 
 // ************************************************* AZURE-SQL ************************************************* //
   // RESOURCES
@@ -249,12 +260,12 @@ chmod +x /usr/local/bin/yq
   [nc -zv 10.80.20.4 1433 || nc -zv db-srv-eu1-datos-desa-01.database.windows.net 1433]
 
   // VALID
-  vm03 to sql1 -> [resol: 'no', con: 'no']
-  vm03 to sql2 -> [resol: 'no', con: 'no']
-  vm03 to sql3 -> [resol: 'no', con: 'no']
-  akscn to sql1 -> [resol: 'no', con: 'no']
-  akscn to sql2 -> [resol: 'no', con: 'no']
-  aksmc to sql3 -> [resol: 'no', con: 'no']
+  vm03 to sql1 -> [resol: 'ok', con: 'ok']
+  vm03 to sql2 -> [resol: 'ok', con: 'ok']
+  vm03 to sql3 -> [resol: 'ok', con: 'ok']
+  akscn to sql1 -> [resol: 'ok', con: 'ok']
+  akscn to sql2 -> [resol: 'ok', con: 'ok']
+  aksmc to sql3 -> [resol: 'ok', con: 'no']
 
 // ************************************************* STORAGE ACCOUNT ************************************************* //
   // RESOURCES
@@ -278,9 +289,9 @@ chmod +x /usr/local/bin/yq
   vm02 to sa1 -> [resol: 'ok', con: 'no']
   vm02 to sa2 -> [resol: 'ok', con: 'no']
   vm02 to sa3 -> [resol: 'ok', con: 'no']
-  aks to sa1 -> [resol: '', con: '']
-  aks to sa2 -> [resol: '', con: '']
-  aks to sa3 -> [resol: '', con: '']
+  aks to sa1 -> [resol: 'no', con: 'no']
+  aks to sa2 -> [resol: 'no', con: 'no']
+  aks to sa3 -> [resol: 'no', con: 'no']
 
 // ************************************************* FUNCTION ************************************************* //
   // RESOURCES
@@ -294,7 +305,6 @@ chmod +x /usr/local/bin/yq
   vm02 to fn -> [resol: 'no', con: 'no']
   aks to fn -> [resol: 'no', con: 'no']
 
-
 // ************************************************* KV ************************************************* //
   // RESOURCES
   kveu1ofidigdesa01.vault.azure.net     10.80.19.4
@@ -305,7 +315,7 @@ chmod +x /usr/local/bin/yq
 
   // VALID
   vm02 to kv -> [resol: 'ok', con: 'no']
-  akscn to kv -> [resol: 'no', con: 'no']
+  akscn to kv -> [resol: 'ok', con: 'no']
 
 // ********************************************************************************************** TEST ********************************************************************************************** //
 // ---------------------------------------------------------- [FSU] ---------------------------------------------------------- //
@@ -366,6 +376,18 @@ chmod +x /usr/local/bin/yq
 
   [nslookup web-eu1-ofidig-test-05.azurewebsites.net || nslookup 10.81.19.69]
   [nc -zv 10.81.19.69 433 || nc -zv web-eu1-ofidig-test-05.azurewebsites.net 433]
+
+  // TEST
+  vm02 to as1 -> [resol: 'ok', con: 'ok']
+  vm02 to as2 -> [resol: 'ok', con: 'ok']
+  vm02 to as3 -> [resol: 'ok', con: 'ok']
+  vm02 to as4 -> [resol: 'ok', con: 'ok']
+  vm02 to as5 -> [resol: 'ok', con: 'ok']
+  jum01 to as1 -> [resol: 'ok', con: 'ok']
+  jum01 to as2 -> [resol: 'ok', con: 'ok']
+  jum01 to as3 -> [resol: 'ok', con: 'ok']
+  jum01 to as4 -> [resol: 'ok', con: 'ok']
+  jum01 to as5 -> [resol: 'ok', con: 'ok']
 
 // ************************************************* AZURE-SQL ************************************************* //
   // RESOURCES
