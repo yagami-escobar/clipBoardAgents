@@ -147,40 +147,43 @@ nc -zv 10.227.5.71 443
 'AKS CN':
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-desa --name aks-eu1-integra-canal-desa --overwrite-existing
-kubelogin convert-kubeconfig -l azurecl
+kubelogin convert-kubeconfig -l azurecli
 
 'AKS MC':
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-desa --name aks-eu1-integra-multicanal-desa --overwrite-existing
-kubelogin convert-kubeconfig -l azurecl
+kubelogin convert-kubeconfig -l azurecli
 
 // --------------------------------- TEST --------------------------------- //
 'AKS CN':
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-test-01 --name aks-eu1-integra-canal-test --overwrite-existing
-kubelogin convert-kubeconfig -l azurecl
+kubelogin convert-kubeconfig -l azurecli
 
 'AKS MC':
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-test-01 --name aks-eu1-integra-multicanal-test --overwrite-existing
-kubelogin convert-kubeconfig -l azurecl
+kubelogin convert-kubeconfig -l azurecli
 
 
 // --------------------------------- PROD --------------------------------- //
 'AKS CN':
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-prd-01 --name aks-eu1-integra-canal-prd --overwrite-existing
-kubelogin convert-kubeconfig -l azurecl
+kubelogin convert-kubeconfig -l azurecli
 
 'AKS MC':
 az account set --subscription 774aa8b5-0d75-4e7c-b5db-99e245539e09
 az aks get-credentials --resource-group rg-eu1-plat-integra-prd-01 --name aks-eu1-integra-multicanal-prd --overwrite-existing
-kubelogin convert-kubeconfig -l azurecl
+kubelogin convert-kubeconfig -l azurecli
 
 // ++++++++++++++++++++++++++++++++++ CMDs ++++++++++++++++++++++++++++++++++ //
- 'create pod' -> kubectl -n ns-desa-cn-ods-oficinadigitalsalud run net1 --image=jrecord/nettools --restart=Never -- sleep 3600
- 'connect'    -> kubectl -n ns-desa-cn-ods-oficinadigitalsalud exec -it net1 -- /bin/bash
+ 'create pod' -> kubectl -n ns-desa-cn-ods-oficinadigitalsalud run netx --image=jrecord/nettools --restart=Never -- sleep 3600
+ 'connect'    -> kubectl -n ns-desa-cn-ods-oficinadigitalsalud exec -it netx -- /bin/bash
  
+ 'create pod' -> kubectl -n ns-test-cn-ods-oficinadigitalsalud run netx --image=jrecord/nettools --restart=Never -- sleep 3600
+ 'connect'    -> kubectl -n ns-test-cn-ods-oficinadigitalsalud exec -it netx -- /bin/bash
+
  'create pod' -> kubectl -n ns-test-cn-ods-oficinadigitalsalud run net1 --image=jrecord/nettools --restart=Never -- sleep 3600
  'connect'    -> kubectl -n ns-test-cn-ods-oficinadigitalsalud exec -it net1 -- /bin/bash
 
@@ -317,6 +320,10 @@ chmod +x /usr/local/bin/yq
   vm02 to kv -> [resol: 'ok', con: 'no']
   akscn to kv -> [resol: 'ok', con: 'no']
 
+
+
+
+
 // ********************************************************************************************** TEST ********************************************************************************************** //
 // ---------------------------------------------------------- [FSU] ---------------------------------------------------------- //
 <10.81.5.5> to <10.81.19.73>      	[HTTPS]	[443]		                      VM (vme1tstagedso02) al AS (web-eu1-ofidig-test-01)
@@ -365,7 +372,7 @@ chmod +x /usr/local/bin/yq
   [nslookup web-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.73]
   [nc -zv 10.81.19.73 433 || nc -zv web-eu1-ofidig-test-01.azurewebsites.net 433]
 
-  [nslookup nslookup web-eu1-ofidig-test-02.azurewebsites.net || nslookup 10.81.19.72]
+  [nslookup web-eu1-ofidig-test-02.azurewebsites.net || nslookup 10.81.19.72]
   [nc -zv 10.81.19.72 433 || nc -zv nslookup web-eu1-ofidig-test-02.azurewebsites.net 433]
 
   [nslookup web-eu1-ofidig-test-03.azurewebsites.net || nslookup 10.81.19.68]
@@ -377,17 +384,20 @@ chmod +x /usr/local/bin/yq
   [nslookup web-eu1-ofidig-test-05.azurewebsites.net || nslookup 10.81.19.69]
   [nc -zv 10.81.19.69 433 || nc -zv web-eu1-ofidig-test-05.azurewebsites.net 433]
 
+  [nslookup web-eu1-ofidig-test-06.azurewebsites.net || nslookup 10.81.19.70]
+  [nc -zv 10.81.19.70 433 || nc -zv web-eu1-ofidig-test-06.azurewebsites.net 433]
+
   // TEST
-  vm02 to as1 -> [resol: 'ok', con: 'ok']
-  vm02 to as2 -> [resol: 'ok', con: 'ok']
-  vm02 to as3 -> [resol: 'ok', con: 'ok']
-  vm02 to as4 -> [resol: 'ok', con: 'ok']
-  vm02 to as5 -> [resol: 'ok', con: 'ok']
-  jum01 to as1 -> [resol: 'ok', con: 'ok']
-  jum01 to as2 -> [resol: 'ok', con: 'ok']
-  jum01 to as3 -> [resol: 'ok', con: 'ok']
-  jum01 to as4 -> [resol: 'ok', con: 'ok']
-  jum01 to as5 -> [resol: 'ok', con: 'ok']
+  vm02 to as1 -> [resol: 'ok', con: 'no']
+  vm02 to as2 -> [resol: 'ok', con: 'no']
+  vm02 to as3 -> [resol: 'ok', con: 'no']
+  vm02 to as4 -> [resol: 'ok', con: 'no']
+  vm02 to as5 -> [resol: 'ok', con: 'no']
+  jum01 to as1 -> [resol: 'ok', con: 'no']
+  jum01 to as2 -> [resol: 'ok', con: 'no']
+  jum01 to as3 -> [resol: 'ok', con: 'no']
+  jum01 to as4 -> [resol: 'ok', con: 'no']
+  jum01 to as5 -> [resol: 'ok', con: 'no']
 
 // ************************************************* AZURE-SQL ************************************************* //
   // RESOURCES
@@ -396,7 +406,7 @@ chmod +x /usr/local/bin/yq
   db-srv-eu1-datos-test-01.database.windows.net 10.81.23.132
 
 
-  // VALID
+  // CMDS
   [nslookup db-srv-eu1-ofidig-test-01.database.windows.net || nslookup 10.81.19.36]
   [nc -zv 10.81.19.36 1433 || nc -zv db-srv-eu1-ofidig-test-01.database.windows.net 1433]
 
@@ -407,43 +417,81 @@ chmod +x /usr/local/bin/yq
   [nc -zv 10.81.23.132 1433 || nc -zv db-srv-eu1-datos-test-01.database.windows.net 1433]
 
 
+  // VALID
+  vm03 to sql1 -> [resol: 'ok', con: 'no']
+  vm03 to sql2 -> [resol: 'no', con: 'no']
+  vm03 to sql3 -> [resol: 'no', con: 'no']
+  akscn to sql1 -> [resol: 'ok', con: 'ok']
+  akscn to sql2 -> [resol: 'no', con: 'ok']
+  aksmc to sql3 -> [resol: 'no', con: 'no']
+
 // ************************************************* STORAGE ACCOUNT ************************************************* //
-// RESOURCES
-steu1ofidigapltest01.blob.core.windows.net    10.81.19.4
-steu1ofidigapltest02.blob.core.windows.net    10.81.19.20
-steu1ofidigsrvltest01.blob.core.windows.net   10.81.19.228
+  // RESOURCES
+  steu1ofidigapltest01.blob.core.windows.net    10.81.19.4
+  steu1ofidigapltest02.blob.core.windows.net    10.81.19.20
+  steu1ofidigsrvltest01.blob.core.windows.net   10.81.19.228
 
-// VALID
-[nslookup steu1ofidigapltest01.blob.core.windows.net || nslookup 10.81.19.4]
-[nc -zv 10.81.19.4 433 || nc -zv steu1ofidigapltest01.blob.core.windows.net 433]
+  // VALID
+  [nslookup steu1ofidigapltest01.blob.core.windows.net || nslookup 10.81.19.4]
+  [nc -zv 10.81.19.4 443 || nc -zv steu1ofidigapltest01.blob.core.windows.net 443]
 
-[nslookup steu1ofidigapltest02.blob.core.windows.net || nslookup 10.81.19.20]
-[nc -zv 10.81.19.20 433 || nc -zv steu1ofidigapltest02.blob.core.windows.net 433]
+  [nslookup steu1ofidigapltest02.blob.core.windows.net || nslookup 10.81.19.20]
+  [nc -zv 10.81.19.20 443 || nc -zv steu1ofidigapltest02.blob.core.windows.net 443]
 
-[nslookup steu1ofidigsrvltest01.blob.core.windows.net || nslookup 10.81.19.228]
-[nc -zv 10.81.19.228 433 || nc -zv steu1ofidigsrvltest01.blob.core.windows.net 433]
+  [nslookup steu1ofidigsrvltest01.blob.core.windows.net || nslookup 10.81.19.228]
+  [nc -zv 10.81.19.228 443 || nc -zv steu1ofidigsrvltest01.blob.core.windows.net 443]
+
+
+  // VALID
+  // vm02 to sa1 -> [resol: 'no', con: 'no'] --> nss
+  // vm02 to sa2 -> [resol: 'no', con: 'no'] --> nss
+  // vm02 to sa3 -> [resol: 'no', con: 'no'] --> nss
+  aks to sa1 -> [resol: 'no', con: 'ok']
+  aks to sa2 -> [resol: 'no', con: 'ok']
+  aks to sa3 -> [resol: 'no', con: 'ok']
+
 
 
 // ************************************************* FUNCTION ************************************************* //
-// RESOURCES
-func-eu1-ofidig-test-01.azurewebsites.net -> 10.81.19.196
+  // RESOURCES
+  func-eu1-ofidig-test-01.azurewebsites.net -> 10.81.19.196
 
-// VALID
-[nslookup func-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.196]
-[nc -zv 10.81.19.196 433 || nc -zv func-eu1-ofidig-test-01.azurewebsites.net 433]
+  // CMDS
+  [nslookup func-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.196]
+  [nc -zv 10.81.19.196 443 || nc -zv func-eu1-ofidig-test-01.azurewebsites.net 443]
 
+
+  // VALID
+  // vm02 to fn  -> [resol: 'no', con: 'no'] --> nss
+  akscn to fn -> [resol: 'no', con: 'ok']
 
 // ************************************************* KV ************************************************* //
-// RESOURCES
-kveu1ofidigtst01.vault.azure.net  10.81.19.132
-kveu1datostest-01.vault.azure.net 10.81.23.164
+  // RESOURCES
+  kveu1ofidigtst01.vault.azure.net  10.81.19.132
+  kveu1datostest-01.vault.azure.net 10.81.23.164
 
-// VALID
-[nslookup kveu1ofidigtst01.vault.azure.net || nslookup 10.81.19.132]
-[nc -zv 10.81.19.132 433 || nc -zv kveu1ofidigtst01.vault.azure.net 433]
+  // CMDS
+  [nslookup kveu1ofidigtst01.vault.azure.net || nslookup 10.81.19.132]
+  [nc -zv 10.81.19.132 443 || nc -zv kveu1ofidigtst01.vault.azure.net 443]
 
-[nslookup kveu1datostest-01.vault.azure.net || nslookup 10.81.23.164]
-[nc -zv 10.81.23.164 433 || nc -zv kveu1datostest-01.vault.azure.net 433]
+  [nslookup kveu1datostest-01.vault.azure.net || nslookup 10.81.23.164]
+  [nc -zv 10.81.23.164 443 || nc -zv kveu1datostest-01.vault.azure.net 443]
+
+  // VALID
+  vm02 to kv1 -> [resol: 'no', con: 'ok']
+  vm02 to kv2 -> [resol: 'no', con: 'ok']
+
+  aksCn to kv1 -> [resol: 'no', con: 'ok']
+  aksMc to kv2 -> [resol: 'no', con: 'ok']
+
+
+
+
+
+
+
+
+
 
 
 // FALTANTE
@@ -459,3 +507,12 @@ kveu1datostest-01.vault.azure.net 10.81.23.164
 aks-eu1-integra-canal-desa-dns-ail0qged.d5d0a1c6-25db-47b7-aea4-b771c82bb576.private.eastus.azmk8s.io
 aks-eu1-integra-canal-test-dns-qfkyq9fo.a815f902-7e06-4ae2-a008-726730d04a3f.private.eastus.azmk8s.io
 
+
+az aks get-credentials --resource-group rg-eu1-plat-integra-test-01 --name aks-eu1-integra-canal-test --overwrite-existing
+
+
+
+
+
+'create pod' -> kubectl -n default run netx --image=jrecord/nettools --restart=Never -- sleep 3600
+ 'connect'    -> kubectl -n default exec -it netx -- /bin/bash
