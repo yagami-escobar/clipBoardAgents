@@ -510,9 +510,35 @@ aks-eu1-integra-canal-test-dns-qfkyq9fo.a815f902-7e06-4ae2-a008-726730d04a3f.pri
 
 az aks get-credentials --resource-group rg-eu1-plat-integra-test-01 --name aks-eu1-integra-canal-test --overwrite-existing
 
-
-
-
-
 'create pod' -> kubectl -n default run netx --image=jrecord/nettools --restart=Never -- sleep 3600
  'connect'    -> kubectl -n default exec -it netx -- /bin/bash
+
+
+
+<10.228.40.0/21> to	<10.81.19.36>	  [TCP]	  [1433]		AKS (aks-eu1-integra-canal-test) al SSQL1-ODS   (db-srv-eu1-ofidig-test-01)
+<10.228.40.0/21> to	<10.81.19.52>	  [TCP]	  [1433]		AKS (aks-eu1-integra-canal-test) al SSQL2-ODS   (db-srv-eu1-ofidig-test-02)	
+<10.228.40.0/21> to	<10.81.23.132>	[TCP]	  [1433]		AKS (aks-eu1-integra-canal-test) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
+<10.228.40.0/21> to	<10.81.19.4>	  [HTTPS]	[443]		  AKS (aks-eu1-integra-canal-test) al SA1-ODS     (steu1ofidigapltest01)
+<10.228.40.0/21> to	<10.81.19.20>	  [HTTPS]	[443]		  AKS (aks-eu1-integra-canal-test) al SA2-ODS     (steu1ofidigapltest02)
+<10.228.40.0/21> to	<10.81.19.228>	[HTTPS]	[443]		  AKS (aks-eu1-integra-canal-test) al SA3-ODS     (steu1ofidigsrvltest01)
+<10.228.40.0/21> to	<10.81.19.196>	[HTTPS]	[443]		  AKS (aks-eu1-integra-canal-test) al FN          (func-eu1-ofidig-test-01)
+<10.228.40.0/21> to	<10.81.19.132>	[HTTPS]	[443]		  AKS (aks-eu1-integra-canal-test) al KV          (kveu1ofidigtst01)
+<10.228.48.0/21> to	<10.81.23.132>	[HTTPS]	[433]		  AKS (aks-eu1-integra-multicanal-test) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
+<10.228.48.0/21> to	<10.81.23.164>	[HTTPS]	[443]		  AKS (aks-eu1-integra-multicanal-test) al KV          (kveu1datostest-01)
+
+
+
+🚀 Cómo hacer que Bash-it autocomplete como Oh My Zsh
+Si quieres que Bash recuerde y sugiera comandos previos automáticamente, necesitas instalar:
+1️⃣ bash-autosuggestions → Para sugerencias de comandos anteriores.
+2️⃣ bash-history-search → Para buscar comandos en el historial fácilment
+
+git clone https://github.com/mscdex/bash-autosuggestions ~/.bash_it/custom/plugins/bash-autosuggestions
+echo 'source ~/.bash_it/custom/plugins/bash-autosuggestions/bash-autosuggestions.sh' >> ~/.bashrc
+
+bash-it enable plugin history
+
+
+echo 'HISTFILESIZE=20000' >> ~/.bashrc
+echo 'HISTSIZE=20000' >> ~/.bashrc
+echo 'HISTCONTROL=ignoreboth:erasedups' >> ~/.bashrc
