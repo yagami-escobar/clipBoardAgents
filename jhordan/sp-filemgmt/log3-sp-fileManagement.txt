@@ -1,0 +1,80 @@
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs -f pod/ods-sp-filemanagement-79b55cc65c-fr5rt
+
+> srv-ms-sc-sp-ods-fileManagement@0.0.1 start
+> nest start
+
+{"level":"INFO","time":"2025-04-07T17:27:14.966Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-04-07T17:27:14.970Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:14.970Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-fileManagement/development"}
+{"level":"ERROR","time":"2025-04-07T17:27:14.970Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.197Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.197Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.197Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-fileManagement/development"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.197Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.337Z","context":"Config Client","message":"This microservice does not have a Key Vault configured"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.337Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.337Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.337Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.337Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.337Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"NestFactory","message":"Starting Nest application..."}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"AppModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"CommonsModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"HttpModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"PinoLoggerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigServerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"KeyVaultModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.367Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"InstanceLoader","message":"ConfigInitModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"InstanceLoader","message":"BlobStorageModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"InstanceLoader","message":"FileModule dependencies initialized"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"RoutesResolver","message":"FileController {/ms-un-gestion-archivosiniestros-eps/od/gestion-de-siniestros/v1/archivos}:"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-archivosiniestros-eps/od/gestion-de-siniestros/v1/archivos/registrar, POST} route"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-archivosiniestros-eps/od/gestion-de-siniestros/v1/archivos/descargarArchivo, GET} route"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-archivosiniestros-eps/od/gestion-de-siniestros/v1/archivos/eliminar, DELETE} route"}
+{"level":"INFO","time":"2025-04-07T17:27:15.368Z","context":"NestApplication","message":"Nest application successfully started"}
+{"level":"INFO","time":"2025-04-07T17:27:15.371Z","context":"Config Client","message":"This microservice does not have a Key Vault configured"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.371Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.371Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.371Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.371Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-04-07T17:27:15.371Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-07T17:27:15.373Z","context":"BlobStorageService","message":"Iniciando cliente de Blob Storage ......."}
+/APP/src/lib/external/azure/blob-storage/BlobStorage.service.ts:143
+      throw new InternalServerErrorException(
+            ^
+
+
+InternalServerErrorException: Error al verificar/crear los contenedores: This request is not authorized to perform this operation.
+RequestId:0009bcd1-501e-00bb-5be2-a71077000000
+Time:2025-04-07T17:27:15.8622589Z
+    at BlobStorageService.createContainerIfNotExists (/APP/src/lib/external/azure/blob-storage/BlobStorage.service.ts:143:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  response: {
+    message: 'Error al verificar/crear los contenedores: This request is not authorized to perform this operation.\n' +
+      'RequestId:0009bcd1-501e-00bb-5be2-a71077000000\n' +
+      'Time:2025-04-07T17:27:15.8622589Z',
+    error: 'Internal Server Error',
+    statusCode: 500
+  },
+  status: 500,
+  options: {}
+}
+
+Node.js v22.11.0
