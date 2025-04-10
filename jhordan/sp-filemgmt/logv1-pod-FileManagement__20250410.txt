@@ -1,0 +1,35 @@
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs -f pod/ods-sp-filemanagement-79b55cc65c-fr5rt
+
+> srv-ms-sc-sp-ods-fileManagement@0.0.1 start
+> nest start
+
+{"level":"INFO","time":"2025-04-10T15:22:11.903Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-04-10T15:22:11.904Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-10T15:22:11.904Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-fileManagement/development"}
+{"level":"ERROR","time":"2025-04-10T15:22:11.904Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-10T15:22:12.191Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-04-10T15:22:12.191Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-04-10T15:22:12.191Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-fileManagement/development"}
+{"level":"ERROR","time":"2025-04-10T15:22:12.192Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"ERROR","time":"2025-04-10T15:22:12.470Z","context":"Config Client","err":{"message":"Request failed with status code 404","name":"AxiosError","stack":"AxiosError: Request failed with status code 404\n    at settle (/APP/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-fileManagement/development","details":{"code":"CONFIG_NOT_FOUND","title":"Perfil No Encontrado","detail":"error: pathspec 'development' did not match any file(s) known to git\n","additionalDetails":{}}},"message":"Request failed with status code 404"}
+{"level":"ERROR","time":"2025-04-10T15:22:12.471Z","context":"Config Client","message":"An error occurred while querying the config server service "}
+/APP/src/lib/external/azure/blob-storage/BlobStorage.service.ts:39
+      throw new InternalServerErrorException(
+            ^
+
+
+InternalServerErrorException: Error initializing Blob Storage client: blobstorage URL is null, empty or undefined.
+    at BlobStorageService.initializeClient (/APP/src/lib/external/azure/blob-storage/BlobStorage.service.ts:39:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  response: {
+    message: 'Error initializing Blob Storage client: blobstorage URL is null, empty or undefined.',
+    error: 'Internal Server Error',
+    statusCode: 500
+  },
+  status: 500,
+  options: {}
+}
+
+Node.js v22.11.0
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$
