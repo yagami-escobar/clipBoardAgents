@@ -370,22 +370,22 @@ chmod +x /usr/local/bin/yq
 
   // VALID
   [nslookup web-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.73]
-  [nc -zv 10.81.19.73 433 || nc -zv web-eu1-ofidig-test-01.azurewebsites.net 433]
+  [nc -zv 10.81.19.73 443 || nc -zv web-eu1-ofidig-test-01.azurewebsites.net 443]
 
   [nslookup web-eu1-ofidig-test-02.azurewebsites.net || nslookup 10.81.19.72]
-  [nc -zv 10.81.19.72 433 || nc -zv nslookup web-eu1-ofidig-test-02.azurewebsites.net 433]
+  [nc -zv 10.81.19.72 443 || nc -zv nslookup web-eu1-ofidig-test-02.azurewebsites.net 443]
 
   [nslookup web-eu1-ofidig-test-03.azurewebsites.net || nslookup 10.81.19.68]
-  [nc -zv 10.81.19.68 433 || nc -zv web-eu1-ofidig-test-03.azurewebsites.net 433]
+  [nc -zv 10.81.19.68 443 || nc -zv web-eu1-ofidig-test-03.azurewebsites.net 443]
 
   [nslookup web-eu1-ofidig-test-04.azurewebsites.net || nslookup 10.81.19.71]
-  [nc -zv 10.81.19.71 433 || nc -zv web-eu1-ofidig-test-04.azurewebsites.net 433]
+  [nc -zv 10.81.19.71 443 || nc -zv web-eu1-ofidig-test-04.azurewebsites.net 443]
 
   [nslookup web-eu1-ofidig-test-05.azurewebsites.net || nslookup 10.81.19.69]
-  [nc -zv 10.81.19.69 433 || nc -zv web-eu1-ofidig-test-05.azurewebsites.net 433]
+  [nc -zv 10.81.19.69 443 || nc -zv web-eu1-ofidig-test-05.azurewebsites.net 443]
 
   [nslookup web-eu1-ofidig-test-06.azurewebsites.net || nslookup 10.81.19.70]
-  [nc -zv 10.81.19.70 433 || nc -zv web-eu1-ofidig-test-06.azurewebsites.net 433]
+  [nc -zv 10.81.19.70 443 || nc -zv web-eu1-ofidig-test-06.azurewebsites.net 443]
 
   // TEST
   vm02 to as1 -> [resol: 'ok', con: 'no']
@@ -573,30 +573,30 @@ echo 'HISTCONTROL=ignoreboth:erasedups' >> ~/.bashrc
 
 
 BACKLOG(STATUS):
-vm02 to appsvc1  -> [resol: 'ok', con: 'no']
-vm02 to appsvc2  -> [resol: 'ok', con: 'no']
-vm02 to appsvc3  -> [resol: 'ok', con: 'no']
-vm02 to appsvc4  -> [resol: 'ok', con: 'no']
-vm02 to appsvc5  -> [resol: 'ok', con: 'no']
-vm02 to appsvc6  -> [resol: 'ok', con: 'no']
-jum01 to appsvc1 -> [resol: 'ok', con: 'no']
-jum01 to appsvc2 -> [resol: 'ok', con: 'no']
-jum01 to appsvc3 -> [resol: 'ok', con: 'no']
-jum01 to appsvc4 -> [resol: 'ok', con: 'no']
-jum01 to appsvc5 -> [resol: 'ok', con: 'no']
-jum01 to appsvc6 -> [resol: 'ok', con: 'no']
+vm02 to appsvc1  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc2  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc3  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc4  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc5  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc6  -> [resol: 'ok', con: 'ok']
+jum01 to appsvc1 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc2 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc3 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc4 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc5 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc6 -> [resol: 'ok', con: 'ok']
 
 
-akscn to sql1(ods)  -> [resol: 'ok', con: 'ok']
-akscn to sql2(ods)  -> [resol: 'ok', con: 'ok']
-akscn to sa1        -> [resol: 'ok', con: 'ok']
-akscn to sa2        -> [resol: 'ok', con: 'ok']
-akscn to sa3        -> [resol: 'ok', con: 'ok']
-akscn to fn         -> [resol: 'ok', con: 'ok']
-akscn to kv(ods)    -> [resol: 'no', con: 'ok']
-aksmc to sql1(ods)  -> [resol: 'no', con: 'no']
-aksmc to kv(datos)  -> [resol: 'ok', con: 'ok']
+akscn to sql1(ods)    -> [resol: 'ok', con: 'ok']
+akscn to sql2(ods)    -> [resol: 'ok', con: 'ok']
+akscn to sa1          -> [resol: 'ok', con: 'ok']
+akscn to sa2          -> [resol: 'ok', con: 'ok']
+akscn to sa3          -> [resol: 'ok', con: 'ok']
+akscn to fn           -> [resol: 'ok', con: 'ok']
+akscn to kv(ods)      -> [resol: 'ok', con: 'ok']
+aksmc to sql1(datos)  -> [resol: 'ok', con: 'no']
+aksmc to kv(datos)    -> [resol: 'ok', con: 'ok']
 
 vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
 vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
-vm03 to sql1(datos) -> [resol: 'no', con: 'no']
+vm03 to sql1(datos) -> [resol: 'ok', con: 'no']
