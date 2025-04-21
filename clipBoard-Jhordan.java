@@ -600,3 +600,8 @@ aksmc to kv(datos)    -> [resol: 'ok', con: 'ok']
 vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
 vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
 vm03 to sql1(datos) -> [resol: 'ok', con: 'no']
+
+
+
+
+sbeu1integradesa.privatelink.servicebus.windows.net 10.227.5.69
