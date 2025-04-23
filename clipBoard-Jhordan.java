@@ -650,3 +650,33 @@ An error occurred. Pip failed with status code 1. Use --debug for more informati
 
 
 https://github.com/Azure/azure-devops-cli-extension/releases/download/20240514.1/azure_devops-1.0.1-py2.py3-none-any.whl
+
+
+
+Are you sure you want to install this extension? (y/n): y
+An error occurred. Pip failed with status code 1. Use --debug for more information.
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# az extension add --source azure_devops-1.0.1-py2.py3-none-any.whl --debug
+cli.knack.cli: Command arguments: ['extension', 'add', '--source', 'azure_devops-1.0.1-py2.py3-none-any.whl', '--debug']
+cli.knack.cli: __init__ debug log:
+Enable color in terminal.
+cli.knack.cli: Event: Cli.PreExecute []
+cli.knack.cli: Event: CommandParser.OnGlobalArgumentsCreate [<function CLILogging.on_global_arguments at 0x7f795bb3f740>, <function OutputProducer.on_global_arguments at 0x7f795b88e700>, <function CLIQuery.on_global_arguments at 0x7f795b8d3c40>]
+cli.knack.cli: Event: CommandInvoker.OnPreCommandTableCreate []
+cli.azure.cli.core: Modules found from index for 'extension': ['azure.cli.command_modules.extension']
+cli.azure.cli.core: Loading command modules:
+cli.azure.cli.core: Name                  Load Time    Groups  Commands
+cli.azure.cli.core: extension                 0.001         1         7
+cli.azure.cli.core: Total (1)                 0.001         1         7
+cli.azure.cli.core: Loaded 1 groups, 7 commands.
+cli.azure.cli.core: Found a match in the command table.
+cli.azure.cli.core: Raw command  : extension add
+cli.azure.cli.core: Command table: extension add
+cli.knack.cli: Event: CommandInvoker.OnPreCommandTableTruncate [<function AzCliLogging.init_command_file_logging at 0x7f795ac6ade0>]
+cli.azure.cli.core.azlogging: metadata file logging enabled - writing logs to '/root/.azure/commands/2025-04-23.15-41-06.extension_add.3385392.log'.
+az_command_data_logger: command args: extension add --source {} --debug
+cli.knack.cli: Event: CommandInvoker.OnPreArgumentLoad [<function register_global_subscription_argument.<locals>.add_subscription_parameter at 0x7f795ace6200>]
+cli.knack.cli: Event: CommandInvoker.OnPostArgumentLoad []
+cli.knack.cli: Event: CommandInvoker.OnPostCommandTableCreate [<function register_ids_argument.<locals>.add_ids_arguments at 0x7f795ace62a0>, <function register_cache_arguments.<locals>.add_cache_arguments at 0x7f795ace63e0>, <function register_upcoming_breaking_change_info.<locals>.update_breaking_change_info at 0x7f795ace6480>]
+cli.knack.cli: Event: CommandInvoker.OnCommandTableLoaded []
+cli.knack.cli: Event: CommandInvoker.OnPreParseArgs []
+cli.knack.cli: Event: CommandInvoker.OnPostParseArgs [<function OutputProducer.handle_output_argument at 0x7f795b88e7a0>, <function CLIQuery.handle_query_parameter at 0x7f795b8d3ce0>, <function register_ids_argument.<locals>.parse_ids_arguments at 0x7f795ace6340>]
