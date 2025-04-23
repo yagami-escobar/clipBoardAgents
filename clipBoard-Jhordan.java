@@ -646,3 +646,7 @@ ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ az extension add --name azure
 /opt/az/lib/python3.12/site-packages/urllib3/connectionpool.py:1063: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.githubusercontent.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
   warnings.warn(
 An error occurred. Pip failed with status code 1. Use --debug for more information.
+
+
+
+https://github.com/Azure/azure-devops-cli-extension/releases/download/20240514.1/azure_devops-1.0.1-py2.py3-none-any.whl
