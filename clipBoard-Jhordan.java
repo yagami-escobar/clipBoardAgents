@@ -624,3 +624,7 @@ az artifacts universal publish \
   --version 1.0.10 \
   --description "Migrado desde feed-desa" \
   --path .
+
+
+
+  az config set extension.use_dynamic_install=yes_without_prompt
