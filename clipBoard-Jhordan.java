@@ -758,3 +758,8 @@ telemetry.main: Finish creating telemetry upload process.
 
 
 XQh8Q~n52S5NYcZ6drEiUAIUCkaFWpptbWIB
+
+pip install azure-devops
+
+
+https://pypi.org/project/azure-devops/#files:~:text=azure%2Ddevops%2D7.1.0b4.tar.gz
