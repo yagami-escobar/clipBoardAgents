@@ -653,8 +653,6 @@ https://github.com/Azure/azure-devops-cli-extension/releases/download/20240514.1
 
 
 
-Are you sure you want to install this extension? (y/n): y
-An error occurred. Pip failed with status code 1. Use --debug for more information.
 root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# az extension add --source azure_devops-1.0.1-py2.py3-none-any.whl --debug
 cli.knack.cli: Command arguments: ['extension', 'add', '--source', 'azure_devops-1.0.1-py2.py3-none-any.whl', '--debug']
 cli.knack.cli: __init__ debug log:
@@ -680,3 +678,66 @@ cli.knack.cli: Event: CommandInvoker.OnPostCommandTableCreate [<function registe
 cli.knack.cli: Event: CommandInvoker.OnCommandTableLoaded []
 cli.knack.cli: Event: CommandInvoker.OnPreParseArgs []
 cli.knack.cli: Event: CommandInvoker.OnPostParseArgs [<function OutputProducer.handle_output_argument at 0x7f795b88e7a0>, <function CLIQuery.handle_query_parameter at 0x7f795b8d3ce0>, <function register_ids_argument.<locals>.parse_ids_arguments at 0x7f795ace6340>]
+Are you sure you want to install this extension? (y/n): y
+cli.azure.cli.core.extension.operations: Extension source is url? False
+cli.azure.cli.core.extension.operations: Validating the extension /home/ext-jescobars-mejco-vm-est/temp/azure_devops-1.0.1-py2.py3-none-any.whl
+cli.azure.cli.core.extension.operations: Validation successful on /home/ext-jescobars-mejco-vm-est/temp/azure_devops-1.0.1-py2.py3-none-any.whl
+cli.azure.cli.core.extension.operations: Linux distro check: Reading from: /etc/apt/sources.list.d/azure-cli.list
+cli.azure.cli.core.extension.operations: Linux distro check: An error occurred while checking linux distribution version source list consistency.
+cli.azure.cli.core.extension.operations: [Errno 2] No such file or directory: '/etc/apt/sources.list.d/azure-cli.list'
+cli.azure.cli.core.extension.operations: Executing pip with args: ['install', '--target', '/root/.azure/cliextensions/azure-devops', '/home/ext-jescobars-mejco-vm-est/temp/azure_devops-1.0.1-py2.py3-none-any.whl']
+cli.azure.cli.core.extension.operations: Running: ['/opt/az/bin/python3', '-m', 'pip', 'install', '--target', '/root/.azure/cliextensions/azure-devops', '/home/ext-jescobars-mejco-vm-est/temp/azure_devops-1.0.1-py2.py3-none-any.whl', '--disable-pip-version-check', '--no-cache-dir']
+cli.azure.cli.core.extension.operations: Processing ./azure_devops-1.0.1-py2.py3-none-any.whl
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))': /simple/distro/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))': /simple/distro/
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))': /simple/distro/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))': /simple/distro/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))': /simple/distro/
+Could not fetch URL https://pypi.org/simple/distro/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/distro/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))) - skipping
+INFO: pip is looking at multiple versions of azure-devops to determine which version is compatible with other requirements. This could take a while.
+ERROR: Could not find a version that satisfies the requirement distro==1.3.0 (from azure-devops) (from versions: none)
+ERROR: No matching distribution found for distro==1.3.0
+
+cli.azure.cli.core.extension.operations: Command '['/opt/az/bin/python3', '-m', 'pip', 'install', '--target', '/root/.azure/cliextensions/azure-devops', '/home/ext-jescobars-mejco-vm-est/temp/azure_devops-1.0.1-py2.py3-none-any.whl', '--disable-pip-version-check', '--no-cache-dir']' returned non-zero exit status 1.
+cli.azure.cli.core.extension.operations: Pip failed so deleting anything we might have installed at /root/.azure/cliextensions/azure-devops
+cli.azure.cli.core.azclierror: Traceback (most recent call last):
+  File "/opt/az/lib/python3.12/site-packages/knack/cli.py", line 233, in invoke
+    cmd_result = self.invocation.execute(args)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 666, in execute
+    raise ex
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 734, in _run_jobs_serially
+    results.append(self._run_job(expanded_arg, cmd_copy))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 703, in _run_job
+    result = cmd_copy(params)
+             ^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/commands/__init__.py", line 336, in __call__
+    return self.handler(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/commands/command_operation.py", line 120, in handler
+    return op(**command_args)
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/command_modules/extension/custom.py", line 16, in add_extension_cmd
+    return add_extension(cli_ctx=cmd.cli_ctx, source=source, extension_name=extension_name, index_url=index_url,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/extension/operations.py", line 343, in add_extension
+    extension_name = _add_whl_ext(cli_ctx=cmd_cli_ctx, source=source, ext_sha256=ext_sha256,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/azure/cli/core/extension/operations.py", line 172, in _add_whl_ext
+    raise CLIError('An error occurred. Pip failed with status code {}. '
+knack.util.CLIError: An error occurred. Pip failed with status code 1. Use --debug for more information.
+
+cli.azure.cli.core.azclierror: An error occurred. Pip failed with status code 1. Use --debug for more information.
+az_command_data_logger: An error occurred. Pip failed with status code 1. Use --debug for more information.
+cli.knack.cli: Event: Cli.PostExecute [<function AzCliLogging.deinit_cmd_metadata_logging at 0x7f795ac6b060>]
+az_command_data_logger: exit code: 1
+cli.__main__: Command ran in 103.705 seconds (init: 0.125, invoke: 103.580)
+telemetry.main: Begin splitting cli events and extra events, total events: 1
+telemetry.client: Accumulated 0 events. Flush the clients.
+telemetry.main: Finish splitting cli events and extra events, cli events: 1
+telemetry.save: Save telemetry record of length 3938 in cache file under /root/.azure/telemetry/20250423154250537
+telemetry.main: Begin creating telemetry upload process.
+telemetry.process: Creating upload process: "/opt/az/bin/python3 /opt/az/lib/python3.12/site-packages/azure/cli/telemetry/__init__.py /root/.azure /root/.azure/telemetry/20250423154250537"
+telemetry.process: Return from creating process 3385952
+telemetry.main: Finish creating telemetry upload process.
