@@ -867,3 +867,12 @@ tarfile.ReadError: not a gzip file
 
 
 https://files.pythonhosted.org/packages/e1/f9/495982345252dc7a15ac632e038be1f975ca0d2f25abfe8f8d908569141d/azure-devops-7.1.0b4.tar.gz
+
+
+
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# tar -tzf azure-devops-7.1.0b4.tar.gz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#
