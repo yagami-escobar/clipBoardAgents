@@ -1,0 +1,896 @@
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-un-parameters-6b85475f9f-cbht9
+
+> srv-ms-sc-ux-ods-parametersManagement@0.0.1 start
+> nest start
+
+{"level":30,"time":1744591247576,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"Config Client","msg":"Fetching values of config server"}
+{"level":50,"time":1744591247579,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":30,"time":1744591247579,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"Config Client","msg":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-ux-ods-parametersManagement/development"}
+{"level":50,"time":1744591247579,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":50,"time":1744591247829,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"Config Client","err":{"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (/APP/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":8000,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/1.8.4","Accept-Encoding":"gzip, compress, deflate, br"},"cancelToken":{"promise":{},"_listeners":[],"reason":{"message":"canceled","name":"CanceledError","stack":"CanceledError: canceled\n    at Object.cancel (/APP/node_modules/axios/lib/cancel/CancelToken.js:60:22)\n    at /APP/node_modules/ps-common-back/node_modules/@nestjs/axios/dist/http.service.js:84:34\n    at execFinalizer (/APP/node_modules/rxjs/src/internal/Subscription.ts:208:5)\n    at SafeSubscriber.Subscription.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscription.ts:80:13)\n    at SafeSubscriber.Subscriber.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscriber.ts:107:24)\n    at SafeSubscriber.Subscriber._error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:120:12)\n    at SafeSubscriber.Subscriber.error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:86:12)\n    at /APP/node_modules/ps-common-back/node_modules/@nestjs/axios/dist/http.service.js:77:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","code":"ERR_CANCELED"}},"method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-ux-ods-parametersManagement/development","allowAbsoluteUrls":true},"code":"ERR_BAD_REQUEST","status":401},"msg":"Request failed with status code 401"}
+{"level":50,"time":1744591247848,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"Config Client","msg":"An error occurred while querying the config server service "}
+{"level":30,"time":1744591247854,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1744591247854,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1744591247854,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"CommonsModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"SqlServerModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"HttpModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"PinoLoggerProviderModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"RedisModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ApplicationInsigthsModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigServerProviderModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ConfigClientModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"TypeOrmCoreModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"InstanceLoader","msg":"ParameterModule dependencies initialized"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RoutesResolver","msg":"ParameterController {/maestros}:"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RouterExplorer","msg":"Mapped {/maestros, GET} route"}
+{"level":30,"time":1744591247855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":50,"time":1744591847091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744591847092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744591847092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744591847125,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744591847130,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744592448031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744592448031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744592448031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744592448059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744592448064,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744593049093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744593049093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744593049093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744593049124,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744593049129,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744593650077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744593650077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744593650077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744593650114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744593650119,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744594251016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744594251016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744594251016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744594251051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744594251057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744594852110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744594852110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744594852110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744594852155,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744594852159,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744595453057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744595453057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744595453057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744595453087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744595453091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744596054025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744596054025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744596054025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744596054054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744596054059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744596655062,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744596655063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744596655063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744596655103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744596655107,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744597256112,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744597256112,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744597256112,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744597256152,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744597256157,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744597857069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744597857069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744597857069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744597857099,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744597857106,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744598458049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744598458049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744598458049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744598458081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744598458085,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744599059026,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744599059026,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744599059026,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744599059058,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744599059062,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744599660121,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744599660122,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744599660122,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744599660157,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744599660161,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744600261013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744600261013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744600261013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744600261046,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744600261051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744600862075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744600862075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744600862075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744600862116,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744600862124,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744601463054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744601463054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744601463054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744601463175,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744601463178,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744602064020,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744602064020,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744602064020,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744602064060,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744602064065,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744602665045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744602665045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744602665045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744602665077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744602665081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744603266007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744603266007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744603266007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744603266037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744603266042,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744603867007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744603867007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744603867007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744603867034,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744603867038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744604468074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744604468074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744604468074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744604468101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744604468105,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744605069059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744605069059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744605069059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744605069084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744605069088,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744605670050,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744605670051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744605670051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744605670098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744605670102,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744606271062,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744606271063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744606271063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744606271091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744606271095,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744606872055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744606872055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744606872055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744606872085,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744606872089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744607473053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744607473053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744607473053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744607473081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744607473086,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744608074052,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744608074053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744608074053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744608074083,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744608074088,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744608675049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744608675049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744608675049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744608675091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744608675097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744609276024,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744609276024,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744609276024,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744609276071,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744609276075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744609877100,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744609877101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744609877101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744609877134,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744609877137,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744610478053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744610478053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744610478053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744610478091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744610478095,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744611079055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744611079055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744611079055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744611079084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744611079089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744611680055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744611680055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744611680055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744611680085,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744611680089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744612281097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744612281097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744612281097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744612281125,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744612281129,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744612882047,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744612882047,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744612882048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744612882109,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744612882121,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744613483017,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744613483017,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744613483017,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744613483055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744613483059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744614084031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744614084031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744614084031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744614084070,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744614084074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744614685030,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744614685031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744614685031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744614685074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744614685078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744615286056,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744615286056,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744615286056,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744615286088,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744615286093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744615887039,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744615887039,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744615887039,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744615887083,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744615887091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744616488025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744616488025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744616488025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744616488052,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744616488056,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744617089089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744617089089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744617089089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744617089122,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744617089127,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744617690110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744617690110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744617690110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744617690168,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744617690172,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744618291098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744618291098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744618291098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744618291125,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744618291129,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744618892051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744618892051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744618892051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744618892122,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744618892127,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744619493090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744619493090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744619493090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744619493238,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744619493242,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744620094049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744620094049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744620094049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744620094087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744620094092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744620695079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744620695079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744620695079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744620695114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744620695118,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744621296077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744621296077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744621296077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744621296111,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744621296115,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744621897084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744621897084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744621897084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744621897113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744621897119,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744622498054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744622498054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744622498054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744622498088,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744622498092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744623099012,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744623099012,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744623099012,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744623099053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744623099067,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744623700016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744623700016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744623700016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744623700053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744623700057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744624301041,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744624301042,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744624301042,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744624301070,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744624301074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744624902050,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744624902051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744624902051,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744624902084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744624902090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744625503078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744625503078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744625503078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744625503109,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744625503113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744626104027,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744626104027,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744626104027,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744626104070,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744626104075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744626705038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744626705038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744626705038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744626705084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744626705088,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744627306062,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744627306063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744627306063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744627306097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744627306101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744627907061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744627907061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744627907061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744627907110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744627907116,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744628508057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744628508057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744628508057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744628508097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744628508100,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744629109057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744629109058,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744629109058,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744629109134,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744629109146,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744629710074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744629710074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744629710074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744629710110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744629710114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744630311068,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744630311068,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744630311068,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744630311103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744630311107,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744630912078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744630912078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744630912078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744630912109,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744630912113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744631513103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744631513103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744631513103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744631513148,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744631513152,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744632114038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744632114038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744632114038,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744632114069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744632114073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744632715020,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744632715021,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744632715021,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744632715070,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744632715081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744633316010,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744633316010,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744633316010,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744633316047,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744633316053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744633917065,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744633917066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744633917066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744633917094,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744633917098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744634518091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744634518091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744634518091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744634518134,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744634518138,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744635119085,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744635119085,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744635119085,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744635119117,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744635119122,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744635720037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744635720037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744635720037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744635720072,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744635720077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744636321082,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744636321082,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744636321082,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744636321123,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744636321127,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744636922031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744636922031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744636922031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744636922067,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744636922071,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744637523158,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744637523158,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744637523158,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744637523192,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744637523196,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744638124029,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744638124030,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744638124030,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744638124074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744638124090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744638725044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744638725045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744638725045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744638725075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744638725079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744639326014,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744639326014,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744639326014,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744639326040,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744639326045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744639927061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744639927061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744639927061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744639927093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744639927097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744640528025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744640528025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744640528025,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744640528053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744640528061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744641129012,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744641129012,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744641129012,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744641129049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744641129053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744641730044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744641730044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744641730044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744641730099,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744641730104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744642331105,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744642331106,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744642331106,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744642331152,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744642331157,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744642932065,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744642932065,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744642932065,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744642932092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744642932097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744643533041,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744643533041,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744643533041,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744643533089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744643533101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744644134013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744644134013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744644134013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744644134045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744644134049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744644735008,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744644735008,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744644735008,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744644735069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744644735073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744645336016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744645336017,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744645336017,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744645336061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744645336096,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744645937089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744645937089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744645937089,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744645937117,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744645937121,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744646538004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744646538004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744646538004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744646538032,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744646538036,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744647139104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744647139105,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744647139105,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744647139201,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744647139225,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744647740112,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744647740113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744647740113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744647740141,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744647740145,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744648341101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744648341101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744648341101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744648341127,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744648341131,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744648942078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744648942078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744648942078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744648942133,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744648942145,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744649543004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744649543004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744649543004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744649543037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744649543043,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744650144093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744650144093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744650144093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744650144136,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744650144141,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744650745099,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744650745099,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744650745099,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744650745147,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744650745159,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744651346007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744651346007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744651346007,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744651346040,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744651346044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744651947053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744651947053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744651947053,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744651947079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744651947083,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744652548098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744652548098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744652548098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744652548135,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744652548158,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744653149030,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744653149030,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744653149030,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744653149069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744653149072,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744653750093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744653750093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744653750093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744653750158,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744653750162,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744654351039,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744654351039,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744654351039,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744654351072,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744654351076,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744654952104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744654952104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744654952104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744654952149,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744654952155,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744655553084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744655553084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744655553084,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744655553114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744655553118,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744656154077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744656154077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744656154078,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744656154112,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744656154125,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744656755003,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744656755003,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744656755003,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744656755029,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744656755033,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744657356044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744657356044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744657356044,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744657356086,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744657356090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744657957114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744657957114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744657957114,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744657957190,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744657957223,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744658558022,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744658558022,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744658558022,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744658558054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744658558063,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744659159037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744659159037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744659159037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744659159077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744659159082,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744659760103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744659760104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744659760104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744659760140,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744659760144,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744660361087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744660361087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744660361087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744660361120,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744660361124,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744660962069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744660962069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744660962069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744660962102,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744660962107,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744661563047,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744661563048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744661563048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744661563088,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744661563092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744662164104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744662164104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744662164104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744662164138,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744662164142,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744662765031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744662765031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744662765031,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744662765067,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744662765071,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744663366057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744663366057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744663366057,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744663366093,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744663366097,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744663967023,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744663967023,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744663967023,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744663967075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744663967079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744664568049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744664568049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744664568049,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744664568091,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744664568095,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744665169079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744665169079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744665169079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744665169108,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744665169113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744665770036,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744665770036,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744665770036,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744665770075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744665770081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744666371098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744666371098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744666371098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744666371132,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744666371136,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744666972081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744666972081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744666972081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744666972117,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744666972123,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744667573096,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744667573096,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744667573096,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744667573125,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744667573129,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744668174048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744668174048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744668174048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744668174101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744668174106,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744668775015,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744668775016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744668775016,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744668775059,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744668775072,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744669376036,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744669376037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744669376037,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744669376074,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744669376079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744669977092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744669977092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744669977092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744669977117,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744669977121,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744670578081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744670578081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744670578081,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744670578118,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744670578121,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744671179069,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744671179070,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744671179070,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744671179131,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744671179135,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744671780073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744671780073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744671780073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744671780113,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744671780118,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744672381046,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744672381046,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744672381046,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744672381079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744672381083,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744672982071,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744672982071,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744672982071,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744672982105,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744672982109,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744673583013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744673583013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744673583013,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744673583055,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744673583066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744674184022,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744674184022,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744674184022,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744674184075,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744674184079,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744674785110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744674785110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744674785110,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744674785144,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744674785149,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744675386005,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744675386005,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744675386005,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744675386036,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744675386040,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744675987024,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744675987024,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744675987024,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744675987061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744675987067,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744676588034,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744676588034,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744676588034,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744676588076,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744676588080,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744677189098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744677189098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744677189098,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744677189126,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744677189130,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744677790073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744677790073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744677790073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744677790105,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744677790109,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744678391102,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744678391103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744678391103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744678391139,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744678391143,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744678992066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744678992066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744678992066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744678992101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744678992111,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744679593014,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744679593014,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744679593014,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744679593047,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744679593052,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744680194043,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744680194043,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744680194043,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744680194083,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744680194087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744680795054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744680795054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744680795054,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744680795090,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744680795094,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744681396047,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744681396048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744681396048,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744681396086,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744681396092,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744681997010,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744681997010,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744681997010,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744681997040,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744681997046,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744682598045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744682598045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744682598045,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744682598082,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744682598087,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744683199086,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744683199086,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744683199086,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744683199121,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744683199128,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744683800035,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744683800035,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744683800035,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744683800073,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744683800077,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744684401094,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744684401094,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744684401094,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744684401123,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744684401127,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744685002103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744685002103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744685002103,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744685002137,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744685002141,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744685603066,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744685603067,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744685603067,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744685603101,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744685603104,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744686204061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686204061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744686204061,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744686204115,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744686204119,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744686246207,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686246207,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744686246207,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686256217,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":50,"time":1744686256217,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686256219,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686266230,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #1"}
+{"level":50,"time":1744686266230,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686266331,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686276339,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #2"}
+{"level":50,"time":1744686276339,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686276540,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686286554,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #3"}
+{"level":50,"time":1744686286554,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686286855,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686296865,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #4"}
+{"level":50,"time":1744686296865,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686297266,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686307274,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #5"}
+{"level":50,"time":1744686307274,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686307775,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686317783,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #6"}
+{"level":50,"time":1744686317783,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686318384,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686328393,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #7"}
+{"level":50,"time":1744686328393,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686329094,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686339102,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #8"}
+{"level":50,"time":1744686339102,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686339902,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686349911,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #9"}
+{"level":50,"time":1744686349911,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686350812,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686360837,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #10"}
+{"level":50,"time":1744686360837,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686361839,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686371849,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis client retrying connection... Attempt #11"}
+{"level":50,"time":1744686371850,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Max reconnection attempts reached"}
+{"level":50,"time":1744686371850,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","context":"RedisService","msg":"Redis error:"}
+{"level":"INFO","time":"2025-04-22T17:29:31.999Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745342972004,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":15,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:36:43.654Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745343403656,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":4,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:44:55.307Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745343895308,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:47:26.700Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745344046701,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T18:29:17.005Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745346557006,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T19:27:39.290Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745350059292,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":4,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T20:02:03.538Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745352123539,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T20:04:49.665Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745352289666,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:00:09.456Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745442009458,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":5,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:00:19.753Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745442019754,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:28:54.306Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método findMasterByCode con codigos: M0001"}
+{"level":30,"time":1745443734307,"pid":28,"hostname":"ods-un-parameters-6b85475f9f-cbht9","req":{"method":"GET","url":"/maestros?codMaestro=M0001","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#

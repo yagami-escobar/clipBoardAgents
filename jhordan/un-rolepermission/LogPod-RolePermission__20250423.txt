@@ -1,0 +1,920 @@
+
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-un-rolepermission-5544d44ddb-wrswp
+
+> srv-ms-sc-un-ods-rolePermissionManagement@0.0.2 start
+> nest start
+
+{"level":30,"time":1744591088499,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"Config Client","msg":"Fetching values of config server"}
+{"level":50,"time":1744591088500,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":30,"time":1744591088500,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"Config Client","msg":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-rolePermissionManagement/development"}
+{"level":50,"time":1744591088500,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"application insights","msg":"Application Insights is not initialized. Cannot track trace."}
+{"level":50,"time":1744591088755,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"Config Client","err":{"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (/APP/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","config":{"transitional":{"silentJSONParsing":true,"forcedJSONParsing":true,"clarifyTimeoutError":false},"adapter":["xhr","http","fetch"],"transformRequest":[null],"transformResponse":[null],"timeout":8000,"xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN","maxContentLength":-1,"maxBodyLength":-1,"env":{},"headers":{"Accept":"application/json, text/plain, */*","User-Agent":"axios/1.8.4","Accept-Encoding":"gzip, compress, deflate, br"},"cancelToken":{"promise":{},"_listeners":[],"reason":{"message":"canceled","name":"CanceledError","stack":"CanceledError: canceled\n    at Object.cancel (/APP/node_modules/axios/lib/cancel/CancelToken.js:60:22)\n    at /APP/node_modules/ps-common-back/node_modules/@nestjs/axios/dist/http.service.js:84:34\n    at execFinalizer (/APP/node_modules/rxjs/src/internal/Subscription.ts:208:5)\n    at SafeSubscriber.Subscription.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscription.ts:80:13)\n    at SafeSubscriber.Subscriber.unsubscribe (/APP/node_modules/rxjs/src/internal/Subscriber.ts:107:24)\n    at SafeSubscriber.Subscriber._error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:120:12)\n    at SafeSubscriber.Subscriber.error (/APP/node_modules/rxjs/src/internal/Subscriber.ts:86:12)\n    at /APP/node_modules/ps-common-back/node_modules/@nestjs/axios/dist/http.service.js:77:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","code":"ERR_CANCELED"}},"method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-rolePermissionManagement/development","allowAbsoluteUrls":true},"code":"ERR_BAD_REQUEST","status":401},"msg":"Request failed with status code 401"}
+{"level":50,"time":1744591088761,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"Config Client","msg":"An error occurred while querying the config server service "}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"NestFactory","msg":"Starting Nest application..."}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"AppModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"CommonsModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"InfraestructureModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"SqlServerModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"HttpModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigHostModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"PinoLoggerProviderModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"RedisModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ApplicationInsigthsModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"LoggerModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigServerProviderModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"KeyVaultModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"ConfigClientModule dependencies initialized"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744591088771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"TypeOrmCoreModule dependencies initialized"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"TypeOrmModule dependencies initialized"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"InstanceLoader","msg":"RoleModule dependencies initialized"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RoutesResolver","msg":"RoleController {/}:"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RouterExplorer","msg":"Mapped {/roles, GET} route"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RouterExplorer","msg":"Mapped {/modulos, GET} route"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RouterExplorer","msg":"Mapped {/prestadores, GET} route"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RouterExplorer","msg":"Mapped {/roles/permisos, POST} route"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RouterExplorer","msg":"Mapped {/roles/:rolId/permisos, PUT} route"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RouterExplorer","msg":"Mapped {/roles/permisos/validar, GET} route"}
+{"level":30,"time":1744591088772,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"NestApplication","msg":"Nest application successfully started"}
+{"level":50,"time":1744591688018,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744591688019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744591688019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744591688066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744591688090,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744592289075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744592289075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744592289075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744592289111,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744592289118,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744592890106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744592890106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744592890106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744592890151,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744592890156,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744593491089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744593491089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744593491089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744593491127,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744593491131,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744594092088,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744594092088,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744594092088,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744594092155,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744594092159,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744594693085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744594693085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744594693085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744594693119,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744594693123,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744595294069,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744595294070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744595294070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744595294117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744595294121,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744595895033,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744595895033,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744595895033,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744595895086,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744595895090,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744596496077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744596496077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744596496079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744596496119,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744596496125,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744597097071,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744597097071,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744597097071,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744597097110,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744597097122,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744597698069,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744597698069,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744597698069,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744597698110,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744597698114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744598299087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744598299087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744598299087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744598299123,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744598299127,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744598900043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744598900043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744598900043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744598900078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744598900082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744599501032,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744599501032,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744599501032,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744599501073,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744599501081,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744600102031,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744600102031,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744600102031,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744600102094,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744600102108,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744600703062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744600703065,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744600703066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744600703104,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744600703108,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744601304062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744601304062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744601304062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744601304107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744601304111,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744601905111,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744601905111,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744601905111,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744601905150,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744601905154,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744602506089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744602506090,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744602506090,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744602506152,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744602506162,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744603107026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744603107026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744603107026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744603107060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744603107066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744603708014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744603708014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744603708014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744603708082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744603708087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744604309043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744604309043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744604309043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744604309083,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744604309087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744604910066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744604910066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744604910066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744604910107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744604910111,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744605511057,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744605511057,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744605511057,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744605511101,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744605511105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744606112120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744606112120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744606112120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744606112155,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744606112158,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744606713104,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744606713104,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744606713104,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744606713144,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744606713148,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744607314105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744607314105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744607314105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744607314161,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744607314165,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744607915106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744607915107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744607915107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744607915154,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744607915160,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744608516048,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744608516048,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744608516048,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744608516099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744608516103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744609117026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744609117026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744609117026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744609117095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744609117099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744609718067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744609718067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744609718067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744609718112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744609718117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744610319042,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744610319042,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744610319042,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744610319078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744610319082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744610920017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744610920018,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744610920018,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744610920063,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744610920074,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744611521017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744611521017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744611521017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744611521050,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744611521054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744612122027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744612122027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744612122027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744612122069,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744612122073,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744612723089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744612723089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744612723089,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744612723123,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744612723127,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744613324077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744613324077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744613324077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744613324117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744613324122,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744613925103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744613925103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744613925103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744613925137,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744613925142,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744614526112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744614526112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744614526112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744614526148,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744614526152,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744615127095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744615127095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744615127095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744615127132,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744615127136,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744615728052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744615728052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744615728052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744615728092,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744615728097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744616329109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744616329109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744616329109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744616329150,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744616329154,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744616930004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744616930004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744616930004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744616930048,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744616930053,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744617531096,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744617531096,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744617531096,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744617531151,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744617531156,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744618132006,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744618132006,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744618132006,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744618132043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744618132047,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744618733079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744618733079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744618733079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744618733116,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744618733120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744619334105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744619334105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744619334105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744619334146,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744619334152,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744619935068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744619935068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744619935068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744619935108,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744619935117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744620536091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744620536091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744620536091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744620536126,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744620536130,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744621137060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744621137060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744621137060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744621137096,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744621137100,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744621738012,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744621738012,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744621738012,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744621738054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744621738067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744622339083,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744622339083,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744622339083,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744622339121,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744622339125,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744622940072,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744622940072,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744622940072,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744622940109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744622940114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744623541076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744623541076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744623541076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744623541109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744623541113,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744624142085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744624142085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744624142085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744624142118,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744624142122,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744624743151,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744624743151,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744624743151,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744624743197,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744624743201,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744625344024,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744625344024,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744625344024,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744625344075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744625344079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744625945014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744625945014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744625945014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744625945056,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744625945060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744626546076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744626546076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744626546076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744626546122,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744626546126,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744627147004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744627147004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744627147004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744627147036,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744627147039,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744627748027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744627748027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744627748027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744627748069,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744627748073,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744628349099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744628349099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744628349099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744628349138,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744628349142,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744628950010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744628950010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744628950010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744628950046,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744628950051,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744629551061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744629551061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744629551061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744629551114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744629551118,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744630152017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744630152017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744630152017,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744630152055,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744630152060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744630753020,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744630753021,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744630753021,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744630753071,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744630753075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744631354037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744631354037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744631354037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744631354085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744631354097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744631955040,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744631955040,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744631955041,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744631955193,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744631955197,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744632556103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744632556103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744632556103,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744632556151,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744632556156,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744633157070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744633157070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744633157070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744633157114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744633157118,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744633758110,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744633758110,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744633758110,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744633758157,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744633758162,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744634359096,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744634359097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744634359097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744634359214,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744634359256,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744634960117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744634960117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744634960117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744634960154,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744634960158,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744635561082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744635561082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744635561082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744635561128,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744635561133,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744636162079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744636162079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744636162079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744636162116,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744636162120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744636763054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744636763054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744636763054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744636763090,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744636763094,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744637364095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744637364095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744637364095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744637364128,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744637364132,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744637965150,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744637965150,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744637965150,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744637965196,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744637965200,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744638566044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744638566044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744638566044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744638566093,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744638566097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744639167097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744639167097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744639167097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744639167132,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744639167140,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744639768093,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744639768093,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744639768093,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744639768130,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744639768133,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744640369016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744640369016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744640369016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744640369059,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744640369063,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744640970026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744640970026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744640970026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744640970058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744640970062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744641571076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744641571076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744641571076,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744641571133,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744641571144,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744642172018,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744642172019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744642172019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744642172062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744642172097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744642773067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744642773067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744642773067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744642773123,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744642773128,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744643374099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744643374099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744643374099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744643374136,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744643374141,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744643975079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744643975079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744643975079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744643975125,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744643975129,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744644576109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744644576109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744644576109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744644576150,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744644576155,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744645177029,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744645177029,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744645177029,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744645177084,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744645177108,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744645778038,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744645778038,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744645778038,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744645778075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744645778080,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744646379021,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744646379022,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744646379022,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744646379058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744646379062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744646980082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744646980082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744646980082,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744646980137,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744646980142,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744647581025,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744647581025,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744647581025,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744647581061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744647581068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744648182030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744648182030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744648182030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744648182074,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744648182078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744648783039,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744648783039,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744648783039,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744648783085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744648783099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744649384028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744649384028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744649384028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744649384067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744649384072,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744649985060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744649985060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744649985060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744649985135,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744649985140,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744650586078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744650586078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744650586078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744650586135,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744650586156,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744651187077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744651187077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744651187077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744651187112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744651187120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744651788008,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744651788008,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744651788008,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744651788043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744651788047,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744652389029,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744652389029,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744652389029,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744652389075,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744652389087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744652990085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744652990085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744652990085,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744652990120,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744652990124,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744653591053,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744653591053,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744653591053,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744653591086,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744653591090,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744654192052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744654192052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744654192052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744654192102,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744654192127,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744654793019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744654793019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744654793019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744654793053,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744654793058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744655394107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744655394107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744655394107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744655394134,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744655394138,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744655995027,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744655995028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744655995028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744655995062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744655995066,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744656596097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744656596097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744656596097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744656596129,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744656596134,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744657197016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744657197016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744657197016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744657197050,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744657197058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744657798109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744657798109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744657798109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744657798175,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744657798199,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744658399019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744658399019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744658399019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744658399058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744658399063,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744659000012,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744659000012,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744659000012,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744659000070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744659000079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744659601047,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744659601048,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744659601048,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744659601096,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744659601100,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744660202042,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744660202042,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744660202042,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744660202077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744660202081,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744660803153,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744660803153,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744660803153,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744660803203,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744660803211,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744661404037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744661404037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744661404037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744661404068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744661404072,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744662005102,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744662005102,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744662005102,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744662005137,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744662005141,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744662606064,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744662606064,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744662606065,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744662606121,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744662606125,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744663207079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744663207079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744663207079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744663207109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744663207116,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744663808014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744663808014,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744663808015,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744663808057,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744663808061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744664409098,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744664409098,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744664409098,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744664409131,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744664409134,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744665010087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744665010087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744665010087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744665010125,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744665010136,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744665611006,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744665611006,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744665611006,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744665611039,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744665611043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744666212060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744666212060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744666212060,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744666212094,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744666212099,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744666813026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744666813026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744666813026,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744666813064,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744666813068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744667414004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744667414004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744667414004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744667414035,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744667414039,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744668015068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744668015068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744668015068,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744668015100,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744668015104,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744668616020,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744668616020,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744668616020,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744668616073,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744668616077,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744669217105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744669217105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744669217105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744669217137,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744669217142,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744669818037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744669818037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744669818037,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744669818083,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744669818087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744670419091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744670419091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744670419091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744670419122,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744670419126,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744671020061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744671020061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744671020061,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744671020104,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744671020108,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744671621034,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744671621034,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744671621034,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744671621087,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744671621091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744672222022,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744672222022,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744672222023,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744672222094,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744672222117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744672823095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744672823095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744672823095,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744672823132,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744672823136,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744673424004,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744673424005,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744673424005,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744673424040,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744673424044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744674025056,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744674025056,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744674025056,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744674025101,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744674025106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744674626019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744674626019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744674626019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744674626054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744674626058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744675227028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744675227028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744675227028,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744675227062,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744675227067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744675828070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744675828070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744675828070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744675828105,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744675828109,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744676429031,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744676429031,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744676429031,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744676429074,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744676429078,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744677030114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744677030114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744677030114,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744677030148,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744677030153,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744677631030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744677631030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744677631030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744677631101,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744677631106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744678232112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744678232112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744678232112,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744678232152,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744678232160,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744678833044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744678833044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744678833044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744678833107,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744678833123,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744679434106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744679434106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744679434106,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744679434141,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744679434145,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744680035030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744680035030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744680035030,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744680035063,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744680035067,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744680636098,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744680636098,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744680636098,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744680636135,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744680636139,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744681237009,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744681237010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744681237010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744681237052,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744681237065,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744681838043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744681838043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744681838043,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744681838079,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744681838083,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744682439016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744682439016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744682439016,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744682439053,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744682439057,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744683040070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744683040070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744683040070,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744683040097,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744683040102,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744683641019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744683641019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744683641019,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744683641054,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744683641058,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744684242024,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744684242024,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744684242024,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744684242059,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744684242064,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744684843091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744684843091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744684843091,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744684843127,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744684843131,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744685444074,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744685444074,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744685444074,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744685444131,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744685444134,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744686045010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686045010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744686045010,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":30,"time":1744686045044,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client connected"}
+{"level":30,"time":1744686045047,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client is ready"}
+{"level":50,"time":1744686246227,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686246227,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":40,"time":1744686246227,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686256237,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #0"}
+{"level":50,"time":1744686256237,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686256239,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686266254,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #1"}
+{"level":50,"time":1744686266254,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686266353,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686276366,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #2"}
+{"level":50,"time":1744686276366,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686276565,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686286576,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #3"}
+{"level":50,"time":1744686286577,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686286877,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686296881,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #4"}
+{"level":50,"time":1744686296881,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686297282,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686307292,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #5"}
+{"level":50,"time":1744686307292,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686307793,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686317805,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #6"}
+{"level":50,"time":1744686317805,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686318407,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686328413,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #7"}
+{"level":50,"time":1744686328414,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686329117,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686339128,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #8"}
+{"level":50,"time":1744686339129,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686339929,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686349933,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #9"}
+{"level":50,"time":1744686349933,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686350835,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686360843,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #10"}
+{"level":50,"time":1744686360843,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":40,"time":1744686361845,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client reconnecting..."}
+{"level":40,"time":1744686371852,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis client retrying connection... Attempt #11"}
+{"level":50,"time":1744686371852,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Max reconnection attempts reached"}
+{"level":50,"time":1744686371853,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","context":"RedisService","msg":"Redis error:"}
+{"level":"INFO","time":"2025-04-22T17:29:45.764Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745342985767,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":12,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:30:13.942Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745343013944,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":5,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:32:30.518Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745343150519,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:34:18.736Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745343258737,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:36:04.613Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745343364614,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:40:30.298Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745343630299,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T17:50:50.704Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745344250706,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T18:19:16.775Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745345956776,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-22T20:02:11.650Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745352131651,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T13:48:18.229Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745416098230,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:00:29.242Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745442029244,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:01:53.965Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745442113966,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:05:05.641Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745442305643,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:06:35.224Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745442395226,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:07:06.770Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745442426771,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:07:57.518Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getModules"}
+{"level":30,"time":1745442477519,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/modulos","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:08:10.725Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745442490726,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:26:27.912Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745443587913,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":2,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:27:39.749Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getRoles"}
+{"level":30,"time":1745443659751,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/roles","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODs","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":3,"msg":"request errored"}
+{"level":"INFO","time":"2025-04-23T21:27:45.034Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Inicio del método getProviders"}
+{"level":30,"time":1745443665035,"pid":27,"hostname":"ods-un-rolepermission-5544d44ddb-wrswp","req":{"method":"GET","url":"/prestadores","X-Correlation-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","X-Request-Id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","usuarioAplicacion":"Godoy Muñoz","nombreAplicacion":"ODS","procesoNegocio":"consulta-maestro"},"res":{"statusCode":500},"err":{"type":"Error","message":"failed with status code 500","stack":"Error: failed with status code 500\n    at onResFinished (/APP/node_modules/pino-http/logger.js:115:39)\n    at ServerResponse.onResponseComplete (/APP/node_modules/pino-http/logger.js:178:14)\n    at ServerResponse.emit (node:events:530:35)\n    at onFinish (node:_http_outgoing:1077:10)\n    at callback (node:internal/streams/writable:766:21)\n    at afterWrite (node:internal/streams/writable:710:5)\n    at afterWriteTick (node:internal/streams/writable:696:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:89:21)"},"responseTime":1,"msg":"request errored"}
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#
