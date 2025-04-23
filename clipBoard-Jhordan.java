@@ -628,3 +628,21 @@ az artifacts universal publish \
 
 
   az config set extension.use_dynamic_install=yes_without_prompt
+
+
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ az config set extension.use_dynamic_install=yes_without_prompt
+Command group 'config' is experimental and under development. Reference and support levels: https://aka.ms/CLI_refstatus
+ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ az extension add --name azure-devops
+Please ensure you have network connection. Error detail: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /Azure/azure-devops-cli-extension/releases/download/20240514.1/azure_devops-1.0.1-py2.py3-none-any.whl (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)')))
+ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ export AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
+ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ az extension add --name azure-devops
+/opt/az/lib/python3.12/site-packages/urllib3/connectionpool.py:1063: InsecureRequestWarning: Unverified HTTPS request is being made to host 'aka.ms'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+/opt/az/lib/python3.12/site-packages/urllib3/connectionpool.py:1063: InsecureRequestWarning: Unverified HTTPS request is being made to host 'azcliextensionsync.blob.core.windows.net'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+/opt/az/lib/python3.12/site-packages/urllib3/connectionpool.py:1063: InsecureRequestWarning: Unverified HTTPS request is being made to host 'github.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+/opt/az/lib/python3.12/site-packages/urllib3/connectionpool.py:1063: InsecureRequestWarning: Unverified HTTPS request is being made to host 'objects.githubusercontent.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+An error occurred. Pip failed with status code 1. Use --debug for more information.
