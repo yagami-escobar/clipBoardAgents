@@ -631,6 +631,19 @@ az artifacts universal publish \
 
 
 
+
+export PIP_NO_VERIFY_CERTS=1
+export CURL_CA_BUNDLE=""
+
+
+python3 -m venv myenv
+source myenv/bin/activate
+pip install azure-devops==7.0.0b4
+
+
+
+
+
 ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ az config set extension.use_dynamic_install=yes_without_prompt
 Command group 'config' is experimental and under development. Reference and support levels: https://aka.ms/CLI_refstatus
 ext-jescobars-mejco-vm-est@vme1desagedso02:~/temp$ az extension add --name azure-devops
