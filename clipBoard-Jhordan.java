@@ -605,3 +605,22 @@ vm03 to sql1(datos) -> [resol: 'ok', con: 'no']
 
 
 sbeu1integradesa.privatelink.servicebus.windows.net 10.227.5.69
+
+
+
+az artifacts universal download \
+  --organization https://dev.azure.com/Org-NSS-PacificoSalud/NSS-PD-ODS-OficinaDigitalSalud \
+  --feed art-desa-fd-be-ns-centralizerBackAll \
+  --name ps-common-back \
+  --version 1.0.10 \
+  --path .
+
+
+
+az artifacts universal publish \
+  --organization https://dev.azure.com/Org-NSS-PacificoSalud/NSS-PD-ODS-OficinaDigitalSalud \
+  --feed art-test-fd-be-ns-centralizerBackAll \
+  --name ps-common-back \
+  --version 1.0.10 \
+  --description "Migrado desde feed-desa" \
+  --path .
