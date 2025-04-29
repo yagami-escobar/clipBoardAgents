@@ -1,0 +1,1 @@
+dpkg -l | grep -E "lib1|lib2|lib3"

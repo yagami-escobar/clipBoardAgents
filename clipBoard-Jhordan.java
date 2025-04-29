@@ -134,7 +134,10 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 
 // ++++++++++++++++++++++++++++++++++ CMDs ++++++++++++++++++++++++++++++++++ //
-az acr login -n acrseu1integradesa
+'az acr login --name acrseu1integratest' -> login.
+'az group list -o table' -> list rg.
+'az acr repository list --name acrseu1integratest' -> list repos from acr.
+
 
 
 // ++++++++++++++++++++++++++++++++++ VALIDATE ++++++++++++++++++++++++++++++++++ //
