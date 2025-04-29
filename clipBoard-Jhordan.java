@@ -118,7 +118,19 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 
 
+// ************************************************* REDIS ************************************************* //
+// ------------------------------ DESA ------------------------------ //
+redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
+'Tier' -> C1 Basic (1GB Cache)-> {'low network bandwith', 'dedicated services', 'ssl', 'up to 1000 con' }
+'PrivateIP': 10.227.5.4
 
+
+
+// ------------------------------ TEST ------------------------------ //
+redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
+'PrivateIP': 10.228.2.196
+
+// ------------------------------ PROD ------------------------------ //
 
 // ************************************************* ACR ************************************************* //
 
