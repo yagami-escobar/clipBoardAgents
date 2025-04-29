@@ -118,6 +118,35 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 
 
+// ************************************************* REDIS ************************************************* //
+// ------------------------------ DESA ------------------------------ //
+'Host-Name' -> redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
+  'Tier'      -> C1 Basic (1GB Cache)-> {'low network bandwith', 'dedicated services', 'ssl', 'up to 1000 con' }
+  'PrivateIP' ->  10.227.5.4
+
+
+
+// ------------------------------ TEST ------------------------------ //
+'Host-Name' -> redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
+  'Tier'      -> 
+  'PrivateIP' -> 10.228.2.196
+
+// ------------------------------ PROD ------------------------------ //
+
+// ************************************************* SERVICEBUS ************************************************* //
+// ------------------------------ DESA ------------------------------ //
+'Host-Name' -> sbeu1integradesa.servicebus.windows.net
+  'Pricing-Tier' -> Premium
+  'PRIA'         -> 10.227.5.69
+// ------------------------------ TEST ------------------------------ //
+'Host-Name' -> sbeu1integratest.servicebus.windows.net
+  'Pricing-Tier' -> Premium
+  'PRIA'         -> 10.228.5.8
+
+
+// ------------------------------ PROD ------------------------------ //
+
+
 
 
 // ************************************************* ACR ************************************************* //
@@ -761,3 +790,129 @@ telemetry.main: Finish creating telemetry upload process.
 
 
 XQh8Q~n52S5NYcZ6drEiUAIUCkaFWpptbWIB
+
+pip install azure-devops
+
+
+https://pypi.org/project/azure-devops/#files:~:text=azure%2Ddevops%2D7.1.0b4.tar.gz
+
+
+
+
+
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# /opt/az/bin/python3.12 -m pip install azure-devops-7.1.0b4.tar.gz
+Processing ./azure-devops-7.1.0b4.tar.gz
+Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:1000)'))) - skipping
+ERROR: Exception:
+Traceback (most recent call last):
+  File "/opt/az/lib/python3.12/tarfile.py", line 1910, in gzopen
+    t = cls.taropen(name, mode, fileobj, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/tarfile.py", line 1887, in taropen
+    return cls(name, mode, fileobj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/tarfile.py", line 1745, in __init__
+    self.firstmember = self.next()
+                       ^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/tarfile.py", line 2670, in next
+    raise e
+  File "/opt/az/lib/python3.12/tarfile.py", line 2643, in next
+    tarinfo = self.tarinfo.fromtarfile(self)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/tarfile.py", line 1297, in fromtarfile
+    buf = tarfile.fileobj.read(BLOCKSIZE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/gzip.py", line 324, in read
+    return self._buffer.read(size)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/_compression.py", line 68, in readinto
+    data = self.read(len(byte_view))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/gzip.py", line 527, in read
+    if not self._read_gzip_header():
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/gzip.py", line 496, in _read_gzip_header
+    last_mtime = _read_gzip_header(self._fp)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/gzip.py", line 456, in _read_gzip_header
+    raise BadGzipFile('Not a gzipped file (%r)' % magic)
+gzip.BadGzipFile: Not a gzipped file (b'<!')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/cli/base_command.py", line 106, in _run_wrapper
+    status = _inner_run()
+             ^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/cli/base_command.py", line 97, in _inner_run
+    return self.run(options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/cli/req_command.py", line 67, in wrapper
+    return func(self, options, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/commands/install.py", line 386, in run
+    requirement_set = resolver.resolve(
+                      ^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/resolver.py", line 76, in resolve
+    collected = self.factory.collect_root_requirements(root_reqs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 545, in collect_root_requirements
+    reqs = list(
+           ^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 501, in _make_requirements_from_install_req
+    cand = self._make_base_candidate_from_link(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/factory.py", line 233, in _make_base_candidate_from_link
+    self._link_candidate_cache[link] = LinkCandidate(
+                                       ^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 304, in __init__
+    super().__init__(
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 159, in __init__
+    self.dist = self._prepare()
+                ^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 236, in _prepare
+    dist = self._prepare_distribution()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/resolution/resolvelib/candidates.py", line 315, in _prepare_distribution
+    return preparer.prepare_linked_requirement(self._ireq, parallel_builds=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/operations/prepare.py", line 527, in prepare_linked_requirement
+    return self._prepare_linked_requirement(req, parallel_builds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/operations/prepare.py", line 598, in _prepare_linked_requirement
+    local_file = unpack_url(
+                 ^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/operations/prepare.py", line 180, in unpack_url
+    unpack_file(file.path, location, file.content_type)
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/utils/unpacking.py", line 326, in unpack_file
+    untar_file(filename, location)
+  File "/opt/az/lib/python3.12/site-packages/pip/_internal/utils/unpacking.py", line 179, in untar_file
+    tar = tarfile.open(filename, mode, encoding="utf-8")  # type: ignore
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/tarfile.py", line 1855, in open
+    return func(name, filemode, fileobj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/az/lib/python3.12/tarfile.py", line 1914, in gzopen
+    raise ReadError("not a gzip file") from e
+tarfile.ReadError: not a gzip file
+
+
+
+https://files.pythonhosted.org/packages/e1/f9/495982345252dc7a15ac632e038be1f975ca0d2f25abfe8f8d908569141d/azure-devops-7.1.0b4.tar.gz
+
+
+
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp# tar -tzf azure-devops-7.1.0b4.tar.gz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#
+
+
+
+
+
+
+
+https://oficinadigital-contenedor.testpacificosegurossalud.com.pe/

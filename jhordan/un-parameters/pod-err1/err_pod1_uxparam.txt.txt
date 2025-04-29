@@ -1,0 +1,22 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl logs pod/ods-ux-parameters-975c49d88-bskmd -n ns-desa-cn-ods-oficinadigitalsalud
+
+> srv-ms-sc-ux-ods-parametersManagement@0.0.1 start
+> nest start
+
+
+<--- Last few GCs --->
+
+[17:0x75493866a000]    14005 ms: Scavenge 251.7 (257.9) -> 251.6 (258.6) MB, pooled: 0 MB, 0.99 / 0.00 ms  (average mu = 0.622, current mu = 0.410) allocation failure;
+[17:0x75493866a000]    14625 ms: Mark-Compact 252.6 (258.9) -> 252.2 (259.6) MB, pooled: 0 MB, 617.32 / 0.00 ms  (average mu = 0.453, current mu = 0.239) allocation failure; scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+npm error path /APP
+npm error command failed
+npm error signal SIGABRT
+npm error command sh -c nest start
+npm error A complete log of this run can be found in: /root/.npm/_logs/2025-01-27T17_54_52_614Z-debug-0.log
