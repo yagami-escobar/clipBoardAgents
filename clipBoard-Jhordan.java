@@ -120,17 +120,34 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 // ************************************************* REDIS ************************************************* //
 // ------------------------------ DESA ------------------------------ //
-redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
-'Tier' -> C1 Basic (1GB Cache)-> {'low network bandwith', 'dedicated services', 'ssl', 'up to 1000 con' }
-'PrivateIP': 10.227.5.4
+'Host-Name' -> redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
+  'Tier'      -> C1 Basic (1GB Cache)-> {'low network bandwith', 'dedicated services', 'ssl', 'up to 1000 con' }
+  'PrivateIP' ->  10.227.5.4
 
 
 
 // ------------------------------ TEST ------------------------------ //
-redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
-'PrivateIP': 10.228.2.196
+'Host-Name' -> redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
+  'Tier'      -> 
+  'PrivateIP' -> 10.228.2.196
 
 // ------------------------------ PROD ------------------------------ //
+
+// ************************************************* SERVICEBUS ************************************************* //
+// ------------------------------ DESA ------------------------------ //
+'Host-Name' -> sbeu1integradesa.servicebus.windows.net
+  'Pricing-Tier' -> Premium
+  'PRIA'         -> 10.227.5.69
+// ------------------------------ TEST ------------------------------ //
+'Host-Name' -> sbeu1integratest.servicebus.windows.net
+  'Pricing-Tier' -> Premium
+  'PRIA'         -> 10.228.5.8
+
+
+// ------------------------------ PROD ------------------------------ //
+
+
+
 
 // ************************************************* ACR ************************************************* //
 
@@ -888,3 +905,11 @@ gzip: stdin: not in gzip format
 tar: Child returned status 1
 tar: Error is not recoverable: exiting now
 root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#
+
+
+
+
+
+
+
+https://oficinadigital-contenedor.testpacificosegurossalud.com.pe/
