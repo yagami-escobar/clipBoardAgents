@@ -913,3 +913,38 @@ root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#
 
 
 https://oficinadigital-contenedor.testpacificosegurossalud.com.pe/
+
+
+
+Policy -> Product
+
+API Validar Session -> ActiveSession = true
+
+
+// WEBS TEST
+
+// FRONT-CONTAINER
+web-eu1-ofidig-test-01.azurewebsites.net
+https://oficinadigital-header.testpacificosegurossalud.com.pe/
+https://eastus-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=a7a9488a-893f-49f0-92ed-3f8a27317e4a
+
+// MF-HEADER
+web-eu1-ofidig-test-02.azurewebsites.net
+https://oficinadigital-header.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-02
+https://eastus-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=a7a9488a-893f-49f0-92ed-3f8a27317e4a
+
+// MF-MENU
+web-eu1-ofidig-test-03.azurewebsites.net
+https://oficinadigital-menu.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-03  
+
+// MF-MODULE
+web-eu1-ofidig-test-04.azurewebsites.net
+https://oficinadigital-opcion.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-04
+
+// MF-ACCESS
+web-eu1-ofidig-test-05.azurewebsites.net
+https://oficinadigital-autorizacion.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-05
