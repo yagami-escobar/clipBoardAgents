@@ -120,9 +120,9 @@ ext-jescobars-mejco-vm-est/D3vS3c0ps*2024
 
 // ************************************************* REDIS ************************************************* //
 // ------------------------------ DESA ------------------------------ //
-redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
-'Tier' -> C1 Basic (1GB Cache)-> {'low network bandwith', 'dedicated services', 'ssl', 'up to 1000 con' }
-'PrivateIP': 10.227.5.4
+'Host-Name' -> redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
+  'Tier'      -> C1 Basic (1GB Cache)-> {'low network bandwith', 'dedicated services', 'ssl', 'up to 1000 con' }
+  'PrivateIP' ->  10.227.5.4
 
 
 // Validaciones:
@@ -131,10 +131,27 @@ nc -zv redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net 6379
 
 
 // ------------------------------ TEST ------------------------------ //
-redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
-'PrivateIP': 10.228.2.196
+'Host-Name' -> redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
+  'Tier'      -> 
+  'PrivateIP' -> 10.228.2.196
 
 // ------------------------------ PROD ------------------------------ //
+
+// ************************************************* SERVICEBUS ************************************************* //
+// ------------------------------ DESA ------------------------------ //
+'Host-Name' -> sbeu1integradesa.servicebus.windows.net
+  'Pricing-Tier' -> Premium
+  'PRIA'         -> 10.227.5.69
+// ------------------------------ TEST ------------------------------ //
+'Host-Name' -> sbeu1integratest.servicebus.windows.net
+  'Pricing-Tier' -> Premium
+  'PRIA'         -> 10.228.5.8
+
+
+// ------------------------------ PROD ------------------------------ //
+
+
+
 
 // ************************************************* ACR ************************************************* //
 
@@ -892,3 +909,46 @@ gzip: stdin: not in gzip format
 tar: Child returned status 1
 tar: Error is not recoverable: exiting now
 root@vme1desagedso02:/home/ext-jescobars-mejco-vm-est/temp#
+
+
+
+
+
+
+
+https://oficinadigital-contenedor.testpacificosegurossalud.com.pe/
+
+
+
+Policy -> Product
+
+API Validar Session -> ActiveSession = true
+
+
+// WEBS TEST
+
+// FRONT-CONTAINER
+web-eu1-ofidig-test-01.azurewebsites.net
+https://oficinadigital-header.testpacificosegurossalud.com.pe/
+https://eastus-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=a7a9488a-893f-49f0-92ed-3f8a27317e4a
+
+// MF-HEADER
+web-eu1-ofidig-test-02.azurewebsites.net
+https://oficinadigital-header.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-02
+https://eastus-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/;ApplicationId=a7a9488a-893f-49f0-92ed-3f8a27317e4a
+
+// MF-MENU
+web-eu1-ofidig-test-03.azurewebsites.net
+https://oficinadigital-menu.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-03  
+
+// MF-MODULE
+web-eu1-ofidig-test-04.azurewebsites.net
+https://oficinadigital-opcion.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-04
+
+// MF-ACCESS
+web-eu1-ofidig-test-05.azurewebsites.net
+https://oficinadigital-autorizacion.testpacificosegurossalud.com.pe/
+appinsght-web-eu1-ofidig-test-05
