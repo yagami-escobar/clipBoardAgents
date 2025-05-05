@@ -125,6 +125,10 @@ redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
 'PrivateIP': 10.227.5.4
 
 
+// Validaciones:
+nslookup redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net
+nc -zv redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net 6379
+
 
 // ------------------------------ TEST ------------------------------ //
 redis-eastus-integra-shared-services-test-01.redis.cache.windows.net
