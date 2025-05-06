@@ -1,8 +1,3 @@
-// ACS:
-'AZURE' -> ext.jescobars.soaint@pacificosegurossalud.com.pe/Y*****2024$
-'GH' -> ext-jescobars-soaint_psalud
-
-
 
 // ************************************************* AZURE ************************************************* //
 az login --service-principal -u 09e98158-6d55-488a-bcf0-b11e8fa209f7 --password=XXXXXXLuT5XPhVY0_XXXXFkzqafqjr2DLisgQXXX --tenant XXXa9021-e6f2-49e1-88c2-e90b79214XXX --allow-no-subscription
@@ -167,7 +162,10 @@ nc -zv redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net 6379
 
 
 // ++++++++++++++++++++++++++++++++++ CMDs ++++++++++++++++++++++++++++++++++ //
-az acr login -n acrseu1integradesa
+'az acr login --name acrseu1integratest' -> login.
+'az group list -o table' -> list rg.
+'az acr repository list --name acrseu1integratest' -> list repos from acr.
+
 
 
 // ++++++++++++++++++++++++++++++++++ VALIDATE ++++++++++++++++++++++++++++++++++ //
@@ -521,14 +519,6 @@ chmod +x /usr/local/bin/yq
 
 
 
-
-
-
-
-
-
-
-
 // FALTANTE
 'AKS -> DB1'      -> aksvm02[resolucion y con efimera] y vm03[resolucion y 0-con]
 'AKS -> DB2'      -> aksvm02[resolucion y con efimera] y vm03 [resolucion y 0-con]
@@ -582,61 +572,6 @@ az aks get-credentials --resource-group rg-eu1-plat-integra-test-01 --name aks-e
 
 
 
-
-
-
-
-
-
-🚀 Cómo hacer que Bash-it autocomplete como Oh My Zsh
-Si quieres que Bash recuerde y sugiera comandos previos automáticamente, necesitas instalar:
-1️⃣ bash-autosuggestions → Para sugerencias de comandos anteriores.
-2️⃣ bash-history-search → Para buscar comandos en el historial fácilment
-
-git clone https://github.com/mscdex/bash-autosuggestions ~/.bash_it/custom/plugins/bash-autosuggestions
-echo 'source ~/.bash_it/custom/plugins/bash-autosuggestions/bash-autosuggestions.sh' >> ~/.bashrc
-
-bash-it enable plugin history
-
-
-echo 'HISTFILESIZE=20000' >> ~/.bashrc
-echo 'HISTSIZE=20000' >> ~/.bashrc
-echo 'HISTCONTROL=ignoreboth:erasedups' >> ~/.bashrc
-
-
-
-BACKLOG(STATUS):
-vm02 to appsvc1  -> [resol: 'ok', con: 'ok']
-vm02 to appsvc2  -> [resol: 'ok', con: 'ok']
-vm02 to appsvc3  -> [resol: 'ok', con: 'ok']
-vm02 to appsvc4  -> [resol: 'ok', con: 'ok']
-vm02 to appsvc5  -> [resol: 'ok', con: 'ok']
-vm02 to appsvc6  -> [resol: 'ok', con: 'ok']
-jum01 to appsvc1 -> [resol: 'ok', con: 'ok']
-jum01 to appsvc2 -> [resol: 'ok', con: 'ok']
-jum01 to appsvc3 -> [resol: 'ok', con: 'ok']
-jum01 to appsvc4 -> [resol: 'ok', con: 'ok']
-jum01 to appsvc5 -> [resol: 'ok', con: 'ok']
-jum01 to appsvc6 -> [resol: 'ok', con: 'ok']
-
-
-akscn to sql1(ods)    -> [resol: 'ok', con: 'ok']
-akscn to sql2(ods)    -> [resol: 'ok', con: 'ok']
-akscn to sa1          -> [resol: 'ok', con: 'ok']
-akscn to sa2          -> [resol: 'ok', con: 'ok']
-akscn to sa3          -> [resol: 'ok', con: 'ok']
-akscn to fn           -> [resol: 'ok', con: 'ok']
-akscn to kv(ods)      -> [resol: 'ok', con: 'ok']
-aksmc to sql1(datos)  -> [resol: 'ok', con: 'no']
-aksmc to kv(datos)    -> [resol: 'ok', con: 'ok']
-
-vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
-vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
-vm03 to sql1(datos) -> [resol: 'ok', con: 'no']
-
-
-
-
 sbeu1integradesa.privatelink.servicebus.windows.net 10.227.5.69
 
 
@@ -648,8 +583,6 @@ az artifacts universal download \
   --version 1.0.10 \
   --path .
 
-
-
 az artifacts universal publish \
   --organization https://dev.azure.com/Org-NSS-PacificoSalud/NSS-PD-ODS-OficinaDigitalSalud \
   --feed art-test-fd-be-ns-centralizerBackAll \
@@ -660,6 +593,7 @@ az artifacts universal publish \
 
 
 
+<<<<<<< HEAD
   az config set extension.use_dynamic_install=yes_without_prompt
 
 
@@ -965,3 +899,5 @@ appinsght-web-eu1-ofidig-test-05
 
 
 ext_gmunozs_softek/Zatak1665!
+=======
+>>>>>>> 000f098fb5723b00fe2f2099abbc0bbb7aa627a3
