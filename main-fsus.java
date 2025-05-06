@@ -1,0 +1,28 @@
+BACKLOG(STATUS):
+vm02 to appsvc1  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc2  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc3  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc4  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc5  -> [resol: 'ok', con: 'ok']
+vm02 to appsvc6  -> [resol: 'ok', con: 'ok']
+jum01 to appsvc1 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc2 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc3 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc4 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc5 -> [resol: 'ok', con: 'ok']
+jum01 to appsvc6 -> [resol: 'ok', con: 'ok']
+
+
+akscn to sql1(ods)    -> [resol: 'ok', con: 'ok']
+akscn to sql2(ods)    -> [resol: 'ok', con: 'ok']
+akscn to sa1          -> [resol: 'ok', con: 'ok']
+akscn to sa2          -> [resol: 'ok', con: 'ok']
+akscn to sa3          -> [resol: 'ok', con: 'ok']
+akscn to fn           -> [resol: 'ok', con: 'ok']
+akscn to kv(ods)      -> [resol: 'ok', con: 'ok']
+aksmc to sql1(datos)  -> [resol: 'ok', con: 'no']
+aksmc to kv(datos)    -> [resol: 'ok', con: 'ok']
+
+vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
+vm03 to sql1(ods)   -> [resol: 'ok', con: 'ok']
+vm03 to sql1(datos) -> [resol: 'ok', con: 'no']
