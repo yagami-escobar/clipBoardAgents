@@ -1,0 +1,36 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-sp-notificationeventmgmt-8fd9c77ff-c4qlt
+
+> ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps@1.0.0 start
+> nest start
+
+{"level":"INFO","time":"2025-05-06T20:03:44.624Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-06T20:03:44.625Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-06T20:03:44.625Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"}
+{"level":"ERROR","time":"2025-05-06T20:03:44.625Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-06T20:03:45.024Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-06T20:03:45.024Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-06T20:03:45.024Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"}
+{"level":"ERROR","time":"2025-05-06T20:03:45.024Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"ERROR","time":"2025-05-06T20:03:53.048Z","context":"Config Client","err":{"message":"timeout of 8000ms exceeded","name":"AxiosError","stack":"AxiosError: timeout of 8000ms exceeded\n    at RedirectableRequest.handleRequestTimeout (/APP/node_modules/axios/lib/adapters/http.js:657:16)\n    at RedirectableRequest.emit (node:events:518:28)\n    at Timeout.<anonymous> (/APP/node_modules/follow-redirects/index.js:221:12)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at runNextTicks (node:internal/process/task_queues:65:5)\n    at listOnTimeout (node:internal/timers:555:9)\n    at process.processTimers (node:internal/timers:529:7)","method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"},"message":"timeout of 8000ms exceeded"}
+{"level":"ERROR","time":"2025-05-06T20:03:53.048Z","context":"Config Client","message":"An error occurred while querying the config server service "}
+node:internal/url:816
+    const href = bindingUrl.parse(input, base, raiseException);
+                            ^
+
+TypeError: Invalid URL
+    at new URL (node:internal/url:816:29)
+    at RedisClient.parseURL (/APP/node_modules/@redis/client/dist/lib/client/index.js:51:76)
+    at Commander._RedisClient_initiateOptions (/APP/node_modules/@redis/client/dist/lib/client/index.js:365:27)
+    at new RedisClient (/APP/node_modules/@redis/client/dist/lib/client/index.js:168:148)
+    at new Commander (/APP/node_modules/@redis/client/dist/lib/commander.js:44:13)
+    at create (/APP/node_modules/@redis/client/dist/lib/client/index.js:47:16)
+    at createClient (/APP/node_modules/redis/dist/index.js:38:38)
+    at RedisService.connect (/APP/src/lib/external/azure/redis/Redis.service.ts:16:31)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at listOnTimeout (node:internal/timers:555:9)
+    at process.processTimers (node:internal/timers:529:7) {
+  code: 'ERR_INVALID_URL',
+  input: 'redis://undefined:undefined'
+}
+
+Node.js v22.11.0
