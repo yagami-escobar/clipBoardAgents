@@ -1,0 +1,56 @@
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-sp-notificationeventmgmt-8fd9c77ff-m6bcp
+
+> ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps@1.0.0 start
+> nest start
+
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] AppModule dependencies initialized +166ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] CommonsModule dependencies initialized +0ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +1ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +0ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM     LOG [InstanceLoader] HttpModule dependencies initialized +2ms
+[Nest] 28  - 05/06/2025, 4:21:46 PM   ERROR [ExceptionHandler] Nest can't resolve dependencies of the HttpExceptionFilter (?). Please make sure that the argument Logger at index [0] is available in the EventManagerModule context.
+
+Potential solutions:
+- Is EventManagerModule a valid NestJS module?
+- If Logger is a provider, is it part of the current EventManagerModule?
+- If Logger is exported from a separate @Module, is that module imported within EventManagerModule?
+  @Module({
+    imports: [ /* the Module containing Logger */ ]
+  })
+
+Error: Nest can't resolve dependencies of the HttpExceptionFilter (?). Please make sure that the argument Logger at index [0] is available in the EventManagerModule context.
+
+Potential solutions:
+- Is EventManagerModule a valid NestJS module?
+- If Logger is a provider, is it part of the current EventManagerModule?
+- If Logger is exported from a separate @Module, is that module imported within EventManagerModule?
+  @Module({
+    imports: [ /* the Module containing Logger */ ]
+  })
+
+    at Injector.lookupComponentInParentModules (/APP/node_modules/@nestjs/core/injector/injector.js:254:19)
+    at async Injector.resolveComponentInstance (/APP/node_modules/@nestjs/core/injector/injector.js:207:33)
+    at async resolveParam (/APP/node_modules/@nestjs/core/injector/injector.js:128:38)
+    at async Promise.all (index 0)
+    at async Injector.resolveConstructorParams (/APP/node_modules/@nestjs/core/injector/injector.js:143:27)
+    at async Injector.loadInstance (/APP/node_modules/@nestjs/core/injector/injector.js:70:13)
+    at async Injector.loadProvider (/APP/node_modules/@nestjs/core/injector/injector.js:97:9)
+    at async /APP/node_modules/@nestjs/core/injector/instance-loader.js:56:13
+    at async Promise.all (index 6)
+    at async InstanceLoader.createInstancesOfProviders (/APP/node_modules/@nestjs/core/injector/instance-loader.js:55:9)
+    at async /APP/node_modules/@nestjs/core/injector/instance-loader.js:40:13
+    at async Promise.all (index 29)
+    at async InstanceLoader.createInstances (/APP/node_modules/@nestjs/core/injector/instance-loader.js:39:9)
+    at async InstanceLoader.createInstancesOfDependencies (/APP/node_modules/@nestjs/core/injector/instance-loader.js:22:13)
+    at async /APP/node_modules/@nestjs/core/nest-factory.js:108:17
+    at async ExceptionsZone.asyncRun (/APP/node_modules/@nestjs/core/errors/exceptions-zone.js:22:13)
+    at async NestFactoryStatic.initialize (/APP/node_modules/@nestjs/core/nest-factory.js:106:13)
+    at async NestFactoryStatic.create (/APP/node_modules/@nestjs/core/nest-factory.js:42:9)
+    at async bootstrap (/APP/src/main.ts:9:15)
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$

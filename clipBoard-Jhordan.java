@@ -925,6 +925,15 @@ Policy -> Product
 API Validar Session -> ActiveSession = true
 
 
+
+// WEBS DESA
+
+  web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net (container) -> 10.80.19.164
+  web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net (header)    -> 10.80.19.167
+  web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net (menu)      -> 10.80.19.165
+  web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net (module)    -> 10.80.19.166
+  web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net (access)    -> 10.80.19.168
+
 // WEBS TEST
 
 // FRONT-CONTAINER
@@ -952,3 +961,7 @@ appinsght-web-eu1-ofidig-test-04
 web-eu1-ofidig-test-05.azurewebsites.net
 https://oficinadigital-autorizacion.testpacificosegurossalud.com.pe/
 appinsght-web-eu1-ofidig-test-05
+
+
+
+ext_gmunozs_softek/Zatak1665!
