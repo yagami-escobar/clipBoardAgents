@@ -1,0 +1,185 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs -f pod/ods-sp-notificationrequest-bcdd984c4-8vp88
+
+> sp-of-digital-luis-ortiz@1.0.0 start
+> nest start
+
+{"level":"INFO","time":"2025-05-06T21:53:19.829Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-06T21:53:19.830Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-06T21:53:19.830Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-notificationRequest/development"}
+{"level":"ERROR","time":"2025-05-06T21:53:19.830Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"ERROR","time":"2025-05-06T21:53:28.018Z","context":"Config Client","err":{"message":"timeout of 8000ms exceeded","name":"AxiosError","stack":"AxiosError: timeout of 8000ms exceeded\n    at RedirectableRequest.handleRequestTimeout (/APP/node_modules/axios/lib/adapters/http.js:657:16)\n    at RedirectableRequest.emit (node:events:518:28)\n    at Timeout.<anonymous> (/APP/node_modules/follow-redirects/index.js:221:12)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)","method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-notificationRequest/development"},"message":"timeout of 8000ms exceeded"}
+(node:29) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":"ERROR","time":"2025-05-06T21:53:28.019Z","context":"Config Client","message":"An error occurred while querying the config server service "}
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] CommonsModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] SqlServerModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] TypeOrmModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +1ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] HttpModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] PinoLoggerProviderModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigServerProviderModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] KeyVaultModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ConfigInitModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM     LOG [InstanceLoader] ExceptionsModule dependencies initialized +0ms
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (1)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (2)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (3)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (4)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (5)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (6)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (7)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (8)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (9)...
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
+[Nest] 29  - 05/06/2025, 9:53:53 PM   ERROR [ExceptionHandler] The "config.server" property is required and must be of type string.
+TypeError: The "config.server" property is required and must be of type string.
+    at new constructor (/APP/node_modules/tedious/src/connection.ts:1048:13)
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:78:19
+    at new Promise (<anonymous>)
+    at ConnectionPool._poolCreate (/APP/node_modules/mssql/lib/tedious/connection-pool.js:67:12)
+    at ConnectionPool._connect (/APP/node_modules/mssql/lib/base/connection-pool.js:446:10)
+    at ConnectionPool.connect (/APP/node_modules/mssql/lib/base/connection-pool.js:413:12)
+    at <anonymous> (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1148:37)
+    at new Promise (<anonymous>)
+    at SqlServerDriver.createPool (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:1133:16)
+    at SqlServerDriver.connect (/APP/node_modules/typeorm/driver/src/driver/sqlserver/SqlServerDriver.ts:299:38)
+    at DataSource.initialize (/APP/node_modules/typeorm/data-source/src/data-source/DataSource.ts:253:27)
+    at /APP/node_modules/@nestjs/typeorm/dist/typeorm-core.module.js:187:30
