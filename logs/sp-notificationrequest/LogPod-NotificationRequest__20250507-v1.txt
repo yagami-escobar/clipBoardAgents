@@ -1,0 +1,139 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs -f pod/ods-sp-notificationrequest-5cdd897fbc-t27kf
+
+> sp-of-digital-luis-ortiz@1.0.0 start
+> nest start
+
+{"level":"INFO","time":"2025-05-07T17:52:12.063Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-07T17:52:12.064Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-07T17:52:12.065Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-notificationRequest/development"}
+{"level":"ERROR","time":"2025-05-07T17:52:12.065Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-07T17:52:12.445Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-07T17:52:12.445Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-07T17:52:12.743Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-07T17:52:12.743Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-07T17:52:12.744Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-07T17:52:12.744Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+(node:28) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [NestFactory] Starting Nest application...
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] AppModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +1ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] CommonsModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] SqlServerModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] TypeOrmModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] InfraestructureModule dependencies initialized +1ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] HttpModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] PinoLoggerProviderModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ApplicationInsigthsModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] LoggerModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigServerProviderModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] KeyVaultModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigClientModule dependencies initialized +1ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ConfigInitModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM     LOG [InstanceLoader] ExceptionsModule dependencies initialized +0ms
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (1)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (2)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (3)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (4)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (5)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (6)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (7)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (8)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [TypeOrmModule] Unable to connect to the database. Retrying (9)...
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[Nest] 28  - 05/07/2025, 5:52:38 PM   ERROR [ExceptionHandler] Server requires encryption, set 'encrypt' config option to true.
+ConnectionError: Server requires encryption, set 'encrypt' config option to true.
+    at /APP/node_modules/mssql/lib/tedious/connection-pool.js:85:17
+    at err (/APP/node_modules/tedious/src/connection.ts:1725:9)
+    at Object.onceWrapper (node:events:633:26)
+    at Connection.emit (node:events:518:28)
+    at emit (/APP/node_modules/tedious/src/connection.ts:1868:18)
+    at <anonymous> (/APP/node_modules/tedious/src/connection.ts:3161:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
