@@ -1,9 +1,11 @@
 // ************************************************** WEB DESA ************************************************** //
-'front-container' => web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net (10.80.19.164)
-'mf-header'       => web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net (10.80.19.167)
-'mf-menu'         => web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net (10.80.19.165)
-'mf-module'       => web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net (10.80.19.166)
-'mf-access'       => web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net (10.80.19.168)
+'front-container'         => web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net (10.80.19.164)
+'mf-header'               => web-eu1-nodelnx-ofidig-desa-02.azurewebsites.net (10.80.19.167)
+'mf-menu'                 => web-eu1-nodelnx-ofidig-desa-03.azurewebsites.net (10.80.19.165)
+'mf-module'               => web-eu1-nodelnx-ofidig-desa-04.azurewebsites.net (10.80.19.166)
+'mf-access'               => web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net (10.80.19.168)
+'mf-sinisterPortal'       => web-eu1-nodelnx-ofidig-desa-06.azurewebsites.net (10.80.19.169)
+'mf-notificationPortal'   => web-eu1-nodelnx-ofidig-desa-07.azurewebsites.net (10.80.19.170)
 
 // VALID
   [nslookup web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net || nslookup 10.80.19.164]
@@ -27,8 +29,8 @@
 'mf-menu'         => web-eu1-ofidig-test-03.azurewebsites.net (10.81.19.68) -> https://oficinadigital-menu.testpacificosegurossalud.com.pe/
 'mf-module'       => web-eu1-ofidig-test-04.azurewebsites.net (10.81.19.71) -> https://oficinadigital-opcion.testpacificosegurossalud.com.pe/
 'mf-access'       => web-eu1-ofidig-test-05.azurewebsites.net (10.81.19.69) -> https://oficinadigital-autorizacion.testpacificosegurossalud.com.pe/
-'mf-access'       => web-eu1-ofidig-test-06.azurewebsites.net (10.81.19.70) -> https://oficinadigital-.testpacificosegurossalud.com.pe/
-
+'mf-access'       => web-eu1-ofidig-test-06.azurewebsites.net (10.81.19.70) -> https://oficinadigital-siniestro-trama.testpacificosegurossalud.com.pe/
+/
 
   // VALID
   [nslookup web-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.73]
