@@ -4,7 +4,24 @@
 export AZURE_DEVOPS_EXT_TLS_NO_VERIFY=1
 export AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
 
-  
+
+
+az artifacts universal download \
+  --organization https://dev.azure.com/Org-NSS-PacificoSalud/NSS-PD-ODS-OficinaDigitalSalud \
+  --feed art-desa-fd-be-ns-centralizerBackAll \
+  --name ps-common-back \
+  --version 1.0.10 \
+  --path .
+
+az artifacts universal publish \
+  --organization https://dev.azure.com/Org-NSS-PacificoSalud/NSS-PD-ODS-OficinaDigitalSalud \
+  --feed art-test-fd-be-ns-centralizerBackAll \
+  --name ps-common-back \
+  --version 1.0.10 \
+  --description "Migrado desde feed-desa" \
+  --path .
+
+
 // ************************************************* APP SERVICE ************************************************* //
 // --------------------------------- DEV --------------------------------- //
 web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net (container) -> 10.80.19.164
@@ -25,6 +42,30 @@ nc -zv web-eu1-nodelnx-ofidig-desa-01.azurewebsites.net 443
 
 // ************************************************* STORAGE ACCOUNTS (SAs) ************************************************* //
 '':
+'az storage account list -g rg-eu1-land-ofidig-desa-01 -o table' -> list sa
+
+// LIST CNTs
+az storage container list --account-name steu1lndofidigbsedesa01 --auth-mode login -o table
+az storage container list --account-name steu1odintfuncdesa01 --auth-mode login -o table
+az storage container list --account-name steu1ofidigfilesdesa01 --auth-mode login -o table
+
+
+// CREATE CNTs
+az storage container create --resource-group rg-eu1-land-ofidig-desa-01 --account-name steu1ofidigfilesdesa01 --name cn-ofidig-login
+
+// CHANGE RULE 
+az storage account update \
+  --name steu1ofidigfilesdesa01  \
+  --resource-group rg-eu1-land-ofidig-desa-01 \
+  --default-action Allow
+
+
+// ENVS
+export AZURE_DEVOPS_EXT_TLS_NO_VERIFY=1
+export AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
+
+
+'STORAGE ACCOUNTS (SAs)':
 'az storage account list -g rg-eu1-land-ofidig-desa-01 -o table' -> list sa
 
 // LIST CNTs
