@@ -37,3 +37,7 @@ gw.web.oficinadigital.pacificosalud.com.pe
 aks.canal.oficinadigital.internal.psdesa.com.pe -> 'INGRESS'
 apim.oficinadigital.internal.psdesa.com.pe
 gw.web.oficinadigital.internal.psdesa.com.pe
+
+
+// TEST
+https://apim.testpacificosegurossalud.com.pe
