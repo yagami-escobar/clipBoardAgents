@@ -24,12 +24,12 @@
   [nc -zv 10.80.19.168 443 || nc -zv web-eu1-nodelnx-ofidig-desa-05.azurewebsites.net 443]
 
 // ************************************************** WEB TEST ************************************************** //
-'front-container' => web-eu1-ofidig-test-01.azurewebsites.net (10.81.19.73) -> https://oficinadigital-contenedor.testpacificosegurossalud.com.pe/
-'mf-header'       => web-eu1-ofidig-test-02.azurewebsites.net (10.81.19.72) -> https://oficinadigital-header.testpacificosegurossalud.com.pe/
-'mf-menu'         => web-eu1-ofidig-test-03.azurewebsites.net (10.81.19.68) -> https://oficinadigital-menu.testpacificosegurossalud.com.pe/
-'mf-module'       => web-eu1-ofidig-test-04.azurewebsites.net (10.81.19.71) -> https://oficinadigital-opcion.testpacificosegurossalud.com.pe/
-'mf-access'       => web-eu1-ofidig-test-05.azurewebsites.net (10.81.19.69) -> https://oficinadigital-autorizacion.testpacificosegurossalud.com.pe/
-'mf-access'       => web-eu1-ofidig-test-06.azurewebsites.net (10.81.19.70) -> https://oficinadigital-siniestro-trama.testpacificosegurossalud.com.pe/
+'front-container' => web-eu1-ofidig-test-01.azurewebsites.net (10.81.19.73) -> https://oficinadigital-contenedor.testpacificosegurossalud.com.pe
+'mf-header'       => web-eu1-ofidig-test-02.azurewebsites.net (10.81.19.72) -> https://oficinadigital-header.testpacificosegurossalud.com.pe
+'mf-menu'         => web-eu1-ofidig-test-03.azurewebsites.net (10.81.19.68) -> https://oficinadigital-menu.testpacificosegurossalud.com.pe
+'mf-module'       => web-eu1-ofidig-test-04.azurewebsites.net (10.81.19.71) -> https://oficinadigital-opcion.testpacificosegurossalud.com.pe
+'mf-access'       => web-eu1-ofidig-test-05.azurewebsites.net (10.81.19.69) -> https://oficinadigital-autorizacion.testpacificosegurossalud.com.pe
+'mf-access'       => web-eu1-ofidig-test-06.azurewebsites.net (10.81.19.70) -> https://oficinadigital-siniestro-trama.testpacificosegurossalud.com.pe
 /
 
   // VALID
@@ -50,3 +50,7 @@
 
   [nslookup web-eu1-ofidig-test-06.azurewebsites.net || nslookup 10.81.19.70]
   [nc -zv 10.81.19.70 443 || nc -zv web-eu1-ofidig-test-06.azurewebsites.net 443]
+
+
+gw.api.oficinadigital.internal.pstest.com.pe
+gw.web.oficinadigital.internal.pstest.com.pe
