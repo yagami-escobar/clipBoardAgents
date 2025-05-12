@@ -1,0 +1,57 @@
+○ → kubectl -n ns-test-cn-ods-oficinadigitalsalud describe pod/netx1
+Name:             netx1
+Namespace:        ns-test-cn-ods-oficinadigitalsalud
+Priority:         0
+Service Account:  default
+Node:             aks-npuscnfwtst-27846003-vmss000000/10.228.40.7
+Start Time:       Mon, 12 May 2025 17:38:36 +0000
+Labels:           run=netx1
+Annotations:      <none>
+Status:           Pending
+IP:               10.228.42.57
+IPs:
+  IP:  10.228.42.57
+Containers:
+  netx1:
+    Container ID:
+    Image:         jrecord/nettools
+    Image ID:
+    Port:          <none>
+    Host Port:     <none>
+    Args:
+      sleep
+      3600
+    State:          Waiting
+      Reason:       ImagePullBackOff
+    Ready:          False
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-cjw2w (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True
+  Initialized                 True
+  Ready                       False
+  ContainersReady             False
+  PodScheduled                True
+Volumes:
+  kube-api-access-cjw2w:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason     Age                From               Message
+  ----     ------     ----               ----               -------
+  Normal   Scheduled  69s                default-scheduler  Successfully assigned ns-test-cn-ods-oficinadigitalsalud/netx1 to aks-npuscnfwtst-27846003-vmss000000
+  Normal   Pulling    27s (x3 over 69s)  kubelet            Pulling image "jrecord/nettools"
+  Warning  Failed     27s (x3 over 69s)  kubelet            Failed to pull image "jrecord/nettools": failed to pull and unpack image "docker.io/jrecord/nettools:latest": failed to resolve reference "docker.io/jrecord/nettools:latest": failed to do request: Head "https://registry-1.docker.io/v2/jrecord/nettools/manifests/latest": tls: failed to verify certificate: x509: certificate signed by unknown authority
+  Warning  Failed     27s (x3 over 69s)  kubelet            Error: ErrImagePull
+  Normal   BackOff    3s (x4 over 69s)   kubelet            Back-off pulling image "jrecord/nettools"
+  Warning  Failed     3s (x4 over 69s)   kubelet            Error: ImagePullBackOff
