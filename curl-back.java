@@ -6,7 +6,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-p
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-parametro' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 
@@ -15,27 +15,61 @@ curl --location 'https://apim.oficinadigital.internal.psdesa.com.pe/un-gestion-p
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-parametro' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 
 API PARAMETROS:
-curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000,1001' \
+curl --location 'https://apim.testpacificosegurossalud.com.pe/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000,1001' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-parametro' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+curl --location 'https://apim.oficinadigital.internal.pstest.com.pe/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000,1001' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-parametro' \
+--header 'ocp-apim-subscription-key: ***' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+apim.testpacificosegurossalud.com.pe
+apim.oficinadigital.internal.pstest.com.pe
+
+
+curl -L 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000,1001' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-parametro' \
+--header 'ocp-apim-subscription-key: ***' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+
+curl -L 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000,1001' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-parametro' \
+--header 'ocp-apim-subscription-key: ***' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+
 
 API USER AUTHORIZATION:
 
-curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
+curl --location 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-usuario-perfil' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios?pagina=1&cantidad=5' \
@@ -43,7 +77,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-u
 --header 'usuarioAplicacion: jespinoza' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-usuario-paginacion' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios' \
@@ -51,7 +85,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-u
 --header 'usuarioAplicacion: jespinoza' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: registro-usuario' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -69,7 +103,7 @@ curl --location --request PUT 'https://apim-eu1-border-service-desa.azure-api.ne
 --header 'usuarioAplicacion: jespinoza' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: actualizar-usuario' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -88,7 +122,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-u
 --header 'usuarioAplicacion: jespinoza' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: asigna-permisos' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -108,12 +142,34 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-u
 
 API ROLE PERMISSION:
 
+curl --location 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-acceso-eps/soporte-ti/v1/roles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-roles' \
+--header 'ocp-apim-subscription-key: ***' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+telnet https://apim-eu1-border-services-test.azure-api.net
+
+curl -v https://apim-eu1-border-services-test.azure-api.net
+
+
+curl -L http://svc-ods-un-rolepermission:9000/roles \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-roles' \
+--header 'ocp-apim-subscription-key: ***' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-acceso-eps/soporte-ti/v1/roles' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-roles' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-acceso-eps/soporte-ti/v1/modulos' \
@@ -121,7 +177,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-a
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-modulos' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-acceso-eps/soporte-ti/v1/prestadores' \
@@ -129,7 +185,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-a
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-prestadores' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-acceso-eps/soporte-ti/v1/roles/permisos' \
@@ -137,7 +193,7 @@ curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-a
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: asigna-permisos-roles' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -152,7 +208,7 @@ curl --location --request PUT 'https://apim-eu1-border-service-desa.azure-api.ne
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-maestro' \
---header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'ocp-apim-subscription-key: ***' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'Content-Type: application/json' \
 --data '{

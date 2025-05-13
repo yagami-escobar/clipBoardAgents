@@ -474,75 +474,9 @@ kubelogin convert-kubeconfig -l azurecli
 
 http://svc-ods-sp-notificationeventmgmt:9000/eventos/connect
 
-// REQUEST 1
-
-curl -X POST http://svc-ods-sp-notificationeventmgmt:9000/eventos/connect \
-  -H "Content-Type: application/json" \
-  -H "WebHook-Request-Origin: prueba-client" \
-  -H "ce-signature: 123456789" \
-  -H "ce-connectionid: conn-abc123" \
-  -d '{
-    "claims": {
-      "idUsuario": ["usuario123"]
-    }
-  }'
-
-curl -X POST http://localhost:3000/eventos/connect \
-  -H "Content-Type: application/json" \
-  -H "WebHook-Request-Origin: prueba-client" \
-  -H "ce-signature: 123456789" \
-  -H "ce-connectionid: conn-abc123" \
-  -d '{
-    "claims": {
-      "idUsuario": ["usuario123"]
-    }
-  }'
+// SOLICITAR:
+https://fonts.googleapis.com/css2?family=Reboto:wght@300;400;500;700&display=swap
 
 
-// REQUEST 2
 
-curl -X POST http://svc-ods-sp-notificationregister:9000/ms-sp-registro-notificacion-eps/od/registro-de-notificaciones/v1/notificacion/notificaciones \
-  -H "Content-Type: application/json" \
-  -H "x-correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2" \
-  -H "x-request-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2" \
-  -H "nombreaplicacion: ODS" \
-  -H "usuarioaplicacion: Godoy Muñoz" \
-  -H "procesonegocio: consulta-maestro" \
-  -H "Cookie: refreshToken=eyJraWQiOiJjcGltY29yZV8wOTI1MjAxNSIsInZlciI6IjEuMCIsInppcCI6IkRlZmxhdGUiLCJzZXIiOiIxLjAifQ..F4Ep9CNfVMQNidFJ.JRUmURSa8FsKDqroafG90DrRrA2hOTA-Ie1Q3k_GAJbaLvTnBBn6fXq7T0Ho8pvPdlBZFhN-cQ7l7_3JzMFaFXJWqUgn69VmPUT-PFWEH6dvLPVdDTcFjTuPMIDi9VC03ZFPxMq-4N6PFMbQxqLyQxAXs4vakISnHo5tqVtZrXnqieAqEMg9A8DADfb76obpknqcLK36DJ5kTqkZ4Ur154OrMJ0ecZAL5GMdhFB-3cxIalu8pPOTM521J1NWZLTcc0U4ylJlLn6nf2orr5BGkH3rlyfvlFOwMn6G1q3cvW-iVjCrfbZiau3QFwrhX0FH7NX8LDSJNl6Fqvxna9W3G0kmkMZqN6ijZlJ8iAEmAZw3f6HkClII7QJ0ONmwiQTqCG-JbWz5bx5MinCuvkR10fT289U6z_WMcfMAe6A3E8KSydJry-CTbk7JbsZ9vu7Fv-bXBxyF_94ACBPjNUwIRtm4mz0S-P6EfU3xpNxjA5dDPjfD7mpkgOreifp1toP4GDm_hgTGBRMvhsRaesSQZSIjqipJK48S7q9-7ZJMzozCliJqencg_0EpPeMY0fa5k5yVKCX1.5H0up8a7h1cLM82kSCEBuw; accessToken=eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJmODMzZmViYS05YjIyLTQ2ZWYtOGY1OC02MjkyMjI4ZjliMTMiLCJpc3MiOiJodHRwczovL3BhY2lmaWNvZXBzYjJjZGVzYTAxLmIyY2xvZ2luLmNvbS84MzliNDAzZS05MmMzLTQ5MDgtODI4Yy0zN2Q2ZGU1ZDAzYzEvdjIuMC8iLCJleHAiOjE3NDE5NzM1NTIsIm5iZiI6MTc0MTk2OTk1Miwic3ViIjoiM2RhZTQ3ZTYtMDAwYS00N2EzLThjYTAtNGNlMWEwZTE1NjA2IiwibmFtZSI6IkdvZG95IE11w7FveiIsInRmcCI6IkIyQ18xX1NpZ25JbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwiYXpwIjoiZjgzM2ZlYmEtOWIyMi00NmVmLThmNTgtNjI5MjIyOGY5YjEzIiwidmVyIjoiMS4wIiwiaWF0IjoxNzQxOTY5OTUyfQ.B-Xr8P9LbvHH5kVCyZJKiAGbAsKZrdT8dnHc8XakrULSM8tIKWM2f8tMKyYZihSxO282XguukfaKRkDyZdF96vowf_O8TBkOYcpOEhqECvDkDONkRDe88A97FjJkn7u7chHGj_ZFOVHTZ44OnFUowTpmU6BFnepmu-hSa9noVgAgSqyPiIOOdVfGyrIVD6eBbx7stuC8xN0lv1enZC5oQOtj_U_-cHtL73uecIlbkMj50qov1Tumh49mA4hnr3ca-FewAHaUhQpBl7Bmoho4TqtLcHU8Cs2NbtKDCrD0WyiftG4CwIwIBlDlB7XySKom_Tc3mYrp5Cka6ik8h12Efw" \
-  -H "ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13" \
-  -d '{
-    "userId": "Godoy Muñoz",
-    "titulo": "Creacion de Nueva Trama",
-    "mensajeCabecera": "Se ha <br>registrado</br> esta nueva infromacion a bd",
-    "mensajeDetalle": "<p>Corregir los datos de la columna 15 para la trama 0001: </p>Detalle HTML del mensaje",
-    "link": "https://www.bing.com/"
-  }'
- 
- 
-curl -X POST http://svc-ods-sp-notificationeventmgmt:9000/ms-sp-registro-notificacion-eps/od/registro-de-notificaciones/v1/notificacion/eventos/connect \
-  -H "Content-Type: application/json" \
-  -H "WebHook-Request-Origin: prueba-client" \
-  -H "ce-signature: 123456789" \
-  -H "ce-connectionid: conn-abc123" \
-  -d '{
-    "claims": {
-      "idUsuario": ["Godoy Muñoz"]
-    }
-  }'
- 
- 
-curl -X POST http://svc-ods-sp-notificationrequest/ms-sp-gestion-notificacion-eps/od/gestion-de-notificaciones/v1/notificacion/notificaciones/listar \
-  -H "Content-Type: application/json" \
-  -H "x-correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2" \
-  -H "x-request-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2" \
-  -H "nombreaplicacion: ODS" \
-  -H "usuarioaplicacion: Godoy Muñoz" \
-  -H "procesonegocio: consulta-maestro" \
-  -H "Cookie: refreshToken=eyJraWQiOiJjcGltY29yZV8wOTI1MjAxNSIsInZlciI6IjEuMCIsInppcCI6IkRlZmxhdGUiLCJzZXIiOiIxLjAifQ..F4Ep9CNfVMQNidFJ.JRUmURSa8FsKDqroafG90DrRrA2hOTA-Ie1Q3k_GAJbaLvTnBBn6fXq7T0Ho8pvPdlBZFhN-cQ7l7_3JzMFaFXJWqUgn69VmPUT-PFWEH6dvLPVdDTcFjTuPMIDi9VC03ZFPxMq-4N6PFMbQxqLyQxAXs4vakISnHo5tqVtZrXnqieAqEMg9A8DADfb76obpknqcLK36DJ5kTqkZ4Ur154OrMJ0ecZAL5GMdhFB-3cxIalu8pPOTM521J1NWZLTcc0U4ylJlLn6nf2orr5BGkH3rlyfvlFOwMn6G1q3cvW-iVjCrfbZiau3QFwrhX0FH7NX8LDSJNl6Fqvxna9W3G0kmkMZqN6ijZlJ8iAEmAZw3f6HkClII7QJ0ONmwiQTqCG-JbWz5bx5MinCuvkR10fT289U6z_WMcfMAe6A3E8KSydJry-CTbk7JbsZ9vu7Fv-bXBxyF_94ACBPjNUwIRtm4mz0S-P6EfU3xpNxjA5dDPjfD7mpkgOreifp1toP4GDm_hgTGBRMvhsRaesSQZSIjqipJK48S7q9-7ZJMzozCliJqencg_0EpPeMY0fa5k5yVKCX1.5H0up8a7h1cLM82kSCEBuw; accessToken=eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJmODMzZmViYS05YjIyLTQ2ZWYtOGY1OC02MjkyMjI4ZjliMTMiLCJpc3MiOiJodHRwczovL3BhY2lmaWNvZXBzYjJjZGVzYTAxLmIyY2xvZ2luLmNvbS84MzliNDAzZS05MmMzLTQ5MDgtODI4Yy0zN2Q2ZGU1ZDAzYzEvdjIuMC8iLCJleHAiOjE3NDE5NzM1NTIsIm5iZiI6MTc0MTk2OTk1Miwic3ViIjoiM2RhZTQ3ZTYtMDAwYS00N2EzLThjYTAtNGNlMWEwZTE1NjA2IiwibmFtZSI6IkdvZG95IE11w7FveiIsInRmcCI6IkIyQ18xX1NpZ25JbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwiYXpwIjoiZjgzM2ZlYmEtOWIyMi00NmVmLThmNTgtNjI5MjIyOGY5YjEzIiwidmVyIjoiMS4wIiwiaWF0IjoxNzQxOTY5OTUyfQ.B-Xr8P9LbvHH5kVCyZJKiAGbAsKZrdT8dnHc8XakrULSM8tIKWM2f8tMKyYZihSxO282XguukfaKRkDyZdF96vowf_O8TBkOYcpOEhqECvDkDONkRDe88A97FjJkn7u7chHGj_ZFOVHTZ44OnFUowTpmU6BFnepmu-hSa9noVgAgSqyPiIOOdVfGyrIVD6eBbx7stuC8xN0lv1enZC5oQOtj_U_-cHtL73uecIlbkMj50qov1Tumh49mA4hnr3ca-FewAHaUhQpBl7Bmoho4TqtLcHU8Cs2NbtKDCrD0WyiftG4CwIwIBlDlB7XySKom_Tc3mYrp5Cka6ik8h12Efw" \
-  -H "ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13" \
-  -d '{
-    "idUsuario": "Godoy Muñoz",
-    "ordenamientoAscendente": true,
-    "cantidad": 10,
-    "paginaActual": 1
-  }'
+3c31259a-d2ed-46ee-8e5d-27097b4b01c2
