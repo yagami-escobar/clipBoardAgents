@@ -64,13 +64,46 @@ curl -L 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-parametr
 
 API USER AUTHORIZATION:
 
-curl --location 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
+curl -L -k 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
 --header 'procesoNegocio: consulta-usuario-perfil' \
---header 'ocp-apim-subscription-key: ***' \
+--header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+
+curl --location 'http://svc-ods-un-userauth:9000/usuarios/perfiles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-usuario-perfil' \
+--header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+curl -v -k 
+
+
+
+curl -L -k 'https://apim.testpacificosegurossalud.com.pe/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-usuario-perfil' \
+--header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+curl --location 'https://aks.canal.oficinadigital.internal.pstest.com.pe/usuarios/perfiles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-usuario-perfil' \
+--header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+* Connection #0 to host aks.canal.oficinadigital.internal.pstest.com.pe left intact
 
 curl --location 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios?pagina=1&cantidad=5' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
