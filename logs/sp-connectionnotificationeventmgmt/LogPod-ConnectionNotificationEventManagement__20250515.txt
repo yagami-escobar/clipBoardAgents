@@ -1,0 +1,923 @@
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-sp-notificationeventmgmt-6fb88f9c4b-b2zld
+
+> ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps@1.0.0 start
+> nest start
+
+{"level":"INFO","time":"2025-05-14T15:14:54.975Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.040Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.041Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.041Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.861Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.861Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.861Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.861Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.955Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.955Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.965Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.965Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.966Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.966Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.979Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.980Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.981Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.981Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:55.981Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-14T15:14:55.981Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:56.544Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-14T15:14:56.544Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-14T15:14:56.544Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps/development"}
+{"level":"ERROR","time":"2025-05-14T15:14:56.544Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"ERROR","time":"2025-05-14T15:14:56.645Z","context":"Config Client","err":{"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (/APP/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps/development","details":{"statusCode":401,"message":"Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API."}},"message":"Request failed with status code 401"}
+{"level":"ERROR","time":"2025-05-14T15:14:56.645Z","context":"Config Client","message":"An error occurred while querying the config server service "}
+{"level":"INFO","time":"2025-05-14T15:14:56.652Z","context":"NestFactory","message":"Starting Nest application..."}
+{"level":"INFO","time":"2025-05-14T15:14:56.652Z","context":"InstanceLoader","message":"AppModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.652Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.652Z","context":"InstanceLoader","message":"CommonsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"HttpModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"PinoLoggerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigServerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"KeyVaultModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ConfigInitModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"ExceptionsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"RedisModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"InstanceLoader","message":"EventManagerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"RoutesResolver","message":"EventManagerController {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos}:"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/connect, OPTIONS} route"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos, GET} route"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/disconnected, OPTIONS} route"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/connect, POST} route"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/disconnected, POST} route"}
+{"level":"INFO","time":"2025-05-14T15:14:56.653Z","context":"NestApplication","message":"Nest application successfully started"}
+{"level":"INFO","time":"2025-05-14T15:14:56.753Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T15:14:56.759Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T15:24:57.119Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T15:24:57.120Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T15:24:57.120Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T15:24:57.166Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T15:24:57.169Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T15:34:58.087Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T15:34:58.087Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T15:34:58.087Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T15:34:58.129Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T15:34:58.133Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T15:44:59.050Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T15:44:59.050Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T15:44:59.050Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T15:44:59.082Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T15:44:59.085Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T15:55:00.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T15:55:00.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T15:55:00.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T15:55:00.140Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T15:55:00.143Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T16:05:01.094Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T16:05:01.094Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T16:05:01.094Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T16:05:01.124Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T16:05:01.127Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T16:15:02.080Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T16:15:02.080Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T16:15:02.080Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T16:15:02.137Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T16:15:02.140Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T16:25:03.073Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T16:25:03.073Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T16:25:03.073Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T16:25:03.105Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T16:25:03.108Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T16:35:04.010Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T16:35:04.010Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T16:35:04.010Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T16:35:04.044Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T16:35:04.047Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T16:45:05.040Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T16:45:05.040Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T16:45:05.040Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T16:45:05.076Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T16:45:05.079Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T16:55:06.097Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T16:55:06.097Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T16:55:06.097Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T16:55:06.134Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T16:55:06.137Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T17:05:07.106Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T17:05:07.106Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T17:05:07.106Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T17:05:07.151Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T17:05:07.154Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T17:15:08.084Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T17:15:08.084Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T17:15:08.084Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T17:15:08.114Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T17:15:08.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T17:25:09.070Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T17:25:09.070Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T17:25:09.070Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T17:25:09.105Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T17:25:09.108Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T17:35:10.102Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T17:35:10.103Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T17:35:10.103Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T17:35:10.134Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T17:35:10.136Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T17:45:11.096Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T17:45:11.096Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T17:45:11.096Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T17:45:11.128Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T17:45:11.131Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T17:55:12.049Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T17:55:12.049Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T17:55:12.049Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T17:55:12.090Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T17:55:12.093Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T18:05:13.074Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T18:05:13.075Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T18:05:13.075Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T18:05:13.110Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T18:05:13.114Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T18:15:14.053Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T18:15:14.053Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T18:15:14.053Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T18:15:14.114Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T18:15:14.117Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T18:25:15.102Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T18:25:15.102Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T18:25:15.102Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T18:25:15.132Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T18:25:15.134Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T18:35:16.061Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T18:35:16.062Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T18:35:16.062Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T18:35:16.103Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T18:35:16.106Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T18:45:17.066Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T18:45:17.066Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T18:45:17.066Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T18:45:17.102Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T18:45:17.106Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T18:55:18.102Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T18:55:18.102Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T18:55:18.102Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T18:55:18.134Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T18:55:18.137Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T19:05:19.112Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T19:05:19.112Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T19:05:19.112Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T19:05:19.144Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T19:05:19.147Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T19:15:20.084Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T19:15:20.084Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T19:15:20.084Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T19:15:20.143Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T19:15:20.146Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T19:25:21.005Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T19:25:21.005Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T19:25:21.005Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T19:25:21.063Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T19:25:21.066Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T19:35:22.046Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T19:35:22.046Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T19:35:22.046Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T19:35:22.086Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T19:35:22.089Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T19:45:23.024Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T19:45:23.024Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T19:45:23.024Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T19:45:23.061Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T19:45:23.070Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T19:55:24.057Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T19:55:24.057Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T19:55:24.057Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T19:55:24.087Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T19:55:24.096Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T20:05:25.024Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T20:05:25.024Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T20:05:25.024Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T20:05:25.054Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T20:05:25.057Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T20:15:26.096Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T20:15:26.096Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T20:15:26.096Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T20:15:26.127Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T20:15:26.131Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T20:25:27.021Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T20:25:27.021Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T20:25:27.021Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T20:25:27.052Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T20:25:27.054Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T20:35:28.030Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T20:35:28.030Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T20:35:28.030Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T20:35:28.073Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T20:35:28.075Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T20:45:29.076Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T20:45:29.077Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T20:45:29.077Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T20:45:29.116Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T20:45:29.119Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T20:55:30.081Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T20:55:30.081Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T20:55:30.081Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T20:55:30.128Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T20:55:30.131Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T21:05:31.060Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T21:05:31.060Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T21:05:31.060Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T21:05:31.115Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T21:05:31.120Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T21:15:32.084Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T21:15:32.084Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T21:15:32.084Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T21:15:32.119Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T21:15:32.121Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T21:25:33.052Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T21:25:33.052Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T21:25:33.052Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T21:25:33.083Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T21:25:33.085Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T21:35:34.046Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T21:35:34.046Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T21:35:34.046Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T21:35:34.077Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T21:35:34.080Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T21:45:35.071Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T21:45:35.071Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T21:45:35.071Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T21:45:35.103Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T21:45:35.105Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T21:55:36.102Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T21:55:36.102Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T21:55:36.102Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T21:55:36.135Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T21:55:36.137Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T22:05:37.018Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T22:05:37.018Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T22:05:37.018Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T22:05:37.050Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T22:05:37.065Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T22:15:38.069Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T22:15:38.069Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T22:15:38.069Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T22:15:38.111Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T22:15:38.113Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T22:25:39.154Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T22:25:39.154Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T22:25:39.154Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T22:25:39.200Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T22:25:39.203Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T22:35:40.074Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T22:35:40.074Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T22:35:40.074Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T22:35:40.165Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T22:35:40.167Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T22:45:41.003Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T22:45:41.003Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T22:45:41.003Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T22:45:41.040Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T22:45:41.043Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T22:55:42.013Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T22:55:42.013Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T22:55:42.013Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T22:55:42.074Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T22:55:42.077Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T23:05:43.013Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T23:05:43.013Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T23:05:43.013Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T23:05:43.053Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T23:05:43.055Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T23:15:44.085Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T23:15:44.085Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T23:15:44.085Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T23:15:44.116Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T23:15:44.119Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T23:25:45.094Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T23:25:45.094Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T23:25:45.094Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T23:25:45.194Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T23:25:45.197Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T23:35:46.098Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T23:35:46.098Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T23:35:46.098Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T23:35:46.132Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T23:35:46.134Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T23:45:47.061Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T23:45:47.062Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T23:45:47.062Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T23:45:47.091Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T23:45:47.094Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-14T23:55:48.061Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-14T23:55:48.061Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-14T23:55:48.061Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-14T23:55:48.102Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-14T23:55:48.105Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T00:05:49.063Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T00:05:49.063Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T00:05:49.063Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T00:05:49.098Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T00:05:49.101Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T00:15:50.069Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T00:15:50.069Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T00:15:50.069Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T00:15:50.099Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T00:15:50.102Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T00:25:51.052Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T00:25:51.052Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T00:25:51.052Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T00:25:51.150Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T00:25:51.183Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T00:35:52.063Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T00:35:52.063Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T00:35:52.063Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T00:35:52.096Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T00:35:52.099Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T00:45:53.066Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T00:45:53.066Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T00:45:53.066Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T00:45:53.097Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T00:45:53.100Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T00:55:54.037Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T00:55:54.038Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T00:55:54.038Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T00:55:54.071Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T00:55:54.075Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T01:05:55.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T01:05:55.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T01:05:55.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T01:05:55.142Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T01:05:55.146Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T01:15:56.011Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T01:15:56.011Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T01:15:56.011Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T01:15:56.047Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T01:15:56.049Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T01:25:57.052Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T01:25:57.052Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T01:25:57.053Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T01:25:57.105Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T01:25:57.108Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T01:35:58.077Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T01:35:58.078Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T01:35:58.078Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T01:35:58.109Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T01:35:58.112Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T01:45:59.076Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T01:45:59.076Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T01:45:59.076Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T01:45:59.106Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T01:45:59.109Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T01:56:00.022Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T01:56:00.022Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T01:56:00.022Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T01:56:00.091Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T01:56:00.093Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T02:06:01.106Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T02:06:01.106Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T02:06:01.106Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T02:06:01.137Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T02:06:01.140Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T02:16:02.106Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T02:16:02.106Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T02:16:02.106Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T02:16:02.138Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T02:16:02.141Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T02:26:03.078Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T02:26:03.078Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T02:26:03.078Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T02:26:03.108Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T02:26:03.111Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T02:36:04.115Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T02:36:04.115Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T02:36:04.115Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T02:36:04.145Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T02:36:04.148Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T02:46:05.113Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T02:46:05.114Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T02:46:05.114Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T02:46:05.148Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T02:46:05.151Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T02:56:06.064Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T02:56:06.064Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T02:56:06.064Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T02:56:06.094Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T02:56:06.097Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T03:06:07.049Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T03:06:07.049Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T03:06:07.049Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T03:06:07.119Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T03:06:07.124Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T03:16:08.022Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T03:16:08.022Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T03:16:08.022Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T03:16:08.054Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T03:16:08.056Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T03:26:09.070Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T03:26:09.070Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T03:26:09.070Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T03:26:09.120Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T03:26:09.123Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T03:36:10.104Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T03:36:10.104Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T03:36:10.104Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T03:36:10.134Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T03:36:10.140Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T03:46:11.061Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T03:46:11.061Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T03:46:11.061Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T03:46:11.094Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T03:46:11.097Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T03:56:12.047Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T03:56:12.047Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T03:56:12.047Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T03:56:12.093Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T03:56:12.108Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T04:06:13.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T04:06:13.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T04:06:13.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T04:06:13.137Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T04:06:13.140Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T04:16:14.080Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T04:16:14.080Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T04:16:14.080Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T04:16:14.111Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T04:16:14.114Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T04:26:15.020Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T04:26:15.020Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T04:26:15.020Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T04:26:15.067Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T04:26:15.069Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T04:36:16.199Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T04:36:16.199Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T04:36:16.199Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T04:36:16.230Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T04:36:16.232Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T04:46:17.192Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T04:46:17.192Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T04:46:17.192Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T04:46:17.227Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T04:46:17.230Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T04:56:18.033Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T04:56:18.033Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T04:56:18.033Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T04:56:18.081Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T04:56:18.084Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:06:19.116Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:06:19.116Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:06:19.116Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:06:19.150Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:06:19.153Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:16:20.101Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:16:20.101Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:16:20.101Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:16:20.132Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:16:20.135Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:26:21.082Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:26:21.082Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:26:21.082Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:26:21.147Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:26:21.153Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:36:22.067Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:36:22.068Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:36:22.068Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:36:22.096Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:36:22.099Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:46:23.015Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:46:23.015Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:46:23.015Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:46:23.045Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:46:23.048Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:56:24.113Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:56:24.113Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:56:24.113Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:56:24.168Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:56:24.190Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T05:57:54.957Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T05:57:54.957Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T05:57:54.957Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T05:57:54.994Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T05:57:54.998Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T06:07:55.003Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T06:07:55.003Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T06:07:55.003Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T06:07:55.032Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T06:07:55.034Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T06:17:56.054Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T06:17:56.054Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T06:17:56.054Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T06:17:56.076Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T06:17:56.079Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T06:27:57.085Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T06:27:57.085Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T06:27:57.085Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T06:27:57.140Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T06:27:57.143Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T06:37:58.115Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T06:37:58.115Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T06:37:58.115Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T06:37:58.149Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T06:37:58.152Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T06:47:59.099Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T06:47:59.099Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T06:47:59.099Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T06:47:59.128Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T06:47:59.131Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T06:58:00.052Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T06:58:00.052Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T06:58:00.052Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T06:58:00.079Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T06:58:00.082Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T07:08:01.097Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T07:08:01.097Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T07:08:01.097Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T07:08:01.121Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T07:08:01.124Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T07:18:02.042Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T07:18:02.042Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T07:18:02.042Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T07:18:02.070Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T07:18:02.073Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T07:28:03.040Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T07:28:03.040Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T07:28:03.040Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T07:28:03.076Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T07:28:03.078Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T07:38:04.005Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T07:38:04.005Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T07:38:04.005Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T07:38:04.035Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T07:38:04.037Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T07:48:05.034Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T07:48:05.034Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T07:48:05.034Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T07:48:05.054Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T07:48:05.056Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T07:58:06.011Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T07:58:06.011Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T07:58:06.011Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T07:58:06.048Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T07:58:06.051Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T08:08:07.106Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T08:08:07.106Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T08:08:07.106Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T08:08:07.132Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T08:08:07.134Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T08:18:08.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T08:18:08.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T08:18:08.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T08:18:08.139Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T08:18:08.141Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T08:28:09.075Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T08:28:09.075Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T08:28:09.075Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T08:28:09.098Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T08:28:09.101Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T08:38:10.011Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T08:38:10.011Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T08:38:10.011Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T08:38:10.041Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T08:38:10.046Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T08:48:11.069Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T08:48:11.070Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T08:48:11.070Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T08:48:11.092Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T08:48:11.095Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T08:58:12.004Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T08:58:12.004Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T08:58:12.004Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T08:58:12.042Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T08:58:12.045Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T09:08:13.009Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T09:08:13.009Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T09:08:13.009Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T09:08:13.034Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T09:08:13.037Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T09:18:14.075Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T09:18:14.075Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T09:18:14.075Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T09:18:14.103Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T09:18:14.105Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T09:28:15.038Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T09:28:15.038Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T09:28:15.038Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T09:28:15.059Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T09:28:15.061Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T09:38:16.006Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T09:38:16.006Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T09:38:16.007Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T09:38:16.031Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T09:38:16.034Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T09:48:17.051Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T09:48:17.052Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T09:48:17.052Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T09:48:17.072Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T09:48:17.076Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T09:58:18.030Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T09:58:18.031Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T09:58:18.031Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T09:58:18.060Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T09:58:18.063Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T10:08:19.019Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T10:08:19.019Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T10:08:19.019Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T10:08:19.040Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T10:08:19.045Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T10:18:20.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T10:18:20.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T10:18:20.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T10:18:20.129Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T10:18:20.137Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T10:28:21.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T10:28:21.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T10:28:21.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T10:28:21.148Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T10:28:21.151Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T10:38:22.089Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T10:38:22.089Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T10:38:22.089Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T10:38:22.122Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T10:38:22.124Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T10:48:23.094Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T10:48:23.094Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T10:48:23.094Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T10:48:23.116Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T10:48:23.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T10:58:24.030Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T10:58:24.031Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T10:58:24.031Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T10:58:24.065Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T10:58:24.067Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T11:08:25.019Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T11:08:25.019Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T11:08:25.019Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T11:08:25.041Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T11:08:25.043Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T11:18:26.080Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T11:18:26.080Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T11:18:26.080Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T11:18:26.109Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T11:18:26.112Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T11:28:27.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T11:28:27.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T11:28:27.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T11:28:27.125Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T11:28:27.129Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T11:38:28.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T11:38:28.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T11:38:28.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T11:38:28.118Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T11:38:28.121Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T11:48:29.021Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T11:48:29.022Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T11:48:29.022Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T11:48:29.051Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T11:48:29.054Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T11:58:29.998Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T11:58:29.998Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T11:58:29.998Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T11:58:30.019Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T11:58:30.022Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T12:08:31.055Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T12:08:31.055Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T12:08:31.055Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T12:08:31.079Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T12:08:31.081Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T12:18:32.064Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T12:18:32.065Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T12:18:32.065Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T12:18:32.101Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T12:18:32.103Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T12:28:33.004Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T12:28:33.004Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T12:28:33.004Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T12:28:33.032Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T12:28:33.035Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T12:38:34.056Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T12:38:34.057Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T12:38:34.057Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T12:38:34.081Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T12:38:34.084Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T12:48:35.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T12:48:35.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T12:48:35.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T12:48:35.119Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T12:48:35.122Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T12:58:35.993Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T12:58:35.993Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T12:58:35.993Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T12:58:36.022Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T12:58:36.025Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T13:08:37.096Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T13:08:37.096Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T13:08:37.096Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T13:08:37.127Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T13:08:37.130Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T13:18:38.094Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T13:18:38.094Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T13:18:38.094Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T13:18:38.127Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T13:18:38.131Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T13:28:39.131Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T13:28:39.131Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T13:28:39.131Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T13:28:39.159Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T13:28:39.162Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T13:38:40.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T13:38:40.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T13:38:40.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T13:38:40.135Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T13:38:40.138Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T13:48:41.022Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T13:48:41.022Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T13:48:41.022Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T13:48:41.045Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T13:48:41.048Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T13:58:41.998Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T13:58:41.998Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T13:58:41.998Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T13:58:42.032Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T13:58:42.034Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T14:08:43.066Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T14:08:43.066Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T14:08:43.067Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T14:08:43.089Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T14:08:43.092Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T14:18:44.018Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T14:18:44.018Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T14:18:44.018Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T14:18:44.049Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T14:18:44.054Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T14:28:45.093Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T14:28:45.093Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T14:28:45.093Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T14:28:45.124Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T14:28:45.127Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T14:38:46.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T14:38:46.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T14:38:46.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T14:38:46.113Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T14:38:46.115Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T14:48:47.079Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T14:48:47.079Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T14:48:47.079Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T14:48:47.105Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T14:48:47.107Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T14:58:48.026Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T14:58:48.026Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T14:58:48.026Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T14:58:48.057Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T14:58:48.059Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T15:08:49.029Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T15:08:49.029Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T15:08:49.029Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T15:08:49.059Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T15:08:49.064Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T15:18:50.054Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T15:18:50.054Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T15:18:50.054Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T15:18:50.086Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T15:18:50.089Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T15:28:51.114Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T15:28:51.114Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T15:28:51.114Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T15:28:51.136Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T15:28:51.138Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T15:38:52.104Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T15:38:52.104Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T15:38:52.104Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T15:38:52.126Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T15:38:52.129Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T15:48:53.066Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T15:48:53.066Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T15:48:53.066Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T15:48:53.092Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T15:48:53.095Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T15:58:54.055Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T15:58:54.055Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T15:58:54.055Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T15:58:54.085Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T15:58:54.089Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T16:08:55.123Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T16:08:55.123Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T16:08:55.123Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T16:08:55.170Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T16:08:55.174Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T16:18:56.015Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T16:18:56.015Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T16:18:56.015Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T16:18:56.044Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T16:18:56.047Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T16:28:57.011Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T16:28:57.011Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T16:28:57.011Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T16:28:57.055Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T16:28:57.059Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T16:38:58.005Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T16:38:58.005Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T16:38:58.005Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T16:38:58.045Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T16:38:58.048Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T16:48:59.094Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T16:48:59.094Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T16:48:59.094Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T16:48:59.126Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T16:48:59.129Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T16:59:00.095Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T16:59:00.096Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T16:59:00.096Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T16:59:00.133Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T16:59:00.135Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T17:09:01.044Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T17:09:01.044Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T17:09:01.044Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T17:09:01.080Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T17:09:01.083Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T17:19:02.044Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T17:19:02.044Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T17:19:02.044Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T17:19:02.087Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T17:19:02.090Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T17:29:03.076Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T17:29:03.076Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T17:29:03.076Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T17:29:03.106Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T17:29:03.109Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T17:39:04.046Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T17:39:04.046Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T17:39:04.046Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T17:39:04.078Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T17:39:04.081Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T17:49:05.044Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T17:49:05.044Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T17:49:05.044Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T17:49:05.075Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T17:49:05.078Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T17:59:06.095Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T17:59:06.095Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T17:59:06.095Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T17:59:06.127Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T17:59:06.130Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T18:09:07.125Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T18:09:07.125Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T18:09:07.125Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T18:09:07.168Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T18:09:07.171Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T18:19:08.101Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T18:19:08.101Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T18:19:08.101Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T18:19:08.131Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T18:19:08.133Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T18:29:09.095Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T18:29:09.095Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T18:29:09.095Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T18:29:09.128Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T18:29:09.131Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T18:39:10.073Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T18:39:10.074Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T18:39:10.074Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T18:39:10.125Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T18:39:10.128Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T18:49:11.072Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T18:49:11.072Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T18:49:11.072Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T18:49:11.121Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T18:49:11.124Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T18:59:12.080Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T18:59:12.080Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T18:59:12.080Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T18:59:12.111Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T18:59:12.114Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T19:09:13.081Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T19:09:13.081Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T19:09:13.081Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T19:09:13.115Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T19:09:13.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T19:19:14.014Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T19:19:14.014Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T19:19:14.014Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T19:19:14.047Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T19:19:14.053Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-15T19:29:15.048Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-15T19:29:15.048Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-15T19:29:15.048Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-15T19:29:15.079Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-15T19:29:15.082Z","context":"RedisService","message":"Redis client is ready"}
