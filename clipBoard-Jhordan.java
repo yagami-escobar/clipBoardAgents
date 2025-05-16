@@ -480,3 +480,9 @@ https://fonts.googleapis.com/css2?family=Reboto:wght@300;400;500;700&display=swa
 
 
 3c31259a-d2ed-46ee-8e5d-27097b4b01c2
+
+
+wps-eastus-ofidig-desa-01.webpubsub.azure.com
+https://wps-eastus-ofidig-desa-01.webpubsub.azure.com
+
+10.80.19.180
