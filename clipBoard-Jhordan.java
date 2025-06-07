@@ -114,6 +114,7 @@ nc -zv redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net 6379
 'Host-Name' -> sbeu1integratest.servicebus.windows.net
   'Pricing-Tier' -> Premium
   'PRIA'         -> 10.228.5.8
+  'PORT'         -> 5671
 
 
 // ------------------------------ PROD ------------------------------ //
@@ -135,6 +136,8 @@ nc -zv redis-eastus-integra-shared-services-desa-01.redis.cache.windows.net 6379
 // ++++++++++++++++++++++++++++++++++ CMDs ++++++++++++++++++++++++++++++++++ //
 'az acr login --name acrseu1integratest' -> login.
 'az group list -o table' -> list rg.
+
+'az acr list -o table' -> list acrs.
 'az acr repository list --name acrseu1integratest' -> list repos from acr.
 
 
@@ -352,6 +355,7 @@ kubelogin convert-kubeconfig -l azurecli
   web-eu1-ofidig-test-04.azurewebsites.net (module)    -> 10.81.19.71
   web-eu1-ofidig-test-05.azurewebsites.net (access)    -> 10.81.19.69
   web-eu1-ofidig-test-06.azurewebsites.net (6to)       -> 10.81.19.70
+  web-eu1-ofidig-test-07.azurewebsites.net (7mo)       -> 10.81.19.70
 
   // VALID
   [nslookup web-eu1-ofidig-test-01.azurewebsites.net || nslookup 10.81.19.73]
@@ -489,3 +493,12 @@ https://wps-eastus-ofidig-desa-01.webpubsub.azure.com
 
 
 
+<10.228.40.0/21> to	<10.81.19.36>	  [TCP]	  [1433]		                    AKS (aks-eu1-integra-canal-test) al SSQL1-ODS   (db-srv-eu1-ofidig-test-01)
+<10.228.40.0/21> to	<10.81.19.52>	  [TCP]	  [1433]		                    AKS (aks-eu1-integra-canal-test) al SSQL2-ODS   (db-srv-eu1-ofidig-test-02)	
+<10.228.40.0/21> to	<10.81.23.132>	[TCP]	  [1433]		                    AKS (aks-eu1-integra-canal-test) al SSQL1-DATOS (db-srv-eu1-datos-test-01)
+<10.228.40.0/21> to	<10.81.19.4>	  [HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al SA1-ODS     (steu1ofidigapltest01)
+<10.228.40.0/21> to	<10.81.19.20>	  [HTTPS]	[443]		                      AKS (aks-eu1-integra-canal-test) al SA2-ODS     (steu1ofidigapltest02)
+
+
+
+nslookup db-srv-eu1-ofidig-test-01.database.windows.net
