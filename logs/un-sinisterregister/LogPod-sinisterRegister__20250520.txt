@@ -1,0 +1,1141 @@
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud logs pod/ods-un-sinisterregister-5c6d8594c6-dbrx4
+
+> srv-ms-sc-un-ods-sinistersManagement@0.0.1 start
+> nest start
+
+{"level":"INFO","time":"2025-05-19T22:07:33.310Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.311Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.311Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinisterRegister/development"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.311Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.345Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.345Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.345Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinisterRegister/development"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.345Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.425Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.426Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.430Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.430Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.430Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.430Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.436Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.436Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.436Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.436Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.436Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.436Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.563Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.563Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.563Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinisterRegister/development"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.563Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.574Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.574Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.574Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.574Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.574Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.574Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"NestFactory","message":"Starting Nest application..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"AppModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"SqlServerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"TypeOrmModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"CommonsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ZipModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"HttpModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"PinoLoggerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigServerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"KeyVaultModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigInitModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"RedisModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"TypeOrmCoreModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"SinisterModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"ServiceBusService","message":"Iniciando recepción de mensajes de Service Bus[sbq-oficinadigital-01]..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"ServiceBusService","message":"Iniciando recepción de mensajes para el suscriptor [sbs-tramareglasintegridadlogvalida-01] en el tópico [sbt-tramareglasintegridadlog-01]..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"ServiceBusService","message":"Iniciando recepción de mensajes para el suscriptor [sbs-reglanegociologvalida-01] en el tópico [sbt-reglanegociolog-01]..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"NestApplication","message":"Nest application successfully started"}
+{"level":"INFO","time":"2025-05-19T22:07:35.311Z","context":"ServiceBusService","message":"Mensaje recibido en el suscriptor [sbs-tramareglasintegridadlogvalida-01] del tópico [sbt-tramareglasintegridadlog-01]: {\"headers\":{\"applicationUser\":\"jocampo\",\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"eventType\":\"StructureIntegrityValidationSuccess\"},\"numeroProceso\":100006,\"idTramaSiniestro\":\"01JTR8MX8ZS2680N86B1MPDWPQ\"}"}
+{"level":"INFO","time":"2025-05-19T22:07:35.311Z","context":"ServiceBusService","message":"Enviando mensaje al tópico [sbt-reglanegocio-01]"}
+{"level":"INFO","time":"2025-05-19T22:07:35.459Z","context":"ServiceBusService","message":"Mensaje enviado al tópico [sbt-reglanegocio-01]"}
+{"level":"ERROR","time":"2025-05-19T22:17:35.184Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:17:35.184Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:17:35.184Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:17:35.213Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:17:35.216Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T22:27:36.022Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:27:36.023Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:27:36.023Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:27:36.062Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:27:36.065Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T22:37:37.096Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:37:37.096Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:37:37.096Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:37:37.130Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:37:37.133Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T22:47:38.042Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:47:38.042Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:47:38.042Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:47:38.081Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:47:38.084Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T22:57:39.016Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:57:39.016Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:57:39.016Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:57:39.043Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:57:39.046Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T23:07:40.013Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T23:07:40.013Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T23:07:40.013Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T23:07:40.042Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T23:07:40.044Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T23:17:41.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T23:17:41.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T23:17:41.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T23:17:41.136Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T23:17:41.141Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T23:27:42.020Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T23:27:42.020Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T23:27:42.020Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T23:27:42.049Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T23:27:42.056Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T23:37:43.096Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T23:37:43.097Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T23:37:43.097Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T23:37:43.124Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T23:37:43.127Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T23:47:44.090Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T23:47:44.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T23:47:44.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T23:47:44.125Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T23:47:44.127Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T23:57:45.041Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T23:57:45.041Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T23:57:45.041Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T23:57:45.092Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T23:57:45.096Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T00:07:46.091Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T00:07:46.091Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T00:07:46.091Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T00:07:46.125Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T00:07:46.127Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T00:17:47.101Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T00:17:47.101Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T00:17:47.101Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T00:17:47.149Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T00:17:47.151Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T00:27:48.102Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T00:27:48.102Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T00:27:48.102Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T00:27:48.130Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T00:27:48.132Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T00:37:49.007Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T00:37:49.007Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T00:37:49.007Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T00:37:49.035Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T00:37:49.038Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T00:47:50.114Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T00:47:50.114Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T00:47:50.114Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T00:47:50.152Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T00:47:50.154Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T00:57:51.087Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T00:57:51.087Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T00:57:51.087Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T00:57:51.117Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T00:57:51.119Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T01:07:52.094Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T01:07:52.094Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T01:07:52.094Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T01:07:52.124Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T01:07:52.128Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T01:17:53.087Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T01:17:53.087Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T01:17:53.087Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T01:17:53.115Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T01:17:53.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T01:27:54.182Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T01:27:54.182Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T01:27:54.182Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T01:27:54.215Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T01:27:54.219Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T01:37:55.084Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T01:37:55.084Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T01:37:55.084Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T01:37:55.115Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T01:37:55.117Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T01:47:56.088Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T01:47:56.088Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T01:47:56.088Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T01:47:56.116Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T01:47:56.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T01:57:57.093Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T01:57:57.093Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T01:57:57.093Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T01:57:57.124Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T01:57:57.126Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T02:07:58.096Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T02:07:58.096Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T02:07:58.096Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T02:07:58.125Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T02:07:58.128Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T02:17:59.082Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T02:17:59.082Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T02:17:59.082Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T02:17:59.120Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T02:17:59.122Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T02:28:00.107Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T02:28:00.107Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T02:28:00.107Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T02:28:00.145Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T02:28:00.149Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T02:38:01.099Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T02:38:01.099Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T02:38:01.099Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T02:38:01.129Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T02:38:01.132Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T02:48:02.131Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T02:48:02.131Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T02:48:02.131Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T02:48:02.194Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T02:48:02.239Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T02:58:03.021Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T02:58:03.021Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T02:58:03.021Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T02:58:03.054Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T02:58:03.061Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T03:08:04.073Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T03:08:04.073Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T03:08:04.073Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T03:08:04.101Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T03:08:04.103Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T03:18:05.040Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T03:18:05.040Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T03:18:05.041Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T03:18:05.078Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T03:18:05.081Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T03:28:06.013Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T03:28:06.013Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T03:28:06.013Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T03:28:06.057Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T03:28:06.065Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T03:38:07.034Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T03:38:07.034Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T03:38:07.034Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T03:38:07.064Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T03:38:07.110Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T03:48:08.097Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T03:48:08.097Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T03:48:08.097Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T03:48:08.139Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T03:48:08.146Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T03:58:09.083Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T03:58:09.083Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T03:58:09.083Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T03:58:09.121Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T03:58:09.123Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T04:08:10.020Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T04:08:10.021Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T04:08:10.021Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T04:08:10.051Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T04:08:10.059Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T04:18:11.044Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T04:18:11.044Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T04:18:11.044Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T04:18:11.082Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T04:18:11.084Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T04:28:12.053Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T04:28:12.053Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T04:28:12.053Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T04:28:12.080Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T04:28:12.083Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T04:38:13.064Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T04:38:13.064Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T04:38:13.065Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T04:38:13.092Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T04:38:13.094Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T04:48:14.033Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T04:48:14.033Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T04:48:14.033Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T04:48:14.065Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T04:48:14.068Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T04:58:15.000Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T04:58:15.000Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T04:58:15.000Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T04:58:15.062Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T04:58:15.066Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T05:08:16.214Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T05:08:16.214Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T05:08:16.214Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T05:08:16.246Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T05:08:16.249Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T05:18:17.199Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T05:18:17.199Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T05:18:17.199Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T05:18:17.229Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T05:18:17.232Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T05:28:18.138Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T05:28:18.138Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T05:28:18.138Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T05:28:18.168Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T05:28:18.170Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T05:38:19.013Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T05:38:19.013Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T05:38:19.013Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T05:38:19.044Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T05:38:19.046Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T05:48:20.109Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T05:48:20.109Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T05:48:20.109Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T05:48:20.147Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T05:48:20.149Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T05:58:21.063Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T05:58:21.063Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T05:58:21.063Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T05:58:21.091Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T05:58:21.093Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T06:08:22.079Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T06:08:22.079Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T06:08:22.079Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T06:08:22.121Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T06:08:22.123Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T06:18:23.180Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T06:18:23.180Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T06:18:23.180Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T06:18:23.221Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T06:18:23.224Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T06:28:24.021Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T06:28:24.021Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T06:28:24.021Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T06:28:24.053Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T06:28:24.056Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T06:38:25.073Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T06:38:25.073Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T06:38:25.073Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T06:38:25.102Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T06:38:25.104Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T06:48:26.070Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T06:48:26.070Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T06:48:26.070Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T06:48:26.100Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T06:48:26.102Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T06:58:27.206Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T06:58:27.206Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T06:58:27.206Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T06:58:27.323Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T06:58:27.325Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T07:08:28.004Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T07:08:28.004Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T07:08:28.004Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T07:08:28.036Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T07:08:28.038Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T07:18:29.058Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T07:18:29.058Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T07:18:29.058Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T07:18:29.092Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T07:18:29.097Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T07:28:30.133Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T07:28:30.133Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T07:28:30.133Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T07:28:30.183Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T07:28:30.189Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T07:38:31.108Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T07:38:31.108Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T07:38:31.108Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T07:38:31.149Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T07:38:31.151Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T07:48:32.012Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T07:48:32.012Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T07:48:32.012Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T07:48:32.042Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T07:48:32.047Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T07:58:33.179Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T07:58:33.179Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T07:58:33.179Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T07:58:33.210Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T07:58:33.214Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T08:08:34.221Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T08:08:34.221Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T08:08:34.221Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T08:08:34.249Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T08:08:34.254Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T08:18:35.072Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T08:18:35.072Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T08:18:35.072Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T08:18:35.104Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T08:18:35.106Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T08:28:36.092Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T08:28:36.092Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T08:28:36.092Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T08:28:36.130Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T08:28:36.133Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T08:38:37.108Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T08:38:37.108Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T08:38:37.108Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T08:38:37.136Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T08:38:37.139Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T08:48:38.176Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T08:48:38.176Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T08:48:38.176Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T08:48:38.216Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T08:48:38.218Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T08:58:39.152Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T08:58:39.153Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T08:58:39.153Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T08:58:39.195Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T08:58:39.200Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T09:08:40.021Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T09:08:40.021Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T09:08:40.021Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T09:08:40.049Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T09:08:40.051Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T09:18:41.023Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T09:18:41.023Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T09:18:41.023Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T09:18:41.060Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T09:18:41.063Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T09:28:42.038Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T09:28:42.038Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T09:28:42.038Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T09:28:42.078Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T09:28:42.083Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T09:38:43.214Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T09:38:43.214Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T09:38:43.214Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T09:38:43.243Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T09:38:43.246Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T09:48:44.067Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T09:48:44.067Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T09:48:44.067Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T09:48:44.104Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T09:48:44.107Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T09:58:45.058Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T09:58:45.058Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T09:58:45.058Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T09:58:45.084Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T09:58:45.089Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T10:08:46.106Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T10:08:46.106Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T10:08:46.106Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T10:08:46.145Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T10:08:46.147Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T10:18:47.128Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T10:18:47.129Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T10:18:47.129Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T10:18:47.158Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T10:18:47.161Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T10:28:48.060Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T10:28:48.061Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T10:28:48.061Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T10:28:48.119Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T10:28:48.123Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T10:38:49.062Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T10:38:49.062Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T10:38:49.062Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T10:38:49.104Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T10:38:49.112Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T10:48:50.102Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T10:48:50.102Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T10:48:50.102Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T10:48:50.148Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T10:48:50.153Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T10:58:51.100Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T10:58:51.100Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T10:58:51.100Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T10:58:51.141Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T10:58:51.144Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T11:08:52.021Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T11:08:52.021Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T11:08:52.021Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T11:08:52.050Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T11:08:52.057Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T11:18:53.001Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T11:18:53.001Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T11:18:53.001Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T11:18:53.034Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T11:18:53.037Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T11:28:54.046Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T11:28:54.046Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T11:28:54.046Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T11:28:54.087Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T11:28:54.094Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T11:38:55.010Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T11:38:55.010Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T11:38:55.010Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T11:38:55.039Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T11:38:55.042Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T11:48:56.050Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T11:48:56.050Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T11:48:56.050Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T11:48:56.089Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T11:48:56.092Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T11:58:57.095Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T11:58:57.095Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T11:58:57.095Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T11:58:57.147Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T11:58:57.175Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T12:08:58.029Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T12:08:58.029Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T12:08:58.029Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T12:08:58.057Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T12:08:58.066Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T12:18:58.999Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T12:18:58.999Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T12:18:58.999Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T12:18:59.031Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T12:18:59.033Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T12:29:00.119Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T12:29:00.119Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T12:29:00.119Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T12:29:00.165Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T12:29:00.170Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T12:39:01.051Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T12:39:01.051Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T12:39:01.051Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T12:39:01.081Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T12:39:01.086Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T12:49:02.071Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T12:49:02.071Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T12:49:02.071Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T12:49:02.100Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T12:49:02.102Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T12:59:03.186Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T12:59:03.186Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T12:59:03.186Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T12:59:03.217Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T12:59:03.220Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T13:09:04.100Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T13:09:04.100Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T13:09:04.100Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T13:09:04.127Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T13:09:04.130Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T13:19:05.006Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T13:19:05.006Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T13:19:05.006Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T13:19:05.035Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T13:19:05.053Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T13:29:06.201Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T13:29:06.201Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T13:29:06.201Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T13:29:06.229Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T13:29:06.232Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T13:39:07.047Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T13:39:07.048Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T13:39:07.048Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T13:39:07.115Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T13:39:07.122Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T13:49:08.092Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T13:49:08.092Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T13:49:08.092Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T13:49:08.121Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T13:49:08.123Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T13:59:09.090Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T13:59:09.090Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T13:59:09.090Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T13:59:09.133Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T13:59:09.138Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T14:09:10.023Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T14:09:10.023Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T14:09:10.023Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T14:09:10.057Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T14:09:10.070Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T14:19:11.057Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T14:19:11.058Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T14:19:11.058Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T14:19:11.097Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T14:19:11.101Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T14:29:12.176Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T14:29:12.176Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T14:29:12.176Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T14:29:12.218Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T14:29:12.223Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T14:39:13.104Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T14:39:13.104Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T14:39:13.104Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T14:39:13.136Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T14:39:13.139Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-05-20T14:39:37.789Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:37.789Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.426Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.426Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.426Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.460Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.460Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.473Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.474Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.474Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.502Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.502Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.515Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.515Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.515Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.544Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.544Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.556Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.556Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.557Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.587Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.587Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.599Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.599Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.599Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.630Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.630Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.642Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.642Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.642Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.672Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.672Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.685Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.685Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.685Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.715Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.715Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.728Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.728Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.728Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.763Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.763Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.776Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.776Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.777Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:39:38.814Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"2025/06/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100007,\"idTramaSiniestro\":\"01JVQ25GDHJV99ZMFAPPENCT1G\"}}"}
+{"level":"INFO","time":"2025-05-20T14:39:38.814Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.828Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener la trama desde el servicio de archivos: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.828Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'archivo')"}
+{"level":"ERROR","time":"2025-05-20T14:39:38.828Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"ERROR","time":"2025-05-20T14:49:14.108Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T14:49:14.108Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T14:49:14.108Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T14:49:14.136Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T14:49:14.139Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-05-20T14:51:19.528Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:19.528Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:19.814Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.292Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:20.293Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:20.293Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:20.293Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:20.295Z","context":"SinisterService","message":"Reglas posicionales no encontradas en Redis. Consultando base de datos..."}
+{"level":"INFO","time":"2025-05-20T14:51:20.317Z","context":"SinisterService","message":"Reglas posicionales almacenadas en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:20.317Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:20.317Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:20.318Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.408Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.409Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.409Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:20.521Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:20.521Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:20.746Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.816Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:20.816Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:20.816Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:20.816Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:20.817Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:20.817Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:20.817Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:20.818Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.822Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.822Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.822Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:20.853Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:20.853Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:20.932Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.942Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:20.942Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:20.942Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:20.942Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:20.944Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:20.944Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:20.944Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:20.944Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.948Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.948Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:20.948Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:20.981Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:20.981Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:20.998Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.010Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.010Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.010Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.010Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.011Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.011Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.011Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.011Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.015Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.015Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.015Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:21.046Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:21.046Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:21.071Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.102Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.102Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.102Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.102Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.106Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.106Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.106Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.106Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.109Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.109Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.110Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:21.148Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:21.148Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:21.163Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.173Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.173Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.173Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.173Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.177Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.177Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.177Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.178Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.181Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.182Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.182Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:21.212Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:21.212Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:21.233Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.243Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.243Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.243Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.243Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.245Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.245Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.245Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.246Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.249Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.249Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.249Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:21.282Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:21.282Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:21.297Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.322Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.322Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.322Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.322Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.324Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.324Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.324Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.325Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.328Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.329Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.329Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:21.362Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:21.362Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:21.377Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.387Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.387Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.387Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.387Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.389Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.389Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.389Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.389Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.393Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.393Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.393Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T14:51:21.426Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"Godoy Muñoz\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"3d6034bf2b9d4c92977c4bab76483c13\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30124\"},\"numeroProceso\":100008,\"idTramaSiniestro\":\"01JVQ2TY014KD55CF141ZHZACB\"}}"}
+{"level":"INFO","time":"2025-05-20T14:51:21.426Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T14:51:21.440Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.451Z","context":"SinisterDomainService","message":"Error in insertTedefSiniestroArchivo: Error: Invalid column name 'estRegistro'."}
+{"level":"INFO","time":"2025-05-20T14:51:21.451Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T14:51:21.451Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T14:51:21.451Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.452Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T14:51:21.452Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T14:51:21.452Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T14:51:21.453Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.456Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.456Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T14:51:21.456Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"ERROR","time":"2025-05-20T15:01:22.030Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T15:01:22.030Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T15:01:22.030Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T15:01:22.062Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T15:01:22.065Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T15:11:23.037Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T15:11:23.037Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T15:11:23.037Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T15:11:23.085Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T15:11:23.093Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-05-20T15:17:35.677Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:35.677Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:35.704Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:35.930Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:35.930Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:35.930Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:35.932Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:35.932Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:35.932Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:35.933Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:35.943Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:35.943Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:35.943Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:35.976Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:35.976Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:35.995Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.027Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.027Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.027Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.029Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.029Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.029Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.029Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.033Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.033Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.033Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.064Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.064Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.084Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.099Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.099Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.099Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.107Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.107Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.107Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.107Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.110Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.111Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.111Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.142Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.142Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.159Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.182Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.182Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.183Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.189Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.189Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.189Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.189Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.193Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.193Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.193Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.226Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.226Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.243Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.257Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.257Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.257Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.259Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.259Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.259Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.259Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.262Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.262Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.263Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.293Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.293Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.312Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.327Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.327Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.327Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.328Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.328Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.328Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.329Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.332Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.332Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.332Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.363Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.363Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.382Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.397Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.397Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.397Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.398Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.398Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.398Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.399Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.402Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.402Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.402Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.435Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.435Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.452Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.466Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.466Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.466Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.467Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.467Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.467Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.468Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.472Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.472Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.472Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.505Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.505Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.529Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.546Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.546Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.546Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.547Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.547Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.547Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.548Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.553Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.553Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.553Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:17:36.584Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:17:36.584Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:17:36.605Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:17:36.636Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:17:36.636Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:17:36.636Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.638Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:17:36.638Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:17:36.638Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:17:36.638Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.642Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.642Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:17:36.642Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.048Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.048Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.078Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.321Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.321Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.321Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.323Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.323Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.323Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.324Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.333Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.333Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.333Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.365Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.365Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.383Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.414Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.414Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.414Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.416Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.416Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.416Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.416Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.419Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.420Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.420Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.450Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.450Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.467Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.506Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.506Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.506Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.509Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.509Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.509Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.509Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.513Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.513Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.513Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.544Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.544Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.562Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.601Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.601Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.601Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.603Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.603Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.603Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.603Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.607Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.607Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.607Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.639Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.639Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.657Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.674Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.674Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.674Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.675Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.675Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.675Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.676Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.679Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.680Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.680Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.711Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.711Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.728Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.761Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.762Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.762Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.763Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.763Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.763Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.763Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.767Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.767Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.767Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.799Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.799Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.815Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.850Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.851Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.851Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.852Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.852Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.852Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.853Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.856Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.856Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.856Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.888Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.888Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.905Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:19.943Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:19.943Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:19.943Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.945Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:19.945Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:19.945Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:19.945Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.949Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.949Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:19.949Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:19.981Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:19.981Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:19.999Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:20.038Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:20.038Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:20.038Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:20.039Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:20.039Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:20.039Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:20.040Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:20.138Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:20.138Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:20.138Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"INFO","time":"2025-05-20T15:18:20.170Z","context":"SinisterService","message":"Procesando mensaje recibido: {\"headers\":{\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"requestId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"applicationUser\":\"jocampo\",\"businessProcess\":\"consulta-maestro\",\"ocpApimSubscriptionKey\":\"avc\"},\"data\":{\"prestador\":{\"codigo\":\"12345\",\"ruc\":\"12345678901\",\"nombre\":\"12345678901\"},\"archivo\":{\"nombre\":\"937_20107695584_00009123_40004_0106398_202502_20250212.S01\",\"url\":\"20453232323/2025/03/937_20107695584_00009123_40004_0106398_202502_20250212.S01\"},\"tramaDetalle\":{\"codigoAseguradora\":\"40004\",\"nombreAseguradora\":\"Pacifico EPS\",\"codigoTipoRegistro\":\"1\",\"tipoRegistro\":\"TramaTedef\",\"codigoVersionTrama\":\"1\",\"versionTrama\":\"Version 5.1\",\"lote\":\"30125\"},\"numeroProceso\":100009,\"idTramaSiniestro\":\"01JVQ3DR3YH0Y7VZX661XB46TK\"}}"}
+{"level":"INFO","time":"2025-05-20T15:18:20.170Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo trama desde el servicio de archivos"}
+{"level":"INFO","time":"2025-05-20T15:18:20.185Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Insertando archivos en la tabla TramaTedefSiniestroArchivo"}
+{"level":"INFO","time":"2025-05-20T15:18:20.225Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Procesando archivo posicional: date_20107695584_00009123_40004_0106398_202502_20250212.txt"}
+{"level":"INFO","time":"2025-05-20T15:18:20.225Z","context":"SinisterService","message":"Obteniendo metadatos del archivo date"}
+{"level":"INFO","time":"2025-05-20T15:18:20.225Z","context":"SinisterService","message":"Buscando reglas posicionales en Redis con clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:20.226Z","context":"SinisterService","message":"Reglas posicionales obtenidas desde Redis para clave: OD_positionalFileRules:TIP002:1"}
+{"level":"INFO","time":"2025-05-20T15:18:20.227Z","context":"SinisterService","message":"Extrayendo datos posicionales del buffer"}
+{"level":"INFO","time":"2025-05-20T15:18:20.227Z","context":"SinisterService","message":"Mapeando datos posicionales"}
+{"level":"INFO","time":"2025-05-20T15:18:20.227Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"obteniendo maestros de parametros"}
+{"level":"ERROR","time":"2025-05-20T15:18:20.236Z","context":"SinisterService","x-correlation-id":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","message":"Error al obtener maestro: AxiosError: Request failed with status code 500"}
+{"level":"ERROR","time":"2025-05-20T15:18:20.236Z","context":"SinisterService","message":"Error al procesar el mensaje: Cannot read properties of undefined (reading 'forEach')"}
+{"level":"ERROR","time":"2025-05-20T15:18:20.236Z","context":"ServiceBusService","message":"Error al recibir mensajes:"}
+{"level":"ERROR","time":"2025-05-20T15:28:21.086Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T15:28:21.086Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T15:28:21.086Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T15:28:21.135Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T15:28:21.142Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T15:38:22.063Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T15:38:22.063Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T15:38:22.063Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T15:38:22.099Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T15:38:22.101Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T15:48:23.065Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T15:48:23.065Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T15:48:23.065Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T15:48:23.102Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T15:48:23.105Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T15:58:24.164Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T15:58:24.164Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T15:58:24.164Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T15:58:24.217Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T15:58:24.223Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T16:08:25.132Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T16:08:25.132Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T16:08:25.132Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T16:08:25.166Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T16:08:25.169Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T16:18:26.104Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T16:18:26.104Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T16:18:26.104Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T16:18:26.146Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T16:18:26.148Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T16:28:27.068Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T16:28:27.069Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T16:28:27.069Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T16:28:27.114Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T16:28:27.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T16:38:28.093Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T16:38:28.093Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T16:38:28.093Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T16:38:28.123Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T16:38:28.128Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T16:48:29.192Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T16:48:29.192Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T16:48:29.192Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T16:48:29.233Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T16:48:29.235Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T16:58:30.029Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T16:58:30.029Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T16:58:30.029Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T16:58:30.059Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T16:58:30.063Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T17:08:31.037Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T17:08:31.037Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T17:08:31.037Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T17:08:31.070Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T17:08:31.075Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T17:18:32.027Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T17:18:32.027Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T17:18:32.028Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T17:18:32.057Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T17:18:32.064Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T17:28:33.082Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T17:28:33.082Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T17:28:33.082Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T17:28:33.116Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T17:28:33.118Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T17:38:34.066Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T17:38:34.066Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T17:38:34.066Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T17:38:34.095Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T17:38:34.100Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T17:48:35.114Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T17:48:35.114Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T17:48:35.114Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T17:48:35.145Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T17:48:35.148Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T17:58:36.516Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T17:58:36.517Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T17:58:36.517Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T17:58:36.612Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T17:58:36.628Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T18:08:37.086Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T18:08:37.087Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T18:08:37.087Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T18:08:37.125Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T18:08:37.130Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T18:18:38.131Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T18:18:38.131Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T18:18:38.132Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T18:18:38.173Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T18:18:38.178Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T18:28:39.047Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T18:28:39.047Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T18:28:39.047Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T18:28:39.178Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T18:28:39.182Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T18:38:40.115Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T18:38:40.115Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T18:38:40.115Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T18:38:40.146Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T18:38:40.148Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-20T18:48:41.033Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-20T18:48:41.033Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-20T18:48:41.033Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-20T18:48:41.074Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-20T18:48:41.076Z","context":"RedisService","message":"Redis client is ready"}

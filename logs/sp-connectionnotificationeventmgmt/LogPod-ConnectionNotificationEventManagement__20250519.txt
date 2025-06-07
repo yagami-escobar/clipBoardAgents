@@ -1,0 +1,77 @@
+
+> ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps@1.0.0 start
+> nest start
+
+{"level":"INFO","time":"2025-05-19T22:10:16.337Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.337Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.337Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.337Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.741Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.742Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.742Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-sp-ods-connectionNotificationEventManagement/development"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.742Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.833Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.833Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.838Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.838Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.838Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.838Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.844Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.844Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.845Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.845Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:16.845Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:10:16.845Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:17.077Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:10:17.077Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:10:17.077Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps/development"}
+{"level":"ERROR","time":"2025-05-19T22:10:17.077Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"ERROR","time":"2025-05-19T22:10:17.095Z","context":"Config Client","err":{"message":"Request failed with status code 401","name":"AxiosError","stack":"AxiosError: Request failed with status code 401\n    at settle (/APP/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/APP/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/APP/node_modules/axios/lib/core/Axios.js:45:41)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","method":"get","url":"https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/ms_fe-oc-sp-oficinadigital-registro-eventoConexion-eps/development","details":{"statusCode":401,"message":"Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API."}},"message":"Request failed with status code 401"}
+{"level":"ERROR","time":"2025-05-19T22:10:17.095Z","context":"Config Client","message":"An error occurred while querying the config server service "}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"NestFactory","message":"Starting Nest application..."}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"AppModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"CommonsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"HttpModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"PinoLoggerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigServerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"KeyVaultModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ConfigInitModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"ExceptionsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"RedisModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"InstanceLoader","message":"EventManagerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"RoutesResolver","message":"EventManagerController {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos}:"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/connect, OPTIONS} route"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos, GET} route"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/disconnected, OPTIONS} route"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/connect, POST} route"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"RouterExplorer","message":"Mapped {/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/disconnected, POST} route"}
+{"level":"INFO","time":"2025-05-19T22:10:17.098Z","context":"NestApplication","message":"Nest application successfully started"}
+{"level":"INFO","time":"2025-05-19T22:10:17.119Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:10:17.124Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"ERROR","time":"2025-05-19T22:20:18.034Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:20:18.035Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:20:18.035Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:20:18.074Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:20:18.078Z","context":"RedisService","message":"Redis client is ready"}

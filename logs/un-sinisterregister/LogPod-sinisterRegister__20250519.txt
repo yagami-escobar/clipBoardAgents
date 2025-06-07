@@ -1,0 +1,78 @@
+
+> srv-ms-sc-un-ods-sinistersManagement@0.0.1 start
+> nest start
+
+{"level":"INFO","time":"2025-05-19T22:07:33.310Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.311Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.311Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinisterRegister/development"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.311Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.345Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.345Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.345Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinisterRegister/development"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.345Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.425Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.426Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.430Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.430Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.430Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.430Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.436Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.436Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.436Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.436Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:33.436Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:07:33.436Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.563Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.563Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.563Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinisterRegister/development"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.563Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.574Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.574Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.574Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.574Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.574Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-05-19T22:07:34.574Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"NestFactory","message":"Starting Nest application..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"AppModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"SqlServerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"TypeOrmModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"CommonsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ZipModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"HttpModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.948Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"PinoLoggerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigServerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"KeyVaultModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"ConfigInitModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"RedisModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"TypeOrmCoreModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"InstanceLoader","message":"SinisterModule dependencies initialized"}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"ServiceBusService","message":"Iniciando recepción de mensajes de Service Bus[sbq-oficinadigital-01]..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"ServiceBusService","message":"Iniciando recepción de mensajes para el suscriptor [sbs-tramareglasintegridadlogvalida-01] en el tópico [sbt-tramareglasintegridadlog-01]..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"ServiceBusService","message":"Iniciando recepción de mensajes para el suscriptor [sbs-reglanegociologvalida-01] en el tópico [sbt-reglanegociolog-01]..."}
+{"level":"INFO","time":"2025-05-19T22:07:34.949Z","context":"NestApplication","message":"Nest application successfully started"}
+{"level":"INFO","time":"2025-05-19T22:07:35.311Z","context":"ServiceBusService","message":"Mensaje recibido en el suscriptor [sbs-tramareglasintegridadlogvalida-01] del tópico [sbt-tramareglasintegridadlog-01]: {\"headers\":{\"applicationUser\":\"jocampo\",\"correlationId\":\"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2\",\"applicationName\":\"ODS\",\"eventType\":\"StructureIntegrityValidationSuccess\"},\"numeroProceso\":100006,\"idTramaSiniestro\":\"01JTR8MX8ZS2680N86B1MPDWPQ\"}"}
+{"level":"INFO","time":"2025-05-19T22:07:35.311Z","context":"ServiceBusService","message":"Enviando mensaje al tópico [sbt-reglanegocio-01]"}
+{"level":"INFO","time":"2025-05-19T22:07:35.459Z","context":"ServiceBusService","message":"Mensaje enviado al tópico [sbt-reglanegocio-01]"}
+{"level":"ERROR","time":"2025-05-19T22:17:35.184Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-05-19T22:17:35.184Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-05-19T22:17:35.184Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-05-19T22:17:35.213Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-05-19T22:17:35.216Z","context":"RedisService","message":"Redis client is ready"}

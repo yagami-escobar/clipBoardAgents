@@ -253,3 +253,34 @@ curl --location --request PUT 'https://apim-eu1-border-service-desa.azure-api.ne
        "01JMQ99YNMQBZKDN88603NVSBY"
     ]
 }'
+
+
+
+
+curl -X POST http://svc-ods-sp-notificationeventmgmt:9000/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/connect \
+  -H "Content-Type: application/json" \
+  -H "WebHook-Request-Origin: prueba-client" \
+  -H "ce-signature: 123456789" \
+  -H "ce-connectionid: conn-abc123" \
+  -d '{
+    "claims": {
+      "idUsuario": ["Godoy Muñoz"]
+    }
+  }'
+ 
+curl -X POST 'https://apim-eu1-border-service-desa.azure-api.net/prueba/prueba/eventos/connect' \
+  -H 'Content-Type: application/json' \
+  -H 'WebHook-Request-Origin: prueba-client' \
+  -H 'ce-signature: 123456789' \
+  -H 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+  -H 'ce-connectionid: conn-abc123' \
+  -d '{
+    "claims": {
+      "idUsuario": ["Godoy"]
+    }
+  }'
+ 
+ 
+ 
+
+ 
