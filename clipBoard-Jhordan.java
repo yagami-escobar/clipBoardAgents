@@ -481,11 +481,48 @@ https://fonts.googleapis.com/css2?family=Reboto:wght@300;400;500;700&display=swa
 
 3c31259a-d2ed-46ee-8e5d-27097b4b01c2
 
-
-wps-eastus-ofidig-desa-01.webpubsub.azure.com
+nslookup wps-eastus-ofidig-desa-01.webpubsub.azure.com
+nz -zv wps-eastus-ofidig-desa-01.webpubsub.azure.com 443
 https://wps-eastus-ofidig-desa-01.webpubsub.azure.com
 
-10.80.19.180
 
+nz -zv 10.80.19.180 443
+
+nslookup 10.80.19.180
+
+
+
+
+curl -X OPTIONS https://aks.canal.oficinadigital.internal.psdesa.com.pe/eventos/connect \
+  -H "Content-Type: application/json" \
+  -H "x-correlation-id : 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2" \
+  -H "x-request-id : 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2" \
+  -H "usuarioaplicacion : user12" \
+  -H "procesonegocio : consulta-maestro" \
+  -H "nombreaplicacion : ODS" \
+  -H "WebHook-Request-Origin: prueba-client" \
+  -H "ce-signature: 123456789" \
+  -H "ce-connectionid: conn-abc123" \
+  -H "Cookie: refreshToken=eyJraWQiOiJjcGltY29yZV8wOTI1MjAxNSIsInZlciI6IjEuMCIsInppcCI6IkRlZmxhdGUiLCJzZXIiOiIxLjAifQ..F4Ep9CNfVMQNidFJ.JRUmURSa8FsKDqroafG90DrRrA2hOTA-Ie1Q3k_GAJbaLvTnBBn6fXq7T0Ho8pvPdlBZFhN-cQ7l7_3JzMFaFXJWqUgn69VmPUT-PFWEH6dvLPVdDTcFjTuPMIDi9VC03ZFPxMq-4N6PFMbQxqLyQxAXs4vakISnHo5tqVtZrXnqieAqEMg9A8DADfb76obpknqcLK36DJ5kTqkZ4Ur154OrMJ0ecZAL5GMdhFB-3cxIalu8pPOTM521J1NWZLTcc0U4ylJlLn6nf2orr5BGkH3rlyfvlFOwMn6G1q3cvW-iVjCrfbZiau3QFwrhX0FH7NX8LDSJNl6Fqvxna9W3G0kmkMZqN6ijZlJ8iAEmAZw3f6HkClII7QJ0ONmwiQTqCG-JbWz5bx5MinCuvkR10fT289U6z_WMcfMAe6A3E8KSydJry-CTbk7JbsZ9vu7Fv-bXBxyF_94ACBPjNUwIRtm4mz0S-P6EfU3xpNxjA5dDPjfD7mpkgOreifp1toP4GDm_hgTGBRMvhsRaesSQZSIjqipJK48S7q9-7ZJMzozCliJqencg_0EpPeMY0fa5k5yVKCX1.5H0up8a7h1cLM82kSCEBuw; accessToken=eyJhbGciOiJSUzI1NiIsImtpZCI6Ilg1ZVhrNHh5b2pORnVtMWtsMll0djhkbE5QNC1jNTdkTzZRR1RWQndhTmsiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiJmODMzZmViYS05YjIyLTQ2ZWYtOGY1OC02MjkyMjI4ZjliMTMiLCJpc3MiOiJodHRwczovL3BhY2lmaWNvZXBzYjJjZGVzYTAxLmIyY2xvZ2luLmNvbS84MzliNDAzZS05MmMzLTQ5MDgtODI4Yy0zN2Q2ZGU1ZDAzYzEvdjIuMC8iLCJleHAiOjE3NDE5NzM1NTIsIm5iZiI6MTc0MTk2OTk1Miwic3ViIjoiM2RhZTQ3ZTYtMDAwYS00N2EzLThjYTAtNGNlMWEwZTE1NjA2IiwibmFtZSI6IkdvZG95IE11w7FveiIsInRmcCI6IkIyQ18xX1NpZ25JbiIsIm5vbmNlIjoiZGVmYXVsdE5vbmNlIiwiYXpwIjoiZjgzM2ZlYmEtOWIyMi00NmVmLThmNTgtNjI5MjIyOGY5YjEzIiwidmVyIjoiMS4wIiwiaWF0IjoxNzQxOTY5OTUyfQ.B-Xr8P9LbvHH5kVCyZJKiAGbAsKZrdT8dnHc8XakrULSM8tIKWM2f8tMKyYZihSxO282XguukfaKRkDyZdF96vowf_O8TBkOYcpOEhqECvDkDONkRDe88A97FjJkn7u7chHGj_ZFOVHTZ44OnFUowTpmU6BFnepmu-hSa9noVgAgSqyPiIOOdVfGyrIVD6eBbx7stuC8xN0lv1enZC5oQOtj_U_-cHtL73uecIlbkMj50qov1Tumh49mA4hnr3ca-FewAHaUhQpBl7Bmoho4TqtLcHU8Cs2NbtKDCrD0WyiftG4CwIwIBlDlB7XySKom_Tc3mYrp5Cka6ik8h12Efw"
+  // -H "Ocp-Apim-Subscription-Key : 3d6034bf2b9d4c92977c4bab76483c13" \
+  // -d '{
+  //   "claims": {
+  //     "idUsuario": ["Godoy Muñoz"]
+  //   }
+  // }'
+
+
+/usuarios/perfiles
+
+
+
+curl -k -X OPTIONS https://aks.canal.oficinadigital.internal.psdesa.com.pe/ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion/eventos/connect \
+  -H "Origin: http://localhost" \
+  -H "Access-Control-Request-Method: POST" \
+  -H "Access-Control-Request-Headers: WebHook-Request-Origin, WebHook-Signature, Content-Type, ce-connectionid, ce-signature" 
+
+
+
+ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion
 
 

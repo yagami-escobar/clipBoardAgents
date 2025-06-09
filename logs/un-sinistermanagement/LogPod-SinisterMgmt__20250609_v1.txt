@@ -1,0 +1,108 @@
+> srv-ms-sc-un-ods-sinistersManagement@0.0.1 start
+> nest start
+
+{"level":"INFO","time":"2025-06-09T15:42:55.466Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-06-09T15:42:55.467Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:55.467Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinistersManagement/development"}
+{"level":"ERROR","time":"2025-06-09T15:42:55.467Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:55.680Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-06-09T15:42:55.681Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:55.681Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinistersManagement/development"}
+{"level":"ERROR","time":"2025-06-09T15:42:55.681Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:55.684Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-06-09T15:42:55.684Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:55.684Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinistersManagement/development"}
+{"level":"ERROR","time":"2025-06-09T15:42:55.684Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.344Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.344Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.454Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.454Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.454Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.455Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.548Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.548Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.549Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.549Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.549Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.549Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.553Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.553Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.555Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.555Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:56.555Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-06-09T15:42:56.555Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:58.784Z","context":"Config Client","message":"Fetching values of config server"}
+{"level":"ERROR","time":"2025-06-09T15:42:58.784Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:58.784Z","context":"Config Client","message":"Fetching information of config server with url: https://apim-eu1-border-service-desa.azure-api.net/ot-configServer/config/srv-ms-sc-un-ods-sinistersManagement/development"}
+{"level":"ERROR","time":"2025-06-09T15:42:58.784Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:58.842Z","context":"Config Client","message":"The key vault name is true and value: kveu1ofidigdesa01"}
+{"level":"ERROR","time":"2025-06-09T15:42:58.842Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:58.843Z","context":"Config Client","message":"This microservice does not have errors configured"}
+{"level":"ERROR","time":"2025-06-09T15:42:58.843Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:58.843Z","context":"Config Client","message":"Loading values to enviroment"}
+{"level":"ERROR","time":"2025-06-09T15:42:58.843Z","context":"application insights","message":"Application Insights is not initialized. Cannot track trace."}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"NestFactory","message":"Starting Nest application..."}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"AppModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"SqlServerModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"TypeOrmModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"CommonsModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"InfraestructureModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"HttpModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigHostModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"PinoLoggerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ApplicationInsigthsModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"LoggerModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigServerProviderModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"KeyVaultModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigClientModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ConfigInitModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"RedisModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"ServiceBusModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"TypeOrmCoreModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"TypeOrmModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"InstanceLoader","message":"SinisterModule dependencies initialized"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RoutesResolver","message":"SinisterController {/ms-un-gestion-siniestros-eps/od/gestion-de-siniestros/v1/siniestros}:"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-siniestros-eps/od/gestion-de-siniestros/v1/siniestros, POST} route"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-siniestros-eps/od/gestion-de-siniestros/v1/siniestros/consultarTrama, POST} route"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-siniestros-eps/od/gestion-de-siniestros/v1/siniestros/consultarTramaDetalle, GET} route"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-siniestros-eps/od/gestion-de-siniestros/v1/siniestros/generarConstanciaRechazada, GET} route"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"RouterExplorer","message":"Mapped {/ms-un-gestion-siniestros-eps/od/gestion-de-siniestros/v1/siniestros/generarConstanciaAprobada, GET} route"}
+{"level":"INFO","time":"2025-06-09T15:42:59.243Z","context":"NestApplication","message":"Nest application successfully started"}
+{"level":"ERROR","time":"2025-06-09T15:52:59.318Z","context":"RedisService","message":"Redis error:"}
+{"level":"WARN","time":"2025-06-09T15:52:59.319Z","context":"RedisService","message":"Redis client retrying connection... Attempt #0"}
+{"level":"WARN","time":"2025-06-09T15:52:59.319Z","context":"RedisService","message":"Redis client reconnecting..."}
+{"level":"INFO","time":"2025-06-09T15:52:59.371Z","context":"RedisService","message":"Redis client connected"}
+{"level":"INFO","time":"2025-06-09T15:52:59.380Z","context":"RedisService","message":"Redis client is ready"}
+{"level":"INFO","time":"2025-06-09T15:58:14.172Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterController","message":"Inicio del método Generar Constancia Aprobada"}
+{"level":"INFO","time":"2025-06-09T15:58:14.172Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Iniciando Generación de Certificado Aprobado"}
+{"level":"INFO","time":"2025-06-09T15:58:14.173Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","x-correlation-id":"01JWVTKGS2P5TJ3Q17HCDT634X","message":"Buscar Solicitud Detalle"}
+{"level":"ERROR","time":"2025-06-09T15:58:14.639Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Se obtuvo los siguientes ruc: 20507264108 . Para el usuario Godoy Muñoz"}
+{"level":"INFO","time":"2025-06-09T15:58:14.644Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","x-correlation-id":"01JWVTKGS2P5TJ3Q17HCDT634X","message":"Inicio de consulta solicitar detalle"}
+{"level":"INFO","time":"2025-06-09T15:58:15.125Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","x-correlation-id":"01JWVTKGS2P5TJ3Q17HCDT634X","message":"Inicio de respuesta solicitar detalle"}
+{"level":"INFO","time":"2025-06-09T15:58:15.130Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Obteniendo certificado"}
+{"level":"INFO","time":"2025-06-09T15:58:15.454Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Creando plantilla de aprobacion"}
+{"level":"INFO","time":"2025-06-09T15:58:15.458Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Enviando a descargar  el archivo de aprobacion"}
+{"level":"INFO","time":"2025-06-09T15:58:16.876Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","err":{"message":"Protocol error (Target.setDiscoverTargets): Target closed: ","name":"TargetCloseError","stack":"TargetCloseError: Protocol error (Target.setDiscoverTargets): Target closed\n    at CallbackRegistry.clear (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:101:30)\n    at Connection.#onClose (/APP/node_modules/puppeteer-core/src/cdp/Connection.ts:224:21)\n    at WebSocket.<anonymous> (/APP/node_modules/puppeteer-core/src/node/NodeWebSocketTransport.ts:51:22)\n    at callListener (/APP/node_modules/ws/lib/event-target.js:290:14)\n    at WebSocket.onClose (/APP/node_modules/ws/lib/event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (/APP/node_modules/ws/lib/websocket.js:272:10)\n    at Socket.socketOnClose (/APP/node_modules/ws/lib/websocket.js:1341:15)\n    at Socket.emit (node:events:518:28)\n    at TCP.<anonymous> (node:net:343:12)\n    at TCP.callbackTrampoline (node:internal/async_hooks:130:17)\ncaused by: ProtocolError\n    at Callback.<instance_members_initializer> (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:127:12)\n    at new Callback (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:132:3)\n    at CallbackRegistry.create (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:30:22)\n    at Connection._rawSend (/APP/node_modules/puppeteer-core/src/cdp/Connection.ts:136:22)\n    at Connection.send (/APP/node_modules/puppeteer-core/src/cdp/Connection.ts:120:17)\n    at TargetManager.initialize (/APP/node_modules/puppeteer-core/src/cdp/TargetManager.ts:152:28)\n    at CdpBrowser._attach (/APP/node_modules/puppeteer-core/src/cdp/Browser.ts:148:31)\n    at Function._create (/APP/node_modules/puppeteer-core/src/cdp/Browser.ts:74:19)\n    at ChromeLauncher.launch (/APP/node_modules/puppeteer-core/src/node/BrowserLauncher.ts:193:38)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SinisterService.generateApprovedCertificate (/APP/src/modules/sinister/application/services/SinisterService.ts:279:21)\n    at async /APP/node_modules/@nestjs/core/router/router-execution-context.js:46:28\n    at async /APP/node_modules/@nestjs/core/router/router-proxy.js:9:17"},"message":"Protocol error (Target.setDiscoverTargets): Target closed"}
+{"level":"INFO","time":"2025-06-09T15:58:17.050Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"{\"name\":\"TargetCloseError\",\"cause\":{\"name\":\"ProtocolError\"}}"}
+{"level":"INFO","time":"2025-06-09T15:58:23.584Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterController","message":"Inicio del método Generar Constancia Aprobada"}
+{"level":"INFO","time":"2025-06-09T15:58:23.584Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Iniciando Generación de Certificado Aprobado"}
+{"level":"INFO","time":"2025-06-09T15:58:23.584Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","x-correlation-id":"01JWVTKGS2P5TJ3Q17HCDT634X","message":"Buscar Solicitud Detalle"}
+{"level":"ERROR","time":"2025-06-09T15:58:23.598Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Se obtuvo los siguientes ruc: 20507264108 . Para el usuario Godoy Muñoz"}
+{"level":"INFO","time":"2025-06-09T15:58:23.601Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Obteniendo certificado"}
+{"level":"INFO","time":"2025-06-09T15:58:23.605Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Creando plantilla de aprobacion"}
+{"level":"INFO","time":"2025-06-09T15:58:23.606Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"Enviando a descargar  el archivo de aprobacion"}
+{"level":"INFO","time":"2025-06-09T15:58:24.864Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","err":{"message":"Protocol error (Target.setDiscoverTargets): Target closed: ","name":"TargetCloseError","stack":"TargetCloseError: Protocol error (Target.setDiscoverTargets): Target closed\n    at CallbackRegistry.clear (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:101:30)\n    at Connection.#onClose (/APP/node_modules/puppeteer-core/src/cdp/Connection.ts:224:21)\n    at WebSocket.<anonymous> (/APP/node_modules/puppeteer-core/src/node/NodeWebSocketTransport.ts:51:22)\n    at callListener (/APP/node_modules/ws/lib/event-target.js:290:14)\n    at WebSocket.onClose (/APP/node_modules/ws/lib/event-target.js:220:9)\n    at WebSocket.emit (node:events:518:28)\n    at WebSocket.emitClose (/APP/node_modules/ws/lib/websocket.js:272:10)\n    at Socket.socketOnClose (/APP/node_modules/ws/lib/websocket.js:1341:15)\n    at Socket.emit (node:events:518:28)\n    at TCP.<anonymous> (node:net:343:12)\n    at TCP.callbackTrampoline (node:internal/async_hooks:130:17)\ncaused by: ProtocolError\n    at Callback.<instance_members_initializer> (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:127:12)\n    at new Callback (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:132:3)\n    at CallbackRegistry.create (/APP/node_modules/puppeteer-core/src/common/CallbackRegistry.ts:30:22)\n    at Connection._rawSend (/APP/node_modules/puppeteer-core/src/cdp/Connection.ts:136:22)\n    at Connection.send (/APP/node_modules/puppeteer-core/src/cdp/Connection.ts:120:17)\n    at TargetManager.initialize (/APP/node_modules/puppeteer-core/src/cdp/TargetManager.ts:152:28)\n    at CdpBrowser._attach (/APP/node_modules/puppeteer-core/src/cdp/Browser.ts:148:31)\n    at Function._create (/APP/node_modules/puppeteer-core/src/cdp/Browser.ts:74:19)\n    at ChromeLauncher.launch (/APP/node_modules/puppeteer-core/src/node/BrowserLauncher.ts:193:38)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async SinisterService.generateApprovedCertificate (/APP/src/modules/sinister/application/services/SinisterService.ts:279:21)\n    at async /APP/node_modules/@nestjs/core/router/router-execution-context.js:46:28\n    at async /APP/node_modules/@nestjs/core/router/router-proxy.js:9:17"},"message":"Protocol error (Target.setDiscoverTargets): Target closed"}
+{"level":"INFO","time":"2025-06-09T15:58:24.865Z","traceId":"0d40e6a3-c1ef-4829-9c1d-90406f5d99e2","context":"SinisterService","message":"{\"name\":\"TargetCloseError\",\"cause\":{\"name\":\"ProtocolError\"}}"}
