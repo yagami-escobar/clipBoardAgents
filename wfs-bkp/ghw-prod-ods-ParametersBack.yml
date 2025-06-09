@@ -1,0 +1,574 @@
+name: gha-prod-ods-parametersBack
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy_option:
+        description: 'Select:'
+        required: true
+        type: choice
+        options:
+          - CI
+          - CI+CD
+      tag_name:
+        description: "Tag Name: (first time)"
+        required: false
+        type: string
+      increment_level:
+        description: "Increase Level (major, minor, patch)"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+
+permissions:
+  contents: write
+  actions: read # Permite leer artefactos
+
+jobs:
+  job_vd_checkActor:
+    runs-on: ubuntu-latest
+    outputs:
+      teams: ${{ steps.actorTeams.outputs.teams }}
+      tag_exists: ${{ steps.check_tag.outputs.tag_exists }}
+    steps:
+      # 1 -> Paint Inputs
+      - name: stp-Inputs
+        run: |
+          echo "━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "🔧 WORKFLOW INPUTS"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━"
+          printf "🚀 Deploy Option : %s\n" "${{ github.event.inputs.deploy_option }}"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━"
+      
+      # 2 -> Get Teams from Actor
+      - name: stp-getTeamsfromActor
+        uses: tspascoal/get-user-teams-membership@v2
+        id: actorTeams
+        with:
+          username: ${{ github.actor }}
+          GITHUB_TOKEN: ${{ secrets.SEC_ORG_ALL_GITHUB_VALIDATEACTOR }}
+
+      # 3 -> Validate Tag
+      - name: stp-ValidateTagIfExist
+        id: check_tag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME=${{ github.event.inputs.tag_name }}
+          echo "Validando si el tag $TAG_NAME ya existe en el repositorio..."
+          EXISTING_TAG=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/${{ github.repository }}/git/refs/tags/$TAG_NAME)
+          if echo "$EXISTING_TAG" | grep -q "sha"; then
+            echo "El tag $TAG_NAME ya existe. Se omite la creación."
+            echo "tag_exists=true" >> $GITHUB_ENV
+            echo "tag_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "El tag $TAG_NAME no existe. Se procederá a crearlo."
+            echo "tag_exists=false" >> $GITHUB_ENV
+            echo "tag_exists=false" >> $GITHUB_OUTPUT
+          fi  # Asegúrate de que el bloque 'if' esté cerrado
+
+  job_ci_buildImage:
+    needs: job_vd_checkActor
+    outputs:
+      var-kv-ods-prod: ${{ steps.set-outputs.outputs.var-kv-ods-prod }}
+      var-dockerRegistry-servername: ${{ steps.set-outputs.outputs.var-dockerRegistry-servername }}
+      var-dockerRegistry-name: ${{ steps.set-outputs.outputs.var-dockerRegistry-name }}
+      var-imageBaseRepository-name: ${{ steps.set-outputs.outputs.var-imageBaseRepository-name }}
+      var-imageRepository-name: ${{ steps.set-outputs.outputs.var-imageRepository-name }}
+      var-buildImage-path: ${{ steps.set-outputs.outputs.var-buildImage-path }}
+      var-buildTag-latest: ${{ steps.set-outputs.outputs.var-buildTag-latest }}
+      var-buildTag-runNumber: ${{ steps.set-outputs.outputs.var-buildTag-runNumber }}
+      var-app-port: ${{ steps.set-outputs.outputs.var-app-port }}
+      var-ns: ${{ steps.set-outputs.outputs.var-ns }}
+      var-svc-param: ${{ steps.set-outputs.outputs.var-svc-param }}
+      var-deploy-param: ${{ steps.set-outputs.outputs.var-deploy-param }}
+      var-label-param: ${{ steps.set-outputs.outputs.var-label-param }}
+      var-cn-param: ${{ steps.set-outputs.outputs.var-cn-param }}
+      var-hpa: ${{ steps.set-outputs.outputs.var-hpa }}
+      var-port: ${{ steps.set-outputs.outputs.var-port }}
+    if: >- 
+        (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/prod') &&
+        (
+          contains(needs.job_vd_checkActor.outputs.teams, 'CT-DSO-COEDevSecOps') || 
+          contains(needs.job_vd_checkActor.outputs.teams, 'CT-DSO-ChapterDevSecOps') || 
+          contains(needs.job_vd_checkActor.outputs.teams, 'CT-DSO-ChapterDevSecOpsExternal')
+        )
+    
+    runs-on: [self-hosted, ghrg-bf-prod-devsecops]
+    steps:
+      # 1 -> Checkout Repo
+      - name: stp-CheckoutRepo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # 2 -> AZ Login
+      - name: stp-LoginAzure
+        run: |
+          az login --service-principal -u ${{ secrets.SEC_ORG_BF_SERVICE_PRINCIPAL_ID_PROD }} -p ${{ secrets.SEC_ORG_BF_SERVICE_PRINCIPAL_SECRET_PROD }} --tenant ${{ secrets.SEC_ORG_ALL_TENANT_ID }}
+
+      # 3 -> Get Sxs From KV [ODS]
+      - name: stp-GetSxKVODS
+        run: |
+          # Change Subs nss-land-oficinadigital
+          az account set -s e5efa695-23f9-4950-99f0-fcf51500e53b
+          
+          # Get Key SXs
+          SXS=(
+            "AZURE-REDIS-PASSWORD"
+            "AZURE-REDIS-URL"
+            "DB-HOST" "DB-NAME"
+            "OCP-APIM-SUBSCRIPTION-KEY"
+            "SPN-CLIENT-ID"
+            "SPN-CLIENT-SECRET"
+            "SPN-TENANT-ID"
+            "API-KEY-CONFIG-SERVER"
+          )
+          
+          for SX in "${SXS[@]}"; do
+              SX_VALUE=$(az keyvault secret show --vault-name ${{ secrets.SEC_ORG_ALL_KEYVAULT_NAME_ODS_PROD }} --name $SX --query "value" -o tsv)
+              echo "::add-mask::$SX_VALUE"
+              echo "$SX=$SX_VALUE" >> $GITHUB_ENV
+          done
+      
+      # 4 -> Get YML Values
+      - name: stp-Values
+        run: |
+          echo "// ------------------------------- SET ENVS ------------------------------- //"
+          FILE_YML_DOCKER="${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/docker/prod/vars.yml"
+          FILE_YML_K8S="${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/kubernetes/prod/vars.yml"
+          
+          # VALUES .ENV
+          echo "var-kv-ods-prod=${{ secrets.SEC_ORG_ALL_KEYVAULT_NAME_ODS_PROD }}" >> $GITHUB_ENV
+
+          # VALUES DOCKER-ACR
+          echo "var-dockerRegistry-servername=$(yq e '.variables.VAR_YML_PROD_DOCKERREGISTRY_SERVERNAME' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          echo "var-dockerRegistry-name=$(yq e '.variables.VAR_YML_PROD_DOCKERREGISTRY_NAME' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          echo "var-imageBaseRepository-name=$(yq e '.variables.VAR_YML_PROD_IMAGEBASEREPOSITORY_NAME' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          echo "var-imageRepository-name=$(yq e '.variables.VAR_YML_PROD_IMAGEREPOSITORY_NAME' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          echo "var-buildImage-path=$(yq e '.variables.VAR_YML_PROD_BUILDIMAGE_PATH' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          echo "var-buildTag-latest=$(yq e '.variables.VAR_YML_PROD_BUILDTAG_LATEST' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          echo "var-buildTag-runNumber=${{ github.run_number }}" >> $GITHUB_ENV
+
+          echo "var-app-port=$(yq e '.variables.VAR_YML_PROD_APP_PORT' "$FILE_YML_DOCKER")" >> $GITHUB_ENV
+          
+          # VALUES K8S
+          echo "var-ns=$(yq e '.variables.VAR_YML_PROD_NS' "$FILE_YML_K8S")" >> $GITHUB_ENV
+          echo "var-svc-param=$(yq e '.variables.VAR_YML_PROD_SVC_PARAM' "$FILE_YML_K8S")" >> $GITHUB_ENV
+          echo "var-deploy-param=$(yq e '.variables.VAR_YML_PROD_DEPLOY_PARAM' "$FILE_YML_K8S")" >> $GITHUB_ENV
+          echo "var-label-param=$(yq e '.variables.VAR_YML_PROD_LABEL_PARAM' "$FILE_YML_K8S")" >> $GITHUB_ENV
+          echo "var-cn-param=$(yq e '.variables.VAR_YML_PROD_CN_PARAM' "$FILE_YML_K8S")" >> $GITHUB_ENV
+          echo "var-hpa=$(yq e '.variables.VAR_YML_PROD_HPA' "$FILE_YML_K8S")" >> $GITHUB_ENV
+          echo "var-port=$(yq e '.variables.VAR_YML_PROD_PORT' "$FILE_YML_K8S")" >> $GITHUB_ENV
+
+      #X -> Set Outputs
+      - name: stp-SetOutputs
+        id: set-outputs
+        run: |
+          # VALUES DOCKER-ACR
+          echo "var-dockerRegistry-servername=${{ env.var-dockerRegistry-servername }}" >> $GITHUB_OUTPUT
+          echo "var-dockerRegistry-name=${{ env.var-dockerRegistry-name }}" >> $GITHUB_OUTPUT
+          echo "var-imageBaseRepository-name=${{ env.var-imageBaseRepository-name }}" >> $GITHUB_OUTPUT
+          echo "var-imageRepository-name=${{ env.var-imageRepository-name }})" >> $GITHUB_OUTPUT
+          echo "var-buildImage-path=${{ env.var-buildImage-path }}" >> $GITHUB_OUTPUT
+          echo "var-buildTag-latest=${{ env.var-buildTag-latest }}" >> $GITHUB_OUTPUT
+          echo "var-buildTag-runNumber=${{ env.var-buildTag-runNumber }}" >> $GITHUB_OUTPUT
+          echo "var-app-port=${{ env.var-app-port }}" >> $GITHUB_OUTPUT
+          
+          # VALUES K8S
+          echo "var-ns=${{ env.var-ns }}" >> $GITHUB_OUTPUT
+          echo "var-svc-param=${{ env.var-svc-param }}" >> $GITHUB_OUTPUT
+          echo "var-deploy-param=${{ env.var-deploy-param }}" >> $GITHUB_OUTPUT
+          echo "var-label-param=${{ env.var-label-param }}" >> $GITHUB_OUTPUT
+          echo "var-cn-param=${{ env.var-cn-param }}" >> $GITHUB_OUTPUT
+          echo "var-hpa=${{ env.var-hpa }}" >> $GITHUB_OUTPUT
+          echo "var-port=${{ env.var-port }}" >> $GITHUB_OUTPUT
+
+      # 5 -> Replace Tokens en *.ymls
+      - name: stp-ReplaceTokens
+        uses: qetza/replacetokens-action@v1
+        with:
+          token-pattern: 'default'
+          token-prefix: '#{'
+          token-suffix: '}#'
+          sources: |
+            ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/environments/.env.${{ vars.VAR_ORG_ALL_ENVIRONMENT_PROD }}
+            ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/kubernetes/*.yml
+            ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/docker/Dockerfile
+          variables: ${{ toJson(env) }}
+
+      # 6 -> Copy Files
+      - name: stp-CopyFileEnv
+        run: |
+          cd ${{ github.workspace }}
+          # mkdir -v files-cd
+          cp -v ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/environments/.env.${{ vars.VAR_ORG_ALL_ENVIRONMENT_PROD }} ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH}}/.env
+
+      # 7 -> Auth Npmrc
+      - name: stp-authNpmrc
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          echo "registry=https:${{ vars.VAR_ORG_PROD_AZDO_BCK_ARTIFACTS }}" > ~/.npmrc
+          echo "${{ vars.VAR_ORG_PROD_AZDO_BCK_ARTIFACTS }}:_authToken=${{ secrets.SEC_ORG_ALL_AZDO_PAT_TOKEN }}" >> ~/.npmrc
+
+      # 8 -> Init Directory
+      - name: stp-gitInitDirectory
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          git init
+      
+      # 9 -> Cache ~/.npm
+      - name: Cache npm dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-${{ runner.os }}-${{ github.ref_name }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            npm-${{ github.ref_name }}-${{ runner.os }}-
+
+      # 10 -> Cache node_modules
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/node_modules
+          key: nodeM-${{ runner.os }}-${{ github.ref_name }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            nodeM-${{ github.ref_name }}-${{ runner.os }}-
+
+      # 11 -> NPM Install
+      - name: stp-NPMInstall
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          export PATH=/usr/local/nodejs/bin:$PATH
+          npm install --verbose
+
+      # 12 -> NPM Run Build
+      - name: stp-NPMRunBuild
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          export PATH=/usr/local/nodejs/bin:$PATH
+          npm run build
+      
+      # XX -> ValidateWeightPre
+      - name: stp-ValidWeightPreBuild
+        run: |
+          echo "// ******************************  DU -SH TOTAL [WORKSPACE] ****************************** //"
+          ls -al
+          du -sh
+          echo -e " \n"
+          du -sh * .[^.]* | sort -hr
+
+          echo "// ******************************  DU -SH [PPATH] ****************************** //"
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          du -sh
+
+          echo "// ******************************  DU -SH CUSTOM [PPATH] ****************************** //"
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          du -sh * .[^.]* | sort -hr
+
+      # 13 -> Docker B&P
+      - name: stp-DockerBuild&Deploy
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}
+          cp -v ${{ env.var-buildImage-path }}/.dockerignore .
+          ls -al
+          
+          ## Login
+          az acr login --name ${{ env.var-dockerRegistry-name }}
+          
+          ## Build
+          docker build --progress=plain -f ${{ env.var-buildImage-path }}/Dockerfile -t ${{ env.var-imageRepository-name }}:${{ github.run_number }} .
+
+          ## Tageo
+          docker tag ${{ env.var-imageRepository-name }}:${{ github.run_number }} ${{ env.var-dockerRegistry-servername }}/${{ env.var-imageRepository-name }}:${{ github.run_number }}
+          docker tag ${{ env.var-imageRepository-name }}:${{ github.run_number }} ${{ env.var-dockerRegistry-servername }}/${{ env.var-imageRepository-name }}:${{ env.var-buildTag-latest }}
+
+          ## Push
+          docker push ${{ env.var-dockerRegistry-servername }}/${{ env.var-imageRepository-name }}:${{ github.run_number }}
+          docker push ${{ env.var-dockerRegistry-servername }}/${{ env.var-imageRepository-name }}:${{ env.var-buildTag-latest }}
+
+          ## CleanImage
+          docker rmi ${{ env.var-imageRepository-name }}:${{ github.run_number }}
+          docker rmi ${{ env.var-dockerRegistry-servername }}/${{ env.var-imageRepository-name }}:${{ github.run_number }}
+          docker rmi ${{ env.var-dockerRegistry-servername }}/${{ env.var-imageRepository-name }}:${{ env.var-buildTag-latest }}
+      
+      # 14 -> Compress Dir
+      - name: stp-compressDir
+        run: |
+          cd ${{ github.workspace }}
+          tar -czvf ${{ vars.VAR_REPO_ARTIFACT_NAME }}.tar.gz ${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops
+
+      # 15 -> Upload Artifact
+      - name: stp-uploadArtifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ vars.VAR_REPO_ARTIFACT_NAME }}
+          path: ${{ github.workspace }}/${{ vars.VAR_REPO_ARTIFACT_NAME }}.tar.gz
+
+  job_cd_deployImageK8s:
+    needs: job_ci_buildImage
+    if: >- 
+        (github.event_name == 'workflow_dispatch' && inputs.deploy_option == 'CI+CD' && github.ref == 'refs/heads/prod') &&
+        (
+          contains(needs.job_vd_checkActor.outputs.teams, 'CT-DSO-COEDevSecOps') || 
+          contains(needs.job_vd_checkActor.outputs.teams, 'CT-DSO-ChapterDevSecOps') || 
+          contains(needs.job_vd_checkActor.outputs.teams, 'CT-DSO-ChapterDevSecOpsExternal')
+        )
+    runs-on: [self-hosted, ghrg-bf-prod-devsecops]
+    environment: env-prod-deploymentApproversBF
+    steps:
+
+      # 1 -> DownloadArtifact
+      - name: stp-DownloadArtifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ vars.VAR_REPO_ARTIFACT_NAME }}
+          path: ${{ github.workspace }} 
+    
+      # 2 -> Descompress Dir
+      - name: stp-decompressDir
+        run: |
+          cd ${{ github.workspace }}
+          tar -xzvf ${{ vars.VAR_REPO_ARTIFACT_NAME}}.tar.gz
+
+      # XX -> ValidatePost
+      - name: stp-ValidFilesPost
+        run: |
+          ls -l ${{ github.workspace }}
+          tree ${{ github.workspace }}
+      
+      # XX -> Get Outputs
+      - name: stp-Values
+        run: |
+          # VALUES DOCKER-ACR
+          echo "var-dockerRegistry-servername=${{ needs.job_ci_buildImage.outputs.var-dockerRegistry-servername }}" >> $GITHUB_ENV
+          echo "var-dockerRegistry-name=${{ needs.job_ci_buildImage.outputs.var-dockerRegistry-name }}" >> $GITHUB_ENV
+          echo "var-imageBaseRepository-name=${{ needs.job_ci_buildImage.outputs.var-imageBaseRepository-name }}" >> $GITHUB_ENV
+          echo "var-imageRepository-name=${{ needs.job_ci_buildImage.outputs.var-imageBaseRepository-name }}" >> $GITHUB_ENV
+          echo "var-buildImage-path=${{ needs.job_ci_buildImage.outputs.var-buildImage-path }}" >> $GITHUB_ENV
+          echo "var-buildTag-latest=${{ needs.job_ci_buildImage.outputs.var-buildTag-latest }}" >> $GITHUB_ENV
+          echo "var-buildTag-runNumber=${{ needs.job_ci_buildImage.outputs.var-buildTag-runNumber }}" >> $GITHUB_ENV
+          echo "var-app-port=${{ needs.job_ci_buildImage.outputs.var-app-port }}" >> $GITHUB_ENV
+          
+          # VALUES K8S
+          echo "var-ns=${{ needs.job_ci_buildImage.outputs.var-ns }}" >> $GITHUB_ENV
+          echo "var-svc-param=${{ needs.job_ci_buildImage.outputs.var-svc-param }}" >> $GITHUB_ENV
+          echo "var-deploy-param=${{ needs.job_ci_buildImage.outputs.var-deploy-param }}" >> $GITHUB_ENV
+          echo "var-label-param=${{ needs.job_ci_buildImage.outputs.var-label-param }}" >> $GITHUB_ENV
+          echo "var-cn-param=${{ needs.job_ci_buildImage.outputs.var-cn-param }}" >> $GITHUB_ENV
+          echo "var-hpa=${{ needs.job_ci_buildImage.outputs.var-hpa }}" >> $GITHUB_ENV
+          echo "var-port=${{ needs.job_ci_buildImage.outputs.var-port }}" >> $GITHUB_ENV
+
+      # 3 -> AZ Login
+      - name: stp-LoginAzure
+        run: |
+          az login --service-principal -u ${{ secrets.SEC_ORG_BF_SERVICE_PRINCIPAL_ID_PROD }} -p ${{ secrets.SEC_ORG_BF_SERVICE_PRINCIPAL_SECRET_PROD }} --tenant ${{ secrets.SEC_ORG_ALL_TENANT_ID }}
+
+      # 4 -> AZ Create Deploy
+      - name: stp-AzCreateDeploy
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/kubernetes
+          az account set -s ${{ vars.VAR_ORG_ALL_SUBSCRIPTION_INTEGRATION_ID }}
+          az aks get-credentials -g ${{ vars.VAR_ORG_ALL_SUBSCRIPTION_INTEGRA_RG_NAME_PROD }} -n ${{ vars.VAR_ORG_ALL_SUBSCRIPTION_INTEGRA_AKSCN_NAME_PROD }} --overwrite-existing
+          kubelogin convert-kubeconfig -l azurecli
+          kubectl config use-context ${{ vars.VAR_ORG_ALL_SUBSCRIPTION_INTEGRA_AKSCN_NAME_PROD }}
+          kubectl config current-context
+          kubectl config set-context --current --namespace=${{ vars.VAR_ORG_ODS_AKSCN_NAMESPACE_PROD }}
+          kubectl apply -f 1-deployment.yml
+
+          CHANGE_CAUSE="Deployed by ${{ github.actor }} via GH WF Exec ${{ github.run_number }} (${{ github.event_name }}) | COMMIT: $(echo ${{ github.sha }} | cut -c1-7)"
+          
+          # Agregar Change-Case [Annotation]
+          kubectl annotate deployment/${{ env.var-deploy-param }} kubernetes.io/change-cause="$CHANGE_CAUSE" --namespace=${{ vars.var-ns }} --overwrite
+
+      # 5 -> AZ Create Svc
+      - name: stp-AzCreateSvc
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/kubernetes
+          kubectl config set-context --current --namespace=${{ vars.VAR_ORG_ODS_AKSCN_NAMESPACE_PROD }}
+          kubectl apply -f 2-services.yml
+
+      # 6 -> AZ Create HPA
+      - name: stp-AzCreateHpa
+        run: |
+          cd ${{ github.workspace }}/${{ vars.VAR_REPO_PRINCIPAL_PATH }}/devops/kubernetes
+          kubectl config set-context --current --namespace=${{ vars.VAR_ORG_ODS_AKSCN_NAMESPACE_PROD }}
+          kubectl apply -f 3-hpa.yml
+      
+      # XX -> Create Tag
+      - name: stp-CreateTag
+        if: needs.job_vd_checkActor.outputs.tag_exists == 'false' || needs.job_vd_checkActor.outputs.tag_exists == false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME=${{ github.event.inputs.tag_name }}
+          echo "Creando el tag $TAG_NAME..."
+          
+          # Crear el tag directamente con la API de GitHub
+          COMMIT_SHA=$(git rev-parse HEAD)
+          
+          # Crear el objeto del tag
+          TAG_OBJECT=$(curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+            -d "{\"tag\": \"$TAG_NAME\", \"message\": \"Creación de tag $TAG_NAME en la rama prod\", \"object\": \"$COMMIT_SHA\", \"type\": \"commit\", \"tagger\": {\"name\": \"${{ github.actor }}\", \"email\": \"${{ github.actor }}@users.noreply.github.com\", \"date\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}}" \
+            https://api.github.com/repos/${{ github.repository }}/git/tags)
+          
+          # Extraer SHA del objeto del tag
+          TAG_SHA=$(echo $TAG_OBJECT | jq -r .sha)
+          
+          # Crear Referencia del tag
+          curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+            -d "{\"ref\": \"refs/tags/$TAG_NAME\", \"sha\": \"$TAG_SHA\"}" \
+            https://api.github.com/repos/${{ github.repository }}/git/refs
+
+          echo "✅ Tag $TAG_NAME creado exitosamente ..."
+
+  job_validateBranchAndTag:
+    needs: job_cd_deployImageK8s
+    runs-on: ubuntu-latest
+    outputs:
+      BRANCH: ${{ steps.getBranch.outputs.BRANCH }}
+      TAG_NAME: ${{ steps.determineTag.outputs.TAG_NAME }}
+    steps:
+      - name: stp-CheckoutRepo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: stp-getCurrentBranch
+        id: getBranch
+        run: |
+          echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_ENV
+          echo "BRANCH=${GITHUB_REF##*/}" >> $GITHUB_OUTPUT
+  
+      - name: stp-checkLastTag
+        run: |
+          BRANCH_NAME="${GITHUB_REF##*/}"
+          echo "Buscando el último tag que contenga '${BRANCH_NAME}' en su nombre..."
+          echo "Tags disponibles:"
+          git ls-remote --tags origin | awk -F'/' '{print $3}'
+          LAST_TAG=$(git ls-remote --tags origin | grep "${BRANCH_NAME}" | awk -F'/' '{print $3}' | sort -V | tail -n 1)
+          if [ -z "$LAST_TAG" ]; then
+            echo "No se encontró ningún tag que contenga '${BRANCH_NAME}' en su nombre."
+            exit 1
+          else
+            echo "Último tag encontrado: ${LAST_TAG}"
+          fi
+
+      - name: stp-checkLastTagEnv
+        run: |
+          BRANCH_NAME="${GITHUB_REF##*/}"
+          echo "Buscando el último tag que contenga '${BRANCH_NAME}' en su nombre..."
+          LAST_TAG=$(git ls-remote --tags origin | grep "${BRANCH_NAME}" | awk -F'/' '{print $3}' | sort -V | tail -n 1)
+          if [ -z "$LAST_TAG" ]; then
+            echo "No se encontró ningún tag que contenga '${BRANCH_NAME}' en su nombre."
+            exit 1
+          else
+            echo "Último tag encontrado: ${LAST_TAG}"
+          fi
+
+      - name: stp-determineTag
+        id: determineTag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "BRANCH: $BRANCH"
+          DATE=$(date +%Y%m%d)
+          INCREMENT_LEVEL=${{ github.event.inputs.increment_level }}
+          echo "INCREMENT_LEVEL: $INCREMENT_LEVEL"
+          
+          # Obtener la versión del último tag
+          LAST_TAG=$(git ls-remote --tags origin | grep "${BRANCH_NAME}" | awk -F'/' '{print $3}' | sort -V | tail -n 1)
+          if [ -z "$LAST_TAG" ]; then
+            echo "No se encontró ningún tag que contenga '${BRANCH_NAME}' en su nombre."
+            LAST_VERSION="0.0.0"
+          else
+            echo "Último tag encontrado: ${LAST_TAG}"
+            LAST_VERSION=$(echo $LAST_TAG | grep -oP '\d+\.\d+\.\d+')
+          fi
+          
+          # Extraer los componentes de la versión
+          IFS='.' read -r -a VERSION_PARTS <<< "$LAST_VERSION"
+          X=${VERSION_PARTS[0]}
+          Y=${VERSION_PARTS[1]}
+          Z=${VERSION_PARTS[2]}
+          
+          # Incrementar la versión según el nivel de incremento
+          if [ "$INCREMENT_LEVEL" == "major" ]; then
+            X=$((X + 1))
+            Y=0
+            Z=0
+          elif [ "$INCREMENT_LEVEL" == "minor" ]; then
+            Y=$((Y + 1))
+            Z=0
+          else
+            Z=$((Z + 1))
+          fi
+          
+          # Generar el nuevo nombre del tag
+          TAG_NAME="v${X}.${Y}.${Z}-$BRANCH-${DATE}"
+          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_ENV
+          echo "TAG_NAME=${TAG_NAME}" >> $GITHUB_OUTPUT
+          echo "TAG_NAME: $TAG_NAME"
+          
+          # Verificar si el tag ya existe
+          EXISTING_TAG=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+            https://api.github.com/repos/${{ github.repository }}/git/refs/tags/$TAG_NAME)
+          if echo "$EXISTING_TAG" | grep -q "sha"; then
+            echo "El tag $TAG_NAME ya existe. Se omite la creación."
+            exit 0
+          else
+            echo "El tag $TAG_NAME no existe. Se procederá a crearlo."
+          fi
+          
+  job_createTag:
+    needs: job_validateBranchAndTag
+    runs-on: ubuntu-latest
+    steps:
+      - name: stp-checkoutRepo
+        uses: actions/checkout@v4
+        
+      - name: stp-createDynamicTag
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ needs.job_validateBranchAndTag.outputs.BRANCH }}
+          TAG_NAME: ${{ needs.job_validateBranchAndTag.outputs.TAG_NAME }}
+        run: |
+          echo "Creando el tag ${{ env.TAG_NAME }}..."
+          git fetch origin ${{ env.BRANCH }}
+          git checkout ${{ env.BRANCH }}
+          COMMIT_SHA=$(git rev-parse ${{ env.BRANCH }})
+          echo "SHA del commit en la rama ${{ env.BRANCH }}: $COMMIT_SHA"
+          if [ -z "$COMMIT_SHA" ]; then
+            echo "Error: No se pudo obtener el SHA del commit."
+            exit 1
+          fi
+          TAG_OBJECT=$(curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+            -d "{\"tag\": \"${{ env.TAG_NAME }}\", \"message\": \"Creación de tag ${{ env.TAG_NAME }} en la rama ${{ env.BRANCH }}\", \"object\": \"$COMMIT_SHA\", \"type\": \"commit\", \"tagger\": {\"name\": \"${{ github.actor }}\", \"email\": \"${{ github.actor }}@users.noreply.github.com\", \"date\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}}" \
+            https://api.github.com/repos/${{ github.repository }}/git/tags)
+          TAG_SHA=$(echo $TAG_OBJECT | jq -r .sha)
+          if [ -z "$TAG_SHA" ]; then
+            echo "Error: No se pudo obtener el SHA del tag."
+            exit 1
+          fi
+          curl -s -X POST -H "Authorization: token $GITHUB_TOKEN" \
+            -d "{\"ref\": \"refs/tags/${{ env.TAG_NAME }}\", \"sha\": \"$TAG_SHA\"}" \
+            https://api.github.com/repos/${{ github.repository }}/git/refs
+          echo "Tag ${{ env.TAG_NAME }} creado exitosamente en la rama ${{ env.BRANCH }}."
+
+  job_cu_repository:
+    runs-on: [self-hosted, ghrg-bf-prod-devsecops]
+    needs: [job_ci_buildImage, job_cd_deployImageK8s]
+    if: always()
+    steps:
+      - name: stp-cleanupArtifacts
+        if: always()
+        run: |
+          cd ${{ github.workspace }}
+          ls -lta
+          echo "Eliminando archivos temporales..."
+          rm -rf .[^.]* *
+          ls -lta
+          echo "Cleanup completado."
