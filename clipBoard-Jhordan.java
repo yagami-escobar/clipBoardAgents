@@ -489,7 +489,6 @@ nslookup wps-eastus-ofidig-desa-01.webpubsub.azure.com
 nz -zv wps-eastus-ofidig-desa-01.webpubsub.azure.com 443
 https://wps-eastus-ofidig-desa-01.webpubsub.azure.com
 
-<<<<<<< HEAD
 
 nz -zv 10.80.19.180 443
 
@@ -531,7 +530,6 @@ curl -k -X OPTIONS https://aks.canal.oficinadigital.internal.psdesa.com.pe/ms-sp
 ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion
 
 
-=======
 10.80.19.180
 10.80.19.180
 
@@ -546,4 +544,3 @@ ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion
 
 
 nslookup db-srv-eu1-ofidig-test-01.database.windows.net
->>>>>>> e10ae38afdac82699752f682749c053b8331b76b
