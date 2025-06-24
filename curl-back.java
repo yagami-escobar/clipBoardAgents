@@ -1,6 +1,9 @@
 
 //  ---------------------------------------------------- DESA ---------------------------------------------------- //
 
+apim.desapacificosegurossalud.com.pe
+apim.oficinadigital.internal.psdesa.com.pe
+
 curl -k -L 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
@@ -93,6 +96,9 @@ curl --location 'http://svc-ods-un-userauth:9000/usuarios/perfiles' \
 
 //  ---------------------------------------------------- TEST ---------------------------------------------------- //
  
+apim.testpacificosegurossalud.com.pe
+apim.oficinadigital.internal.pstest.com.pe
+
 
 API USER AUTHORIZATION:
 
@@ -103,6 +109,26 @@ curl -L -k 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-usuar
 --header 'procesoNegocio: consulta-usuario-perfil' \
 --header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+curl -L -k 'https://apim.testpacificosegurossalud.com.pe/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-usuario-perfil' \
+--header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+curl -L -k 'https://apim.oficinadigital.internal.pstest.com.pe/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-usuario-perfil' \
+--header 'ocp-apim-subscription-key: 2f0c43ad3fbe44e89c99b2ad47e26f0b' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
 
 
 
