@@ -544,3 +544,13 @@ ms-sp-registro-eventoconexion-eps/od/registro-de-evento/v1/notificacion
 
 
 nslookup db-srv-eu1-ofidig-test-01.database.windows.net
+
+
+
+
+
+
+vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-desa
+vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-test
+vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-prod
+

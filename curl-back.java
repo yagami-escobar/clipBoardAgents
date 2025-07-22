@@ -13,6 +13,8 @@ curl -k -L 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-parame
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 
+
+
 curl --location 'https://apim.oficinadigital.internal.psdesa.com.pe/un-gestion-parametro-eps/soporte-ti/v1/parametros?maestro=1000,1001' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
@@ -63,9 +65,19 @@ curl -L 'https://apim-eu1-border-services-test.azure-api.net/un-gestion-parametr
 --header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
 
 
-
+apim.desapacificosegurossalud.com.pe
+apim.oficinadigital.internal.psdesa.com.pe
 // API USER AUTHORIZATION:
 curl -L -k 'https://apim-eu1-border-service-desa.azure-api.net/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
+--header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
+--header 'usuarioAplicacion: jocampo' \
+--header 'nombreAplicacion: ODS' \
+--header 'procesoNegocio: consulta-usuario-perfil' \
+--header 'ocp-apim-subscription-key: 3d6034bf2b9d4c92977c4bab76483c13' \
+--header 'X-Request-Id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2'
+
+
+curl -L -k 'https://apim.desapacificosegurossalud.com.pe/un-gestion-usuario-eps/soporte-ti/v1/usuarios/perfiles' \
 --header 'X-Correlation-id: 0d40e6a3-c1ef-4829-9c1d-90406f5d99e2' \
 --header 'usuarioAplicacion: jocampo' \
 --header 'nombreAplicacion: ODS' \
