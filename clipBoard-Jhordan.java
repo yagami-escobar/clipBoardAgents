@@ -577,3 +577,20 @@ ods-un-userauth-54dbc64cf5-ljxp2                                  1m           3
 ods-un-validatesinisterstructure-66974fff87-jn67z                 1m           330Mi
 srv-ms-od360-oc-un-dsc-sincroniza-usuariob2c-ssd-56dddbbfcskd84   1m           301Mi
 ext-jescobars-mejco-vm-est@vme1desagedso02:~$
+
+
+
+
+NAME                                               CPU(cores)   MEMORY(bytes)
+ods-ne-plottransregister-57f77bf7f7-jgtcv          1m           319Mi
+ods-ne-validatebssrule-5556f856df-m7kdq            1m           386Mi
+ods-secretssync-86bc897d76-ftnk9                   0m           0Mi
+ods-sp-filemanagement-79b99d56c5-pzqvf             1m           313Mi
+ods-sp-notificationrequest-7798899f9-9t4v7         1m           315Mi
+ods-un-parameters-65c97ccfdb-jm4s4                 1m           344Mi
+ods-un-rolepermission-ffd6bf8c9-26kt6              1m           324Mi
+ods-un-sinistermanagement-84575d6d96-fkpwt         1m           329Mi
+ods-un-sinisterparameters-545d7ff76c-8zvzt         1m           324Mi
+ods-un-sinisterregister-5fcfdbc77f-w542b           1m           323Mi
+ods-un-userauth-cb6b6c665-8kf4v                    1m           311Mi
+ods-un-validatesinisterstructure-f77dc98c8-l2s9h   1m           320Mi
