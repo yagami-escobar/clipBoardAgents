@@ -554,3 +554,26 @@ vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-desa
 vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-test
 vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-prod
 
+
+
+
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud top pods
+NAME                                                              CPU(cores)   MEMORY(bytes)
+ms-od360-oc-ne-gestion-siniestrodetalletrama-ssd-6c65d6c686x4x7   1m           322Mi
+ms-od360-oc-ne-gestion-siniestrotrama-ssd-588c5465c9-cjjvv        1m           316Mi
+ods-ne-plottransregister-6697ff995d-k9h7m                         1m           317Mi
+ods-ne-validatebssrule-6944bbdc4f-bf8md                           1m           323Mi
+ods-secretssync-8d9bbf78c-vcm9n                                   0m           0Mi
+ods-sp-filemanagement-668bb74c76-8zz85                            1m           250Mi
+ods-sp-notificationeventmgmt-6fd9497bb6-bl76b                     1m           309Mi
+ods-sp-notificationregister-675cf6cdd-xgmdj                       1m           276Mi
+ods-sp-notificationrequest-5b844cd569-47fp7                       1m           312Mi
+ods-un-parameters-54494f74b4-lwr52                                1m           313Mi
+ods-un-rolepermission-5d6d5575f6-5z969                            1m           331Mi
+ods-un-sinistermanagement-69d9d84fb8-frxl7                        1m           325Mi
+ods-un-sinisterparameter-667b7786f8-g2p9p                         1m           333Mi
+ods-un-sinisterregister-86bf975545-f5qzz                          1m           313Mi
+ods-un-userauth-54dbc64cf5-ljxp2                                  1m           329Mi
+ods-un-validatesinisterstructure-66974fff87-jn67z                 1m           330Mi
+srv-ms-od360-oc-un-dsc-sincroniza-usuariob2c-ssd-56dddbbfcskd84   1m           301Mi
+ext-jescobars-mejco-vm-est@vme1desagedso02:~$
