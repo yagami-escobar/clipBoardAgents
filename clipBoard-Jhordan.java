@@ -601,3 +601,7 @@ ods-un-sinisterparameters-545d7ff76c-8zvzt         1m           324Mi
 ods-un-sinisterregister-5fcfdbc77f-w542b           1m           323Mi
 ods-un-userauth-cb6b6c665-8kf4v                    1m           311Mi
 ods-un-validatesinisterstructure-f77dc98c8-l2s9h   1m           320Mi
+
+
+
+https://steu1ofidigfilesdesa01.blob.core.windows.net/cn-ofidig-login/customize-ui.html
