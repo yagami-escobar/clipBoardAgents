@@ -549,8 +549,18 @@ nslookup db-srv-eu1-ofidig-test-01.database.windows.net
 
 
 
+STORAGE -> 
 
-vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-desa
+VNET/SNET -> vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-desa
+STORAGE_ACCOUNT -> steu1ofidigfilesdesa01
+
+
 vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-test
 vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-prod
+
+
+
+
+saul -> 
+dani/celso -> para que se pueda agregar la ip a la whitelist.
 
