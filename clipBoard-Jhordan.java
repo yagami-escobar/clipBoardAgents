@@ -561,11 +561,9 @@ vnet-eu1-adm-devsecops-cross/sn-eu1-plat-adm-devsecops-prod
 
 
 
-<<<<<<< HEAD
 saul -> 
 dani/celso -> para que se pueda agregar la ip a la whitelist.
 
-=======
 ext-jescobars-mejco-vm-est@vme1desagedso02:~$ kubectl -n ns-desa-cn-ods-oficinadigitalsalud top pods
 NAME                                                              CPU(cores)   MEMORY(bytes)
 ms-od360-oc-ne-gestion-siniestrodetalletrama-ssd-6c65d6c686x4x7   1m           322Mi
@@ -603,4 +601,3 @@ ods-un-sinisterparameters-545d7ff76c-8zvzt         1m           324Mi
 ods-un-sinisterregister-5fcfdbc77f-w542b           1m           323Mi
 ods-un-userauth-cb6b6c665-8kf4v                    1m           311Mi
 ods-un-validatesinisterstructure-f77dc98c8-l2s9h   1m           320Mi
->>>>>>> 0d43b42b25ddd6c1f1b721689bc21c8f11807010
