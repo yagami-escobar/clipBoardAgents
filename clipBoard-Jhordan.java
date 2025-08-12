@@ -605,3 +605,6 @@ ods-un-validatesinisterstructure-f77dc98c8-l2s9h   1m           320Mi
 
 
 https://steu1ofidigfilesdesa01.blob.core.windows.net/cn-ofidig-login/customize-ui.html
+APIM_DESA_OD360__OCP_APIM_SUBSCRIPTION_KEY=3d6034bf2b9d4c92977c4bab76483c13
+APIM_TEST_OD360__OCP_APIM_SUBSCRIPTION_KEY=2f0c43ad3fbe44e89c99b2ad47e26f0b
+APIM_PROD_OD360__OCP_APIM_SUBSCRIPTION_KEY=a8668047fa6c45988701e346165e90f8
