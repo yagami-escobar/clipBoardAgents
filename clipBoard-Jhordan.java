@@ -605,3 +605,4 @@ ods-un-validatesinisterstructure-f77dc98c8-l2s9h   1m           320Mi
 
 
 https://steu1ofidigfilesdesa01.blob.core.windows.net/cn-ofidig-login/customize-ui.html
+https://pacificoepsb2cdesa01.b2clogin.com/pacificoepsb2cdesa01.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN_EMAILMFA&client_id=64259e21-b29a-4cc5-94e8-9426022f9e80&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fjwt.ms%2F&scope=openid&response_type=id_token&prompt=login
