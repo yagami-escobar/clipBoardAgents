@@ -615,3 +615,5 @@ APIM_PROD_OD360__OCP_APIM_SUBSCRIPTION_KEY=a8668047fa6c45988701e346165e90f8
 https://pacificoepsb2cdesa01.b2clogin.com/pacificoepsb2cdesa01.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN_EMAILMFA&client_id=64259e21-b29a-4cc5-94e8-9426022f9e80&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fjwt.ms%2F&scope=openid&response_type=id_token&prompt=login
 
 https://pacificoepsb2cdesa01.b2clogin.com/pacificoepsb2cdesa01.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN&client_id=64259e21-b29a-4cc5-94e8-9426022f9e80&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fjwt.ms%2F&scope=openid&response_type=id_token&prompt=login
+
+https://pacificoepsb2cdesa01.b2clogin.com/pacificoepsb2cdesa01.onmicrosoft.com/oauth2/v2.0/authorize?p=B2C_1A_SIGNUP_SIGNIN_EMAILMFA&client_id=64259e21-b29a-4cc5-94e8-9426022f9e80&nonce=defaultNonce&redirect_uri=https%3A%2F%2Fjwt.ms%2F&scope=openid&response_type=id_token&prompt=login
